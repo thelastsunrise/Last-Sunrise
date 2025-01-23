@@ -1,0 +1,18 @@
+---
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/preview.css";
+import "../styles/global.css";
+import MainLayout from "../layouts/MainLayout.astro";
+const { title } = Astro.props;
+---
+<head>
+    <title>Last Sunrise - {title}</title>
+</head>
+
+<MainLayout>
+    <div class="col-lg-4"></div>
+    <div class="col-lg-8">
+        <h2>{title}</h2>
+        <slot/>
+    </div>
+</MainLayout>

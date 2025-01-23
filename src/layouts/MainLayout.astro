@@ -2,13 +2,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/preview.css";
 import "../styles/global.css";
-const { title } = Astro.props;
 ---
 <html>
-<head>
-    <title>Last Sunrise - {title}</title>
-</head>
-
 <body>
 <div class="container">
     <div class="row">
@@ -27,14 +22,7 @@ const { title } = Astro.props;
         </nav>
 
         <div class="row">
-            <aside class="col-lg-4">
-                <h2>Hello...</h2>
-            </aside>
-            
-            <main class="col-lg-8">
-                <h2>{title}</h2>
-                <slot/>
-            </main>
+            <slot/>
         </div>
 
         <div class="row">
