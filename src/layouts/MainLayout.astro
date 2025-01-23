@@ -2,25 +2,13 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/preview.css";
 import "../styles/global.css";
+
+import Header from "../components/Header.astro";
 ---
 <html>
 <body>
 <div class="container">
-    <div class="row">
-        <header class="col-12 position-relative">
-            <h1 class="position-absolute translate-middle top-50 start-50">Last Sunrise</h1>
-        </header>
-        <nav class="navbar navbar-expand-lg justify-content-around">
-            <div class="navbar-nav">
-                <a class="nav-link" href="../">Home</a>
-                <a class="nav-link" href="../about">About</a>
-                <a class="nav-link" href="../about">Works</a>
-                <a class="nav-link" href="../about">Blog</a>
-                <a class="nav-link" href="../about">Shrines</a>
-                <a class="nav-link" href="../about">Links</a>
-            </div>
-        </nav>
-    </div>
+    <Header/>
 
     <div class="row">
         <slot/>
