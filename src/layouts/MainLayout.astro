@@ -1,0 +1,23 @@
+---
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/preview.css"
+const { title } = Astro.props;
+---
+<div class="container">
+    <div class="row">
+        <header class="col-12">
+            <h1>Last Sunrise</h1>
+            <nav>
+                <li>Home</li>
+                <li>About</li>
+            </nav>
+        </header>
+        <main>
+            <h2>{title}</h2>
+            <slot/>
+        </main>
+        <footer>
+            <p>Last Sunrise est. 2022 // Last updated MM/DD/YYYY</p>
+        </footer>
+    </div>
+</div>
