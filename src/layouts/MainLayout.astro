@@ -12,25 +12,37 @@ const { title } = Astro.props;
 <body>
 <div class="container">
     <div class="row">
-        <header class="col-12">
+        <header class="col-12 text-center">
             <h1>Last Sunrise</h1>
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg justify-content-around">
                 <div class="navbar-nav">
                     <a class="nav-link" href="../">Home</a>
                     <a class="nav-link" href="../about">About</a>
+                    <a class="nav-link" href="../about">Works</a>
+                    <a class="nav-link" href="../about">Blog</a>
+                    <a class="nav-link" href="../about">Shrines</a>
+                    <a class="nav-link" href="../about">Links</a>
                 </div>
             </nav>
         </header>
-        
-        <main>
-            <h2>{title}</h2>
-            <slot/>
-        </main>
 
-        <footer>
-            <p>Last Sunrise est. 2022 // Last updated MM/DD/YYYY</p>
-            <p><a href="/sitemap">Sitemap</a></p>
-        </footer>
+        <div class="row">
+            <aside class="col-4">
+                <h2>Hello...</h2>
+            </aside>
+            
+            <main class="col-8">
+                <h2>{title}</h2>
+                <slot/>
+            </main>
+        </div>
+
+        <div class="row">
+            <footer class="col-12 text-center">
+                <p>Last Sunrise est. 2022 // Last updated MM/DD/YYYY</p>
+                <p><a href="/sitemap">Sitemap</a></p>
+            </footer>
+        </div>
     </div>
 </div>
 </body>
