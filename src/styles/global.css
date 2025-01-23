@@ -1,8 +1,10 @@
 :root {
     --color: #fff:
 
-    --mascot-width:400px;
-    --offset: calc(var(--mascot-width)/2);
+    /* mascot vars */
+    --mascot-width: 400px;
+    --h-offset: calc(var(--mascot-width)/2);
+    --v-offset: 200px;
 }
 
 body {
@@ -20,13 +22,15 @@ header {
 /* EXTRA LARGE SCREENS & UP */
 @media only screen and (min-width: 1200px) {
     #mascot {
-        transform: translateY(-200px);
+        float: left;
+        transform: translateY(calc(-1*var(--v-offset)));
+        shape-outside: inset(0 0 var(--v-offset) 0);
     }
 
     .navbar {
         position: relative;
         left: 50%;
-        transform: translateX(-50%) translateX(var(--offset));
-        width: calc(100% - var(--offset));
+        transform: translateX(-50%) translateX(var(--h-offset));
+        width: calc(100% - var(--h-offset));
     }
 }
