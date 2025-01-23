@@ -4,7 +4,9 @@ const { title, description } = Astro.props;
 <head>
     <title>Last Sunrise - {title}</title>
     <meta name="title" content={`Last Sunrise - ${title}`}>
+    <meta name="author" content="Cat Leff">
     <meta name="description" content={description}>
+    <meta name="keywords" content="neocities, nekoweb, yesterweb, indie web, old web, small web, art, cats, fansite, retro, personal, lgbtq, blue, yellow"/>
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url.toString()} />
@@ -13,10 +15,9 @@ const { title, description } = Astro.props;
     <meta property="og:image" content="LINK" />
     
     <meta charset="UTF-8">
-    <meta name="keywords" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Cat Leff">
     <meta name="language" content="English">
+    <meta name="generator" content={Astro.generator}>
     <meta name="robots" content="index, follow">
     <meta name="revisit-after" content="0 days">
 
