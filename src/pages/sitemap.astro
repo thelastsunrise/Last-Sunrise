@@ -1,39 +1,25 @@
 ---
-import fs from 'fs/promises';
-import path from 'path';
-import { parseStringPromise } from 'xml2js';
+import fs from "fs/promises";
+import path from "path";
+import { parseStringPromise } from "xml2js";
 
-// Read and parse the sitemap.xml file
-const sitemapPath = path.resolve('./dist/sitemap-0.xml'); // Adjust if necessary
+const sitemapPath = path.resolve("./dist/sitemap-0.xml");
 let urls = [];
 
-try {
-  const xmlContent = await fs.readFile(sitemapPath, 'utf8');
-  const parsed = await parseStringPromise(xmlContent);
+import MainLayout from "../layouts/MainLayout.astro";
 
-  // Extract URLs from the sitemap
-  urls = parsed.urlset.url.map((entry) => entry.loc[0]); // Each <loc> contains a URL
+try {
+    const xmlContent = await fs.readFile(sitemapPath, "utf8");
+    const parsed = await parseStringPromise(xmlContent);
+    urls = parsed.urlset.url.map((page: any) => page.loc[0]);
 } catch (error) {
-  console.error('Error reading sitemap.xml:', error);
+    console.error("OOPS");
 }
 ---
-
-<html>
-  <head>
-    <title>HTML Sitemap</title>
-  </head>
-  <body>
-    <h1>Sitemap</h1>
-    {urls.length > 0 ? (
-      <ul>
+<MainLayout title="Sitemap">
+    <ul>
         {urls.map((url) => (
-          <li>
-            <a href={url}>{url}</a>
-          </li>
+            <li><a href={url}>{url}</a></li>
         ))}
-      </ul>
-    ) : (
-      <p>No URLs found in the sitemap.</p>
-    )}
-  </body>
-</html>
+    </ul>
+</MainLayout>
