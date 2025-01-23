@@ -1,5 +1,8 @@
 :root {
     --color: #fff:
+
+    --mascot-width:400px;
+    --offset: calc(var(--mascot-width)/2);
 }
 
 body {
@@ -14,9 +17,16 @@ header {
     height: 300px;
 }
 
-/* EXTRA EXTRA LARGE SCREENS & UP */
-@media only screen and (min-width: 1400px) {
+/* EXTRA LARGE SCREENS & UP */
+@media only screen and (min-width: 1200px) {
     #mascot {
         transform: translateY(-200px);
+    }
+
+    .navbar {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%) translateX(var(--offset));
+        width: calc(100% - var(--offset));
     }
 }
