@@ -4,6 +4,7 @@ import path from "path";
 import { parseStringPromise } from "xml2js";
 
 const sitemapPath = path.resolve("./dist/sitemap-0.xml");
+const siteURL = "https://lastsunrise.art";
 let urls = [];
 
 import MainLayout from "../layouts/MainLayout.astro";
@@ -11,7 +12,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 try {
     const xmlContent = await fs.readFile(sitemapPath, "utf8");
     const parsed = await parseStringPromise(xmlContent);
-    urls = parsed.urlset.url.map((page: any) => page.loc[0]);
+    urls = parsed.urlset.url.map((page: any) => page.loc[0].replace(siteURL, "")); // trim off whole url
 } catch (error) {
     console.error("OOPS");
 }
