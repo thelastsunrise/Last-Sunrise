@@ -1,0 +1,21 @@
+---
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/preview.css";
+import "../styles/global.css";
+
+const { title } = Astro.props;
+
+import { Image } from "astro:assets";
+import heliosMascotImage from "../images/helios-sketch.png"
+---
+<html>
+    <figure id="mascot">
+        <Image class="float-lg-start mx-auto d-block" width="400"
+            src={heliosMascotImage}
+            alt="Helios" />
+    </figure>
+    <section class="col-12">
+        <h2>{title}</h2>
+        <slot>
+    </section>
+</html>
