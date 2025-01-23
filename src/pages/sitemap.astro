@@ -1,7 +1,9 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+export const title = "Sitemap";
+
 const allPages = Object.values(import.meta.glob("./*.astro", {eager: true}));
 ---
 <MainLayout title="Sitemap">
-    {allPages.map((page: any) => <li><a href={page.url}>PAGE NAME</a></li>)}
+    {allPages.map((page: any) => <li><a href={page.url}>{page.title || "Untitled Page"}</a></li>)}
 </MainLayout>
