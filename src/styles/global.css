@@ -1,3 +1,7 @@
+:root {
+    --color: #fff:
+}
+
 body {
     background-color: rgb(64, 88, 124);
 }
@@ -9,4 +13,3 @@ body {
 header {
     height: 300px;
 }
-
