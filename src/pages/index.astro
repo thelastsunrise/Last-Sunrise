@@ -3,11 +3,19 @@ import MainLayout from "../layouts/MainLayout.astro"
 
 const title = "Home";
 const description = "A personal website";
+
+import { Image } from "astro:assets";
+import heliosMascotImage from "../images/helios-sketch.png"
 ---
+
 <MainLayout title={title} description={description}>
+    <figure id="mascot">
+        <Image class="float-lg-start mx-auto d-block" width="400"
+            src={heliosMascotImage}
+            alt="Helios" />
+    </figure>
     <section class="col-12">
         <h2>{title}</h2>
-        <figure id="mascot"><img height="400px" width="300px" class="float-lg-end mx-auto d-block"/></figure>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut felis egestas, maximus felis sed, molestie erat. Donec placerat ultricies mi id tempus. Nullam venenatis urna sit amet magna cursus vehicula. Aliquam volutpat ex et nunc ultrices, et gravida elit eleifend. Pellentesque eget magna a ex pellentesque fermentum vel molestie justo. Phasellus suscipit metus sapien, eget consequat justo interdum eget. Sed imperdiet, dolor ac commodo elementum, neque leo elementum enim, eget molestie augue turpis in neque.</p>
         <p>Suspendisse nec commodo nibh. Sed sit amet gravida neque. Ut odio nisi, tincidunt quis imperdiet et, egestas at mauris. In eget augue vulputate, euismod est in, porttitor lacus. Curabitur et pellentesque lorem. Praesent porta elementum sem, at egestas neque tristique eget. Nam aliquam sapien at lorem tristique, vel porta lacus venenatis. Cras lectus dolor, sollicitudin at laoreet nec, eleifend id turpis. Fusce sodales augue eget urna sagittis, ut tristique urna convallis. Praesent erat leo, malesuada id tincidunt ac, tristique non odio.</p>
     </section>
