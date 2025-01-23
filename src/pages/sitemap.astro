@@ -7,7 +7,7 @@ const sitemapPath = path.resolve("./dist/sitemap-0.xml");
 const siteURL = "https://lastsunrise.art";
 let urls = [];
 
-import MainLayout from "../layouts/MainLayout.astro";
+import OneColumnSection from "../layouts/OneColumnSection.astro";
 
 try {
     const xmlContent = await fs.readFile(sitemapPath, "utf8");
@@ -17,10 +17,10 @@ try {
     console.error("OOPS");
 }
 ---
-<MainLayout title="Sitemap">
+<OneColumnSection title="Sitemap">
     <ul>
         {urls.map((url) => (
             <li><a href={url}>home{url}</a></li>
         ))}
     </ul>
-</MainLayout>
+</OneColumnSection>
