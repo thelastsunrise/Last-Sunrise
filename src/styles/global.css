@@ -13,3 +13,10 @@ body {
 header {
     height: 300px;
 }
+
+/* EXTRA EXTRA LARGE SCREENS & UP */
+@media only screen and (min-width: 1400px) {
+    #mascot {
+        transform: translateY(-200px);
+    }
+}
