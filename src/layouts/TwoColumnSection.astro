@@ -3,13 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/preview.css";
 import "../styles/global.css";
 import MainLayout from "../layouts/MainLayout.astro";
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
-<head>
-    <title>Last Sunrise - {title}</title>
-</head>
-
-<MainLayout>
+<MainLayout title={title} description={description}>
     <div class="col-lg-4">
         <slot name="col-l"/>
     </div>
