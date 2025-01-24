@@ -8,6 +8,8 @@ import { Image } from "astro:assets";
 import lsrLogoWide from "../images/logo-wide.png"
 import lsrLogoTall from "../images/logo-tall.png"
 ---
+<script>import "bootstrap/js/dist/dropdown.js"</script>
+
 <div class="row">
     <header class="col-12 position-relative">
         <h1 id="logo" class="position-absolute translate-middle top-50 start-50">
@@ -25,7 +27,12 @@ import lsrLogoTall from "../images/logo-tall.png"
             <a class="nav-link" href="../works">Works</a>
             <a class="nav-link" href="../blog">Blog</a>
             <a class="nav-link" href="../shrines">Shrines</a>
-            <a class="nav-link" href="../links">Links</a>
+            <li class="dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="../links">Links</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../graveyard">Page Graveyard</a></li>
+                </ul>    
+            </li>
         </div>
     </nav>
 </div>
