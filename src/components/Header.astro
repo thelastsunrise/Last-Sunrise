@@ -2,10 +2,20 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/preview.css";
 import "../styles/global.css";
+
+import { Image } from "astro:assets";
+import lsrLogoWide from "../images/logo-wide.png"
+import lsrLogoTall from "../images/logo-tall.png"
 ---
 <div class="row">
     <header class="col-12 position-relative">
-        <h1 class="position-absolute translate-middle top-50 start-50">Last Sunrise</h1>
+        <h1 id="logo" class="position-absolute translate-middle top-50 start-50">
+            <picture>
+                <source srcset="../src/images/logo-wide.png" width="1000" media="(min-width: 992px)"/>
+                <source srcset="../src/images/logo-tall.png" width="600"/>
+                <Image src={lsrLogoTall} alt="hi"/>
+            </picture>
+        </h1>
     </header>
     <nav class="navbar navbar-expand-lg justify-content-around">
         <div class="navbar-nav">
