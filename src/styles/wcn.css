@@ -1,0 +1,415 @@
+:root {
+    --blood: #602d2a;
+    --roses: #7d322e;
+    --raven: #2a2931;
+    --depths: #201f27;
+    --fall: #552c2c;
+    --twilight: #292331;
+    --scroll: #978273;
+    --time: #7f6d61;
+    --soul: #c5c1c6;
+}
+
+@font-face {
+    font-family: benegraphic;
+    src: url(/public/fonts/Benegraphic.ttf);
+}
+
+::selection {
+    background: var(--roses); /* WebKit/Blink Browsers */
+    color: var(--soul);
+  }
+  ::-moz-selection {
+    background: var(--roses); /* Gecko Browsers */
+    color: var(--soul);
+  }
+
+html {
+    min-width: 1300px;
+    overflow-x: hidden;
+}
+
+body {
+    background-image:
+        url(../../src/images/graveyard/wcnBloodHeader.png),
+        url(../../src/images/graveyard/stardust.png),
+        linear-gradient(to bottom, var(--fall), var(--twilight));
+    background-repeat: no-repeat, repeat, no-repeat;
+    background-position: top -70px left 0px, 0;
+    background-size: contain, inherit;
+    color: var(--depths);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+    font-size: 11pt;
+}
+
+nav, aside {
+    background: var(--time);
+}
+
+hr {
+    border: var(--depths) 1pt solid;
+    opacity: 100;
+}
+
+.cornerdeco {
+    position: absolute;
+    bottom: -100px;
+    right: -735px;
+    z-index: 99;
+}
+
+#roseart {
+    width: 200px;
+}
+
+footer {
+    margin-top: 50px!important;
+    color: var(--soul);
+    margin-right: 0!important;
+    a:hover {
+        background: none;
+        border: none;
+    }
+}
+
+.footer {
+    background: #1e1d25 padding-box;
+    border-width: 20px;
+    border-style: solid;
+    border-image: url(../../src/images/graveyard/waterborder.png) 30 round;
+    position: relative;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.gondolier {
+    margin-bottom: -10px;
+    background: 
+        url(../../src/images/graveyard/gondolierfooterdeco.png) top 0 left 50% no-repeat,
+        url(../../src/images/graveyard/roses.png) repeat-x top -40px left 25px;
+    height: 85px;
+}
+
+a {
+    color: var(--roses);
+    text-decoration: none;
+}
+
+a.active, a.button {
+    color: var(--soul)!important;
+}
+
+h1 {
+    font: 54pt "benegraphic";
+    transform: translate(-25px, -2px);
+    letter-spacing: 0.15rem;
+}
+
+h2, h3, h4 {
+    font-family: 'Cinzel', serif;
+}
+
+.container-fluid {
+    margin-top: 100px;
+    width: 1200px;
+}
+
+.titletext {
+    margin-right: 250px;
+    color: var(--soul);
+}
+
+.infobox {
+    background: var(--time);
+    border: 2pt var(--depths) solid;
+    border-radius: 15px;
+    margin: 2.5rem;
+    margin-left: 1.5rem;
+    height: fit-content;
+    position: relative;
+    padding: 0.5rem 0 0 0.75rem;
+}
+
+.infobox::before {
+    content: " ";
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+    top: -12pt;
+    left: -13pt;
+    right: -12.5pt;
+    bottom: -12pt;
+    background: 
+        url(../../src/images/graveyard/infobordercurl-tr.png) top 0 right 0 no-repeat,
+        url(../../src/images/graveyard/infobordercurl-tl.png) top 0 left 0 no-repeat,
+        url(../../src/images/graveyard/infobordercurl-br.png) bottom 0 right 0 no-repeat,
+        url(../../src/images/graveyard/infobordercurl-bl.png) bottom 0 left 0 no-repeat;
+}
+
+.infoscroll {
+    margin: 1rem;
+    padding-bottom: 40px;
+    border-width: 20px;
+    border-style: solid;
+    border-image: url(../../src/images/graveyard/paperbg.png) 20 round;
+    background: var(--time) padding-box;
+    position: relative;
+    filter: drop-shadow(0px 8px 5px #35343e6f);
+    h2 {
+        margin-left: 40px;
+        padding-right: 10pt;
+    }
+    p {
+        border-left: 2pt var(--blood) solid;
+        padding-left: 10pt;
+    }
+}
+
+.infoscroll::before {
+    content: " ";
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    right: -30px;
+    bottom: -20px;
+    background: 
+        url(../../src/images/graveyard/infoscrollcorner.png) top -3px right 10px no-repeat,
+        url(../../src/images/graveyard/scrollribbontop.png) top 2px left 30px no-repeat,
+        url(../../src/images/graveyard/infoscrollbottom.png) bottom 0 left 2px no-repeat;
+    pointer-events: none;
+}
+
+.sidebar {
+    border: 2pt solid var(--depths);
+    position: relative;
+    z-index: 10;
+    padding: 1rem 1.35rem;
+    ul {
+        list-style-type: none;
+    }
+    li {
+        margin-bottom: 0.35rem;
+        margin-right: -24px;
+        margin-left: -20px;
+        text-align: right;
+    }
+    a {
+        display: block;
+        padding: 0.5rem;
+        color: var(--blood);
+        font-weight: 500;
+        border: transparent 2pt solid;
+    }
+    a:hover {
+        background-color: var(--scroll);
+        border: var(--depths) 2pt solid;
+        border-right: none;
+    }
+}
+
+a:hover {
+    color: var(--soul);
+}
+
+a.active {
+    background-color: var(--roses);
+    border: var(--depths) 2pt solid;
+}
+
+a.active:hover {
+    background-color: var(--blood);
+    border-right: 2pt solid var(--depths);
+}
+
+.sidebar::before {
+    content: " ";
+    position: absolute;
+    border: 2pt solid var(--depths);
+    z-index: 3;
+    top: 5pt;
+    left: 5pt;
+    right: 5pt;
+    bottom: 5pt;
+    pointer-events: none;
+}
+
+.sidebar.left::before {
+    border-right: none;
+}
+
+.sidebar.right::before {
+    border-left: none;
+}
+
+.sidebar.left {
+    background: var(--time);
+    border-right: none;
+}
+
+.sidebar.left::after {
+    content: " ";
+    background: 
+        url(../../src/images/graveyard/asidebordercurl-tl.png) top 2pt left 2pt no-repeat,
+        url(../../src/images/graveyard/asidecornerblock.png) top 2pt left 2pt no-repeat,
+        url(../../src/images/graveyard/asidebordercurl-bl.png) bottom 2pt left 2pt no-repeat,
+        url(../../src/images/graveyard/asidecornerblock.png) bottom 2pt left 2pt no-repeat;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.sidebar.right::after {
+    content: " ";
+    background: 
+        url(../../src/images/graveyard/asidebordercurl-tr.png) top 2pt right 2pt no-repeat,
+        url(../../src/images/graveyard/asidecornerblock.png) top 2pt right 2pt no-repeat,
+        url(../../src/images/graveyard/asidebordercurl-br.png) bottom 2pt right 2pt no-repeat,
+        url(../../src/images/graveyard/asidecornerblock.png) bottom 2pt right 2pt no-repeat;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.maincontainer {
+    background: var(--scroll);
+    border: 2pt solid var(--depths);
+    border-top: none;
+    border-bottom: none;
+}
+
+.maincontainer.ctr {
+    min-height: 375px;
+}
+
+.maincontainer.top {
+    width: 794.667px;
+    margin: auto;
+    height: 320px;
+    border-top: 2pt solid var(--depths);
+    border-bottom: none;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+}
+
+.maincontainer.top::before {
+    content: " ";
+    position: absolute;
+    border: 2pt solid var(--depths);
+    z-index: -1;
+    top: -8pt;
+    left: -8pt;
+    right: -8pt;
+    bottom: -8pt;
+    background-color: var(--time);
+}
+
+.maincontainer.btm {
+    width: 794.667px;
+    height: 30px;
+    margin: auto;
+    border-bottom: 2pt solid var(--depths);
+    border-top: none;
+    border-radius: 0 0 30px 30px ;
+    position: relative;
+}
+
+.maincontainer.btm::before {
+    content: " ";
+    position: absolute;
+    border: 2pt solid var(--depths);
+    z-index: -1;
+    top: -8pt;
+    left: -8pt;
+    right: -8pt;
+    bottom: -8pt;
+    background-color: var(--time);
+}
+
+.playericon {
+    padding: 0;
+    border: none!important;
+}
+
+.playericon:hover {
+    border: none!important;
+    background: none;
+}
+
+.sidebar.right {
+    border-left: none;
+    background: var(--time);
+    a {
+        display: inline-block;
+        padding: 0;
+    }
+    a:hover {
+        background: none;
+        border: 2pt solid transparent;
+    }
+    .playericon:hover {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.666);
+    }
+    .row {
+        margin-left: 0px;
+    }
+    .col-6 {
+        margin: -10px 0 14px -8px;
+        position: relative;
+        z-index: 10;
+    }
+    li {
+        text-align: left!important;
+    }
+    ul {
+        padding-left: 1.5rem;
+    }
+    hr {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}
+
+#ravenart {
+    width: 275px;
+}
+
+#headerdeco {
+    transform: translate(-150px, -120px);
+}
+
+.button {
+    background: var(--roses);
+    border: var(--depths) solid 2pt;
+    margin: 1rem;
+    padding: 0.25rem;
+    color: var(--depths);
+    transform: translateX(25px);
+}
+
+.button:hover {
+    background: var(--blood);
+}
+
+.overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    min-width: 1200px;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    opacity: 25%;
+    pointer-events: none;
+    z-index: 999;
+    background: url("../../src/images/graveyard/overlay.png") repeat;
+}
