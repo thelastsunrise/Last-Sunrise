@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     background-color: var(--blue);
-    background-image: url(/web/20230312045747im_/https://lastsunrise.neocities.org/images/backgrounds/lined-paper-2.png);
+    background-image: url(../src/images/graveyard/lined-paper-2.png);
     font-family: 'EB Garamond', serif;
 }
 
