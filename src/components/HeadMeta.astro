@@ -2,7 +2,7 @@
 const { title, description } = Astro.props;
 ---
 <head>
-    <title>Last Sunrise - {title}</title>
+    <title>{title} - Last Sunrise v3</title>
     <meta name="title" content={`Last Sunrise - ${title}`}>
     <meta name="author" content="Cat Leff">
     <meta name="description" content={description}>
@@ -10,7 +10,7 @@ const { title, description } = Astro.props;
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url.toString()} />
-    <meta property="og:title" content={`Last Sunrise - ${title}`} />
+    <meta property="og:title" content={`Last Sunrise v3 - ${title}`} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content="LINK" />
     
