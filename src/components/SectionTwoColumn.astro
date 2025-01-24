@@ -1,0 +1,13 @@
+---
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/global.css";
+
+const { title, description } = Astro.props;
+---
+<section class="col-4">
+    <slot name="col-l"/>
+</section>
+<section class="col-8">
+    <h2>{title}</h2>
+    <slot name="col-r"/>
+</section>
