@@ -1,5 +1,10 @@
 :root {
-    --color: #fff:
+    --night: #5665a5:
+    --dim: #8897be;
+    --sky: #cdd3e0;
+    --glow: #f0ca8f;
+    --shine: #f0ddb0;
+    --radiant: #ebe9db;
 
     /* mascot vars */
     --mascot-width: 400px;
@@ -8,15 +13,20 @@
 }
 
 body {
-    background-color: rgb(64, 88, 124);
+    background-color: var(--sky);
 }
 
 .container {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--radiant);
 }
 
 header {
     height: 300px;
+}
+
+main {
+    margin-left:150px;
+    margin-right:150px;
 }
 
 /* EXTRA LARGE SCREENS & UP */
