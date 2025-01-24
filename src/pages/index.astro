@@ -4,8 +4,10 @@ import SectionMascot from "../components/SectionMascot.astro";
 
 const title = "Home";
 const description = "A personal website";
+
+const mascotActive = true;
 ---
-<MainLayout title={title} description={description}>
+<MainLayout title={title} description={description} mascotActive={mascotActive}>
     <SectionMascot>
         <h2>Hello and Welcome</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut felis egestas, maximus felis sed, molestie erat. Donec placerat ultricies mi id tempus. Nullam venenatis urna sit amet magna cursus vehicula. Aliquam volutpat ex et nunc ultrices, et gravida elit eleifend. Pellentesque eget magna a ex pellentesque fermentum vel molestie justo. Phasellus suscipit metus sapien, eget consequat justo interdum eget. Sed imperdiet, dolor ac commodo elementum, neque leo elementum enim, eget molestie augue turpis in neque.</p>

@@ -37,7 +37,7 @@ main {
         shape-outside: inset(0 0 var(--v-offset) 0);
     }
 
-    .navbar {
+    .navbar.mascotActive {
         position: relative;
         left: 50%;
         transform: translateX(-50%) translateX(var(--h-offset));
