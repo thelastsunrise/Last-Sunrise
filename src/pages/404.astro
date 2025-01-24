@@ -1,6 +1,12 @@
 ---
-import OneColumnSection from "../layouts/OneColumnSection.astro"
+import MainLayout from "../layouts/MainLayout.astro"
+import SectionOneColumn from "../components/SectionOneColumn.astro";
+
+const title = "Error 404";
+const description = "Page not found!";
 ---
-<OneColumnSection title="Error 404">
-    <p>Website Machine Broke...</p>
-</OneColumnSection>
+<MainLayout title={title} description={description}>
+    <SectionOneColumn title="Error 404">
+        <p>Website Machine Broke...</p>
+    </SectionOneColumn>
+</MainLayout>
