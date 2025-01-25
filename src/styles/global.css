@@ -66,9 +66,15 @@ footer {
     background-color: var(--night);
 }
 
-/* HTML: <div class="circle-cut"></div> */
+.cloud-topper-filler {
+    height: 100%;
+    margin-left: 200px;
+    margin-right: 200px;
+    background: url(../../src/images/cloud-header-filler.png) repeat-x;
+}
+
 .cloud-topper {
-    height: 170px;
+    height: 105px;
     margin-left: -3px;
     margin-right: -3px;
     background: 
