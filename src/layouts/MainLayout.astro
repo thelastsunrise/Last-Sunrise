@@ -20,7 +20,7 @@ import Header from "../components/Header.astro";
             </div>
 
             <main class="mx-4 px-4 py-2 content">
-                <nav class={`navbar navbar-expand-lg justify-content-around ${mascotActive ? "mascotActive" : ""}`}>
+                <nav class={`navbar navbar-expand-md justify-content-around ${mascotActive ? "mascotActive" : ""}`}>
                     <div class="navbar-nav">
                         <a class="nav-link" href="../../../../">Home</a>
                         <a class="nav-link" href="../../about">About</a>
@@ -37,7 +37,7 @@ import Header from "../components/Header.astro";
                 </nav>
                 <slot/>
             </main>
-            
+
         </div>
         <Footer/>
     </body>
