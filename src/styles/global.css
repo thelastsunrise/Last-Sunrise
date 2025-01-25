@@ -13,7 +13,9 @@
 }
 
 body {
-    background-color: var(--sky);
+    background: 
+        repeat-x url(../../src/images/header-bottom-bg.png),
+        var(--sky);
 }
 
 .container {
