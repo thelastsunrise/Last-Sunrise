@@ -68,18 +68,28 @@ footer {
 
 .cloud-topper-filler {
     height: 100%;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 190px;
+    margin-right: 190px;
     background: url(../../src/images/cloud-header-filler.png) repeat-x;
 }
 
 .cloud-topper {
-    height: 105px;
+    height: 102px;
     margin-left: -3px;
     margin-right: -3px;
     background: 
-        url(../../src/images/cloud-header-corner-l.png) no-repeat,
-        url(../../src/images/cloud-header-corner-r.png) right 0 no-repeat;
+        url(../../src/images/cloud-header-corner-sm-l.png) no-repeat,
+        url(../../src/images/cloud-header-corner-sm-r.png) right 0 no-repeat;
+}
+
+/* MEDIUM SCREENS & UP */
+@media only screen and (min-width: 768px) {
+    .cloud-topper {
+        height: 105px;
+        background: 
+            url(../../src/images/cloud-header-corner-l.png) no-repeat,
+            url(../../src/images/cloud-header-corner-r.png) right 0 no-repeat;
+    }
 }
 
 /* EXTRA LARGE SCREENS & UP */
