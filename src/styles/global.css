@@ -14,13 +14,14 @@
 
 body {
     background: 
-        repeat-x url(../../src/images/header-bottom-bg.png) 0 400px,
-        no-repeat url(../../src/images/sunset-bg.png),
+        repeat-x url(../../src/images/header-bottom-bg.png) 0 350px,
+        no-repeat center top / auto 600px url(../../src/images/sunset-bg.png),
+        linear-gradient(var(--night), var(--night)) center top / auto 600px no-repeat,
         var(--sky);
 }
 
 .container {
-    background-color: var(--radiant);
+    min-height: 1000px;
 }
 
 header {
