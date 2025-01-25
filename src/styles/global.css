@@ -14,7 +14,8 @@
 
 body {
     background: 
-        repeat-x url(../../src/images/header-bottom-bg.png),
+        repeat-x url(../../src/images/header-bottom-bg.png) 0 400px,
+        no-repeat url(../../src/images/sunset-bg.png),
         var(--sky);
 }
 
@@ -33,7 +34,7 @@ main {
 
 footer {
     background: repeat-x url(../../src/images/footer-top.png);
-    height: 294px;
+    height: 300px;
     color: var(--radiant);
     & > div {
         padding-top: 100px;
