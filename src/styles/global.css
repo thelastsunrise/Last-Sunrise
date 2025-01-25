@@ -29,6 +29,7 @@ header {
 }
 
 main {
+    background-color: var(--radiant);
     margin-left:150px;
     margin-right:150px;
 }
