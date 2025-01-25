@@ -1,5 +1,5 @@
 :root {
-    --night: #5665a5:
+    --night: #5665a5;
     --dim: #8897be;
     --sky: #cdd3e0;
     --glow: #f0ca8f;
@@ -27,6 +27,23 @@ header {
 main {
     margin-left:150px;
     margin-right:150px;
+}
+
+footer {
+    background: repeat-x url(../../src/images/footer-top.png);
+    height: 294px;
+    color: var(--radiant);
+    & > div {
+        padding-top: 100px;
+        position: relative;
+        bottom: -264px !important;
+    }
+}
+
+.footer-filler {
+    content: "";
+    height: 200px;
+    background-color: var(--night);
 }
 
 /* EXTRA LARGE SCREENS & UP */
