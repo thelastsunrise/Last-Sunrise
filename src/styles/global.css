@@ -5,6 +5,7 @@
     --glow: #f0ca8f;
     --shine: #f0ddb0;
     --radiant: #ebe9db;
+    --twilight: #594a46;
 
     /* mascot vars */
     --mascot-width: 400px;
@@ -22,16 +23,30 @@ body {
 
 .container {
     min-height: 1000px;
+    max-width: 1200px;
 }
 
 header {
     height: 300px;
+    margin-top: 100px!important;
 }
 
 main {
+    position: relative;
     background-color: var(--radiant);
-    margin-left:150px;
-    margin-right:150px;
+    border-left: var(--twilight) 3px solid;
+    border-right: var(--twilight) 3px solid;
+}
+
+main::before {
+    content: " ";
+    z-index: -1;
+    position: absolute;
+    inset: 0 -30px;
+    padding-left: 30px;
+    background-color: var(--glow);
+    border-left: var(--twilight) 3px solid;
+    border-right: var(--twilight) 3px solid;
 }
 
 footer {
@@ -50,6 +65,8 @@ footer {
     height: 200px;
     background-color: var(--night);
 }
+
+
 
 /* EXTRA LARGE SCREENS & UP */
 @media only screen and (min-width: 1200px) {
