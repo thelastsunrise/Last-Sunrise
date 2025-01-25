@@ -15,7 +15,8 @@ import lsrLogoTall from "../images/logo-tall.png"
         <h1 id="logo" class="position-absolute translate-middle top-50 start-50">
             <picture>
                 <source srcset="../../src/images/logo-wide.png" width="1000" media="(min-width: 992px)"/>
-                <source srcset="../../src/images/logo-tall.png" width="600"/>
+                <source srcset="../../src/images/logo-tall.png" width="600" media="(min-width:576px)"/>
+                <source srcset="../../src/images/logo-tall.png" width="500" />
                 <Image src={lsrLogoTall} alt="Last Sunrise"/>
             </picture>
         </h1>
