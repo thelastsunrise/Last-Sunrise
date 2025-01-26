@@ -135,5 +135,8 @@ footer {
 
 /* NONESSENTIAL COMPONENTS */
 .card {
+    background-color: var(--shine);
     border: 3px var(--twilight) solid;
+    border-radius: 0;
+    padding: 0.5rem;
 }
