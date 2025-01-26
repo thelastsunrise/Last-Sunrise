@@ -37,6 +37,17 @@ header {
     margin-top: -75px;
 }
 
+nav {
+    --nav-expand: 100px;
+
+    position: relative;
+    left: calc(-1 * var(--nav-expand)); /* Move the navbar 200px to the left */
+    width: calc(100% + (2*var(--nav-expand))); 
+
+    background-color: var(--sky);
+    border: 3px var(--twilight) solid;
+}
+
 main {
     position: relative;
     background-color: var(--radiant);
@@ -102,6 +113,7 @@ footer {
 @media only screen and (min-width: 1200px) {
     #mascot {
         float: left;
+        margin-right: 1rem;
         transform: translateY(calc(-1*var(--v-offset)));
         shape-outside: inset(0 0 var(--v-offset) 0 round 125px);
     }
