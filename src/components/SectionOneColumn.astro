@@ -4,6 +4,6 @@ import "../styles/global.css";
 
 const { title, extraClasses } = Astro.props;
 ---
-<section class="col-12">
+<section class={`"col-12" ${extraClasses}`}>
     <slot/>
 </section>

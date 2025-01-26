@@ -4,9 +4,18 @@ import SectionOneColumn from "../components/SectionOneColumn.astro";
 
 const title = "Error 404";
 const description = "Page not found!";
+const extraClasses = "text-center"
+
+import { Image } from "astro:assets";
+import heliosErrorImage from "../images/helios-error.png"
 ---
 <MainLayout title={title} description={description}>
-    <SectionOneColumn title="Error 404">
-        <p>Website Machine Broke...</p>
+    <SectionOneColumn extraClasses={extraClasses}>
+        <Image 
+            class="my-4"
+            src={heliosErrorImage} 
+            width="500"
+            alt="A picture of Helios, the website's mascot who is a winged calico cat with a light blue scarf, flopped belly-down on the ground with his paws out in front and behind him. He looks upset."/>
+        <p>There's nothing here! Go <a href="javascript:history.go(-1)">back</a>?</p>
     </SectionOneColumn>
 </MainLayout>
