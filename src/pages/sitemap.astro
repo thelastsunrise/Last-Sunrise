@@ -20,10 +20,13 @@ try {
 } catch (error) {
     console.error("OOPS");
 }
+
+const pageCount = urls.length;
 ---
 <MainLayout title={title} description={description}>
     <SectionOneColumn title={title}>
-        <p>Every page on the site, not including dynamically generated ones.</p>
+        <p>Every page on the site, not including dynamically generated ones. You can view an XML version of the sitemap <a href="sitemap-0.xml">here</a>.</p>
+        <p>There are currently <b>{pageCount}</b> pages on the website, with <b>0</b> secret pages.</p>
         <ul>
             {urls.map((url) => (
                 <li><a href={url}>home{url}</a></li>
