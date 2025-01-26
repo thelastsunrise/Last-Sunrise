@@ -3,8 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/global.css";
 
 import { Image } from "astro:assets";
-import lsrLogoWide from "../images/logo-wide.png"
-import lsrLogoTall from "../images/logo-tall.png"
+import lsrLogoTall from "../images/logo-tall.svg"
 ---
 <script>import "bootstrap/js/dist/dropdown.js"</script>
 
@@ -12,9 +11,9 @@ import lsrLogoTall from "../images/logo-tall.png"
     <header class="col-12 position-relative">
         <h1 id="logo" class="position-absolute translate-middle top-50 start-50">
             <picture>
-                <source srcset="../../src/images/logo-wide.png" width="1000" media="(min-width: 992px)"/>
-                <source srcset="../../src/images/logo-tall.png" width="600" media="(min-width:576px)"/>
-                <source srcset="../../src/images/logo-tall.png" width="500" />
+                <source srcset="../../src/images/logo-wide.svg" width="1000" media="(min-width: 992px)"/>
+                <source srcset="../../src/images/logo-tall.svg" width="600" media="(min-width:576px)"/>
+                <source srcset="../../src/images/logo-tall.svg" width="500" />
                 <Image loading=eager style="filter: drop-shadow(0 10px 4px #413e3d35)" src={lsrLogoTall} alt="Last Sunrise"/>
             </picture>
         </h1>
