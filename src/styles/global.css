@@ -103,13 +103,11 @@ footer {
     #mascot {
         float: left;
         transform: translateY(calc(-1*var(--v-offset)));
-        shape-outside: inset(0 0 var(--v-offset) 0);
+        shape-outside: inset(0 0 var(--v-offset) 0 round 125px);
     }
 
-    .navbar.mascotActive {
+    .navbar.mascotActive .navbar-nav {
         position: relative;
-        left: 50%;
-        transform: translateX(-50%) translateX(var(--h-offset));
-        width: calc(100% - var(--h-offset));
+        left: var(--h-offset);
     }
 }
