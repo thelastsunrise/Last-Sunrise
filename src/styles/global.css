@@ -49,6 +49,13 @@ body {
     font-family: 'Manrope', sans-serif;
 }
 
+h2 {
+    line-height: 0px;
+    text-align: center;
+    transform: translateY(-35px);
+    font-size: 25pt;
+}
+
 h2, h3 {
     font-family: "BreeSerif", serif;
 }
@@ -158,7 +165,7 @@ footer {
         shape-outside: inset(0 0 var(--v-offset) 0);
     }
 
-    .navbar.mascotActive .navbar-nav {
+    .navbar.mascotActive .navbar-nav, h2.mascotActive {
         position: relative;
         left: var(--h-offset);
     }

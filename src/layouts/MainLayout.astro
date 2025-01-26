@@ -21,6 +21,7 @@ import NavBar from "../components/NavBar.astro";
             </div>
 
             <main class="mx-4 content">
+                <h2 class:list={`${mascotActive ? 'mascotActive' : ''}`}>{title}</h2>
                 <NavBar mascotActive={mascotActive}/>
                 <slot/>
             </main>
