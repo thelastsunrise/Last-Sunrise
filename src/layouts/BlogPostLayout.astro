@@ -4,9 +4,17 @@ import SectionOneColumn from "../components/SectionOneColumn.astro";
 
 const { frontmatter } = Astro.props;
 ---
-<MainLayout title={frontmatter.title} description={"hi"}>
+<MainLayout title="Cat's Blog" description={"hi"}>
     <SectionOneColumn>
+        <h3>{frontmatter.title}</h3>
         <p><strong>Published</strong>: {frontmatter.pubDate.toString().slice(0, 10)}</p>
+        <p>{frontmatter.description}</p>
+        <ul>
+            {frontmatter.subpoints.map((point: string) => (
+                <li>{point}</li>
+            ))}
+        </ul>
+        
         <slot/>
     </SectionOneColumn>
 </MainLayout>

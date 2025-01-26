@@ -1,6 +1,8 @@
 ---
 layout: "../../layouts/BlogPostLayout.astro"
-title: 'Aromanticism'
+title: "Aromanticism"
+description: ""
+subpoints: ["Content warnings: internalized aphobia, general aphobia"]
 pubDate: 2023-06-28
 ---
 One of my favorite things about the queer experience is hearing about people's relationships with their own identities and labels; the moment they realized who they were, all the hints before that moment, and how they honor that fact now. I've always kind of known I was queer, even before I put a name to my experiences. It wasn't a struggle for me to realize my bisexuality, asexuality, or even my lack of a gender, but the one piece of the puzzle that took a while to click was my aromanticism.
