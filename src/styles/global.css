@@ -2,15 +2,26 @@
     --night: #5665a5;
     --dim: #8897be;
     --sky: #cdd3e0;
+    --aura: #e68045;
     --glow: #f0ca8f;
     --shine: #f0ddb0;
     --radiant: #ebe9db;
     --twilight: #594a46;
+    --deep: #322a28;
 
     /* mascot vars */
     --mascot-width: 400px;
     --h-offset: calc(var(--mascot-width)/2);
     --v-offset: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--aura);
+}
+
+a:hover {
+    color: var(--glow);
 }
 
 body {
@@ -20,6 +31,7 @@ body {
         linear-gradient(var(--sky), var(--sky)) center top 600px / auto calc(100% - 600px) no-repeat,
         var(--night);
     overflow-x: hidden;
+    color: var(--deep)
 }
 
 .container {
@@ -124,7 +136,7 @@ footer {
         float: left;
         margin-right: 1rem;
         transform: translateY(calc(-1*var(--v-offset)));
-        shape-outside: inset(0 0 var(--v-offset) 0 round 125px);
+        shape-outside: inset(0 0 var(--v-offset) 0);
     }
 
     .navbar.mascotActive .navbar-nav {
