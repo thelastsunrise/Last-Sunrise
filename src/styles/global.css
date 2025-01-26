@@ -2,7 +2,7 @@
     --night: #5665a5;
     --dim: #8897be;
     --sky: #cdd3e0;
-    --aura: #e68045;
+    --aura: #e36b26;
     --glow: #f0ca8f;
     --shine: #f0ddb0;
     --radiant: #ebe9db;
@@ -12,7 +12,7 @@
     /* mascot vars */
     --mascot-width: 400px;
     --h-offset: calc(var(--mascot-width)/2);
-    --v-offset: 200px;
+    --v-offset: 250px;
 }
 
 @font-face {
@@ -49,7 +49,7 @@ body {
     font-family: 'Manrope', sans-serif;
 }
 
-h2 {
+h2, h3 {
     font-family: "BreeSerif", serif;
 }
 
@@ -167,7 +167,10 @@ footer {
 /* NONESSENTIAL COMPONENTS */
 .card {
     background-color: var(--shine);
-    border: 3px var(--twilight) solid;
+    border: 2px var(--glow) solid;
     border-radius: 0;
     padding: 0.5rem;
+    p:last-child {
+        margin-bottom: 0;
+    }
 }
