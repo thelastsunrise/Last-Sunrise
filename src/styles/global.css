@@ -53,6 +53,7 @@ main {
     background-color: var(--radiant);
     border-left: var(--twilight) 3px solid;
     border-right: var(--twilight) 3px solid;
+    padding-bottom: 150px!important;
 }
 
 main::before {
@@ -68,8 +69,11 @@ main::before {
 
 footer {
     background: repeat-x url(../../src/images/footer-top.png);
-    height: 300px;
+    height: 282px;
     color: var(--radiant);
+    margin-top: -160px!important;
+    z-index: 100;
+    position: relative;
     & > div {
         padding-top: 100px;
         position: relative;
