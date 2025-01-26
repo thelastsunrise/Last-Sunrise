@@ -22,7 +22,8 @@ try {
 }
 ---
 <MainLayout title={title} description={description}>
-    <SectionOneColumn>
+    <SectionOneColumn title={title}>
+        <p>Every page on the site, not including dynamically generated ones.</p>
         <ul>
             {urls.map((url) => (
                 <li><a href={url}>home{url}</a></li>
