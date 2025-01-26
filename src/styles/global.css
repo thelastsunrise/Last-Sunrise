@@ -23,7 +23,6 @@ body {
 }
 
 .container {
-    min-height: 1000px;
     max-width: 1200px;
 }
 
@@ -49,6 +48,7 @@ nav {
 }
 
 main {
+    min-height: 700px;
     position: relative;
     background-color: var(--radiant);
     border-left: var(--twilight) 3px solid;
