@@ -15,6 +15,20 @@
     --v-offset: 200px;
 }
 
+@font-face {
+    font-family: "Manrope";
+    src: url("/fonts/manrope-light.woff");
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "BreeSerif";
+    src: url("/fonts/BreeSerif-Regular.woff");
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
 a {
     text-decoration: none;
     color: var(--aura);
@@ -31,7 +45,12 @@ body {
         linear-gradient(var(--sky), var(--sky)) center top 600px / auto calc(100% - 600px) no-repeat,
         var(--night);
     overflow-x: hidden;
-    color: var(--deep)
+    color: var(--deep);
+    font-family: 'Manrope', sans-serif;
+}
+
+h2 {
+    font-family: "BreeSerif", serif;
 }
 
 .container {
