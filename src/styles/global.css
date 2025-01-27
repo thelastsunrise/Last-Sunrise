@@ -117,6 +117,12 @@ footer {
         position: relative;
         bottom: -264px !important;
     }
+    & a {
+        color: var(--glow);
+    }
+    & a:hover {
+        color: var(--radiant);
+    }
 }
 
 .footer-filler {
