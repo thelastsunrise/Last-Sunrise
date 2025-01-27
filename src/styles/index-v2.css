@@ -20,8 +20,8 @@ html {
 
 body {
     background: 
-    no-repeat url(../../src/images/graveyard/pagebg.png), 
-    url(../../src/images/graveyard/startile.png),
+    no-repeat url(/images/graveyard/pagebg.png), 
+    url(/images/graveyard/startile.png),
     linear-gradient(0deg, rgba(210,107,7,1) 0%, rgba(25,65,66,1) 30%);
     background-position: center -100px, 0, 0;
     background-repeat: no-repeat, repeat, no-repeat;
@@ -65,7 +65,7 @@ h3 {
 }
 
 #newscroller {
-    background: no-repeat url(../../src/images/graveyard/banner.png);
+    background: no-repeat url(/images/graveyard/banner.png);
     position: absolute;
     bottom: 0;
     transform: translate(-58px, 30px);
@@ -87,7 +87,7 @@ h3 {
 }
 
 .header {
-    background: no-repeat url(../../src/images/graveyard/headerbg.png);
+    background: no-repeat url(/images/graveyard/headerbg.png);
     background-position: center;
     height: 350px;
 }
@@ -103,38 +103,38 @@ h3 {
     opacity: 25%;
     pointer-events: none;
     z-index: 999;
-    background: url("../../src/images/graveyard/overlay.png") repeat;
+    background: url("/images/graveyard/overlay.png") repeat;
   }
 
 .top {
     background: 
-        url(../../src/images/graveyard/topcontent.png) top 19px left 17px no-repeat,
-        url(../../src/images/graveyard/topcurve.png) no-repeat,
-        url(../../src/images/graveyard/divider.png) bottom 0px left 27px no-repeat;
+        url(/images/graveyard/topcontent.png) top 19px left 17px no-repeat,
+        url(/images/graveyard/topcurve.png) no-repeat,
+        url(/images/graveyard/divider.png) bottom 0px left 27px no-repeat;
 }
 
 .mid {
-    background: url(../../src/images/graveyard/divider.png) bottom 0px left 27px no-repeat;
+    background: url(/images/graveyard/divider.png) bottom 0px left 27px no-repeat;
 }
 
 .btm {
     background: 
-        url(../../src/images/graveyard/bottomcontent.png) bottom 19px left 17px no-repeat,
-        url(../../src/images/graveyard/bottomcurve.png) bottom 0px left 0px no-repeat; 
+        url(/images/graveyard/bottomcontent.png) bottom 19px left 17px no-repeat,
+        url(/images/graveyard/bottomcurve.png) bottom 0px left 0px no-repeat; 
 }
 
 .topbtm {
     background: 
-        url(../../src/images/graveyard/topcontent.png) top 19px left 17px no-repeat,
-        url(../../src/images/graveyard/topcurve.png) no-repeat,
-        url(../../src/images/graveyard/bottomcontentsidebar.png) bottom 19px left 17px no-repeat,
-        url(../../src/images/graveyard/bottomcurve.png) bottom 0px left 0px no-repeat; 
+        url(/images/graveyard/topcontent.png) top 19px left 17px no-repeat,
+        url(/images/graveyard/topcurve.png) no-repeat,
+        url(/images/graveyard/bottomcontentsidebar.png) bottom 19px left 17px no-repeat,
+        url(/images/graveyard/bottomcurve.png) bottom 0px left 0px no-repeat; 
 }
 
 .wrapper {
     background: 
-        url(../../src/images/graveyard/contentwrapper.png) bottom 19px left 5px repeat-y,
-        url(../../src/images/graveyard/borderwrapper.png) -12px repeat-y;
+        url(/images/graveyard/contentwrapper.png) bottom 19px left 5px repeat-y,
+        url(/images/graveyard/borderwrapper.png) -12px repeat-y;
     transform: translateX(13px);
 }
 
@@ -144,7 +144,7 @@ h3 {
 }
 
 .sideheader {
-    background: url(../../src/images/graveyard/sideheaders.png) no-repeat 0 -58px;
+    background: url(/images/graveyard/sideheaders.png) no-repeat 0 -58px;
     height: 49px;
     text-align: left;
     padding: 11px 7px;
@@ -152,23 +152,23 @@ h3 {
 }
 
 .sideheader.top {
-    background: url(../../src/images/graveyard/sideheaders.png) no-repeat 0 0;
+    background: url(/images/graveyard/sideheaders.png) no-repeat 0 0;
 }
 
 .sideheader.top.right {
-    background: url(../../src/images/graveyard/sideheaders.png) no-repeat 0 -117px;
+    background: url(/images/graveyard/sideheaders.png) no-repeat 0 -117px;
     text-align: right;
 }
 
 .sideheader.right {
-    background: url(../../src/images/graveyard/sideheaders.png) no-repeat 0 -175px;
+    background: url(/images/graveyard/sideheaders.png) no-repeat 0 -175px;
     text-align: right;
 }
 
 .statusbox {
     margin-left: 33px;
     height: 190px;
-    background:url(../../src/images/graveyard/statusbg.gif);
+    background:url(/images/graveyard/statusbg.gif);
     color: var(--dark)
 }
 
@@ -189,16 +189,16 @@ h3 {
 .updatesheader {
     padding-bottom: 8px;
     width: 683px;
-    background: url(../../src/images/graveyard/updatesheader.png) no-repeat;
+    background: url(/images/graveyard/updatesheader.png) no-repeat;
 }
 
 .guestbookheader {
-    background: url(../../src/images/graveyard/guestbookheader.png) no-repeat;
+    background: url(/images/graveyard/guestbookheader.png) no-repeat;
     transform: translateY(18px)
 }
 
 .guestbook {
-    background: url(../../src/images/graveyard/guestbookbackground.png) no-repeat;
+    background: url(/images/graveyard/guestbookbackground.png) no-repeat;
     height: 520px;
 }
 
@@ -274,7 +274,7 @@ h3 {
 }
 
 .webheader {
-    background: url(../../src/images/graveyard/webheader.png) no-repeat 17px -5px;
+    background: url(/images/graveyard/webheader.png) no-repeat 17px -5px;
 }
 
 .card {

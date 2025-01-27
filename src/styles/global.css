@@ -40,8 +40,8 @@ a:hover {
 
 body {
     background: 
-        url(../../src/images/header-bottom-bg.svg) repeat-x top 350px center / 1300pt,
-        url(../../src/images/sun-bg.svg) no-repeat center top -10px / auto 750pt,
+        url(images/header-bottom-bg.svg) repeat-x top 350px center / 1300pt,
+        url(images/sun-bg.svg) no-repeat center top -10px / auto 750pt,
         linear-gradient(var(--sky), var(--sky)) center top 600px / auto calc(100% - 600px) no-repeat,
         var(--night);
     overflow-x: hidden;
@@ -106,7 +106,7 @@ main::before {
 }
 
 footer {
-    background: url(../../src/images/footer-top.svg) repeat-x center / 1600pt;
+    background: url(images/footer-top.svg) repeat-x center / 1600pt;
     height: 235pt;
     color: var(--radiant);
     margin-top: -160px!important;
@@ -129,7 +129,7 @@ footer {
     height: 100%;
     margin-left: 190px;
     margin-right: 190px;
-    background: url(../../src/images/cloudtopper-filler.svg) repeat-x center 1px;
+    background: url(images/cloudtopper-filler.svg) repeat-x center 1px;
 }
 
 .cloud-topper {
@@ -137,8 +137,8 @@ footer {
     margin-left: -3px;
     margin-right: -3px;
     background: 
-        url(../../src/images/cloudtopper-corner-sm-l.svg) top 1px left 0 no-repeat,
-        url(../../src/images/cloudtopper-corner-sm-r.svg) top 1px right 0 no-repeat;
+        url(images/cloudtopper-corner-sm-l.svg) top 1px left 0 no-repeat,
+        url(images/cloudtopper-corner-sm-r.svg) top 1px right 0 no-repeat;
 }
 
 /* MEDIUM SCREENS & UP */
@@ -146,8 +146,8 @@ footer {
     .cloud-topper {
         height: 105px;
         background: 
-            url(../../src/images/cloudtopper-corner-l.svg) top 1px left 0 no-repeat,
-            url(../../src/images/cloudtopper-corner-r.svg) top 1px right 0 no-repeat;
+            url(images/cloudtopper-corner-l.svg) top 1px left 0 no-repeat,
+            url(images/cloudtopper-corner-r.svg) top 1px right 0 no-repeat;
     }
 
     .cloud-topper-filler {
