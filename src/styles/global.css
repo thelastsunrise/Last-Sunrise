@@ -40,7 +40,7 @@ a:hover {
 
 body {
     background: 
-        repeat-x url(../../src/images/header-bottom-bg.png) 0 350px,
+        url(../../src/images/header-bottom-bg.svg) repeat-x top 350px center / 1300pt,
         no-repeat center top / auto 600px url(../../src/images/sunset-bg.png),
         linear-gradient(var(--sky), var(--sky)) center top 600px / auto calc(100% - 600px) no-repeat,
         var(--night);
