@@ -106,7 +106,7 @@ main::before {
 }
 
 footer {
-    background: repeat-x url(../../src/images/footer-top.png);
+    background: repeat-x url(../../src/images/footer-top.svg);
     height: 282px;
     color: var(--radiant);
     margin-top: -160px!important;
