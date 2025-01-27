@@ -41,7 +41,7 @@ a:hover {
 body {
     background: 
         url(../../src/images/header-bottom-bg.svg) repeat-x top 350px center / 1300pt,
-        no-repeat center top / auto 600px url(../../src/images/sunset-bg.png),
+        url(../../src/images/sun-bg.svg) no-repeat center top -10px / auto 600px,
         linear-gradient(var(--sky), var(--sky)) center top 600px / auto calc(100% - 600px) no-repeat,
         var(--night);
     overflow-x: hidden;
