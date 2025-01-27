@@ -106,8 +106,8 @@ main::before {
 }
 
 footer {
-    background: repeat-x url(../../src/images/footer-top.svg);
-    height: 282px;
+    background: url(../../src/images/footer-top.svg) repeat-x center / 1600pt;
+    height: 235pt;
     color: var(--radiant);
     margin-top: -160px!important;
     z-index: 100;
@@ -137,8 +137,8 @@ footer {
     margin-left: -3px;
     margin-right: -3px;
     background: 
-        url(../../src/images/cloud-header-corner-sm-l.png) no-repeat,
-        url(../../src/images/cloud-header-corner-sm-r.png) right 0 no-repeat;
+        url(../../src/images/cloudtopper-corner-sm-l.svg) top 1px left 0 no-repeat,
+        url(../../src/images/cloudtopper-corner-sm-r.svg) top 1px right 0 no-repeat;
 }
 
 /* MEDIUM SCREENS & UP */
@@ -148,6 +148,11 @@ footer {
         background: 
             url(../../src/images/cloudtopper-corner-l.svg) top 1px left 0 no-repeat,
             url(../../src/images/cloudtopper-corner-r.svg) top 1px right 0 no-repeat;
+    }
+
+    .cloud-topper-filler {
+        margin-left: 190px;
+        margin-right: 190px;
     }
 
     main {
