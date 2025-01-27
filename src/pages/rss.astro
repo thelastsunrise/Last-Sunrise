@@ -1,0 +1,15 @@
+---
+import MainLayout from "../layouts/MainLayout.astro"
+import SectionOneColumn from "../components/SectionOneColumn.astro";
+
+const title = "RSS Feeds";
+const description = "";
+const extraClasses = "text-center"
+---
+<MainLayout title={title} description={description}>
+    <SectionOneColumn extraClasses={extraClasses}>
+        <p>SUBSCRIBE TO MY FEEDS BOY!!!</p>
+        <a href="/changelog-rss.xml">Changelogs</a>
+        <a href="/blog-rss.xml">Blog Posts</a>
+    </SectionOneColumn>
+</MainLayout>
