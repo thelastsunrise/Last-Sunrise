@@ -193,3 +193,12 @@ footer {
     }
     margin-bottom: 1rem;
 }
+
+.table {
+    max-width: 750px;
+    border: 2px var(--twilight) solid;
+    margin: auto;
+    td, th {
+        background-color: var(--radiant);
+    }
+}
