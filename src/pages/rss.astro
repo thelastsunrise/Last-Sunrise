@@ -8,6 +8,7 @@ const extraClasses = "text-center supermargin"
 
 const changelogLink = Astro.url.origin + "/changelog-rss.xml"
 const blogLink = Astro.url.origin + "/blog-rss.xml"
+const artLink = Astro.url.origin + "/art-rss.xml"
 ---
 <style>
     input {
@@ -18,17 +19,24 @@ const blogLink = Astro.url.origin + "/blog-rss.xml"
 <MainLayout title={title} description={description}>
     <SectionOneColumn extraClasses={extraClasses}>
         <p>Want to keep track of the website as a whole? Or is there one thing you're particularly interested in, like blog posts or art uploads? Regardless, here are some links to copy into your RSS reader of choice!</p>
-        <table class="table stripey">
+        <p>As a note, the changelog feed is the most "complete" version of the site's RSS, and encompasses everything else. That said, its descriptions are very short, and probably not the best for an RSS feed used for your morning reading.</p>
+        <table class="mt-4 table stripey">
             <tr>
                 <th>Changelogs</td>
                 <td>
-                    <input type="text" value={changelogLink}>
+                    <input readonly="readonly" type="text" value={changelogLink}>
                 </td>
             </tr>
             <tr>
                 <th>Blog Posts</td>
                 <td>
-                    <input type="text" value={blogLink}>
+                    <input readonly="readonly" type="text" value={blogLink}>
+                </td>
+            </tr>
+            <tr>
+                <th>Art</td>
+                <td>
+                    <input type="text" value={artLink}>
                 </td>
             </tr>
         </table>
