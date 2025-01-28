@@ -196,9 +196,12 @@ footer {
 
 .table {
     max-width: 750px;
-    border: 2px var(--twilight) solid;
+    border: 2px var(--glow) solid;
     margin: auto;
     td, th {
         background-color: var(--radiant);
+    }
+    &.stripey > tbody > tr:nth-of-type(2n+1) > * {
+        background: rgb(from var(--shine) r g b / 50%);
     }
 }
