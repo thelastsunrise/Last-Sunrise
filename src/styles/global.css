@@ -154,9 +154,6 @@ input {
 
 /* MEDIUM SCREENS & UP */
 @media only screen and (min-width: 768px) {
-    .supermargin {
-        margin: auto 10vw;
-    }
 
     .cloud-topper {
         height: 105px;
