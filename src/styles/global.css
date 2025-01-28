@@ -149,6 +149,10 @@ footer {
 
 /* MEDIUM SCREENS & UP */
 @media only screen and (min-width: 768px) {
+    .supermargin {
+        margin: auto 10vw;
+    }
+    
     .cloud-topper {
         height: 105px;
         background: 
@@ -199,7 +203,7 @@ footer {
     border: 2px var(--glow) solid;
     margin: auto;
     td, th {
-        background-color: var(--radiant);
+        background-color: var(--shine);
     }
     &.stripey > tbody > tr:nth-of-type(2n+1) > * {
         background: rgb(from var(--shine) r g b / 50%);

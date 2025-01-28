@@ -4,19 +4,32 @@ import SectionOneColumn from "../components/SectionOneColumn.astro";
 
 const title = "RSS Feeds";
 const description = "Links to all the RSS feeds you need to keep up with site updates.";
-const extraClasses = "text-center"
+const extraClasses = "text-center supermargin"
+
+const changelogLink = Astro.url.origin + "/changelog-rss.xml"
+const blogLink = Astro.url.origin + "/blog-rss.xml"
 ---
+<style>
+    input {
+        width: 100%;
+    }
+</style>
+
 <MainLayout title={title} description={description}>
     <SectionOneColumn extraClasses={extraClasses}>
-        <p>SUBSCRIBE TO MY FEEDS BOY!!!</p>
-        <table class="table table-striped">
+        <p>Want to keep track of the website as a whole? Or is there one thing you're particularly interested in, like blog posts or art uploads? Regardless, here are some links to copy into your RSS reader of choice!</p>
+        <table class="table stripey">
             <tr>
                 <th>Changelogs</td>
-                <td><a href="/changelog-rss.xml">https://lastsunrise.art/changelog-rss.xml</a></td>
+                <td>
+                    <input type="text" value={changelogLink}>
+                </td>
             </tr>
             <tr>
                 <th>Blog Posts</td>
-                <td><a href="/blog-rss.xml">https://lastsunrise.art/blog-rss.xml</a></td>
+                <td>
+                    <input type="text" value={blogLink}>
+                </td>
             </tr>
         </table>
     </SectionOneColumn>
