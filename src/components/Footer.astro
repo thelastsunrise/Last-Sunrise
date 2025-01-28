@@ -1,11 +1,28 @@
 ---
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/global.css";
+import { readFileSync } from 'fs';
+import { parseString } from 'xml2js';
+
+
+let latestDate = '';
+
+const xml = readFileSync('./dist/changelog-rss.xml', 'utf-8');
+
+parseString(xml, (err, result) => {
+    if (err) {
+        console.error(err);
+    } else {
+        const items = result.rss.channel[0].item;
+        const fullDate = new Date(items[0].pubDate[0]);
+        latestDate = fullDate.toDateString();
+    }
+});
 ---
 <div class="row">
     <footer class="col-12 text-center">
         <div>
-            <p>Last Sunrise est. 2023 // Last updated MM/DD/YYYY</p>
+            <p>Last Sunrise est. 2023 &#9734 Last updated <span>{latestDate}</span></p>
             <p><a href="/sitemap">Sitemap</a> &#10023; <a href="/copyright">Copyright</a> &#10023; <a href="/rss">RSS</a> &#10023; <a href="mailto:cat@lastsunrise.art">Email</a></p>
         </div>
     </footer>
