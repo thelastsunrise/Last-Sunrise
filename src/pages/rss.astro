@@ -26,18 +26,21 @@ const artLink = Astro.url.origin + "/art-rss.xml"
                 <td>
                     <input readonly="readonly" type="text" value={changelogLink}>
                 </td>
+                <td>(<a href={changelogLink}>X</a>)</td>
             </tr>
             <tr>
                 <th>Blog Posts</td>
                 <td>
                     <input readonly="readonly" type="text" value={blogLink}>
                 </td>
+                <td>(<a href={blogLink}>X</a>)</td>
             </tr>
             <tr>
-                <th>Art</td>
+                <th>Art (WIP)</td>
                 <td>
                     <input type="text" value={artLink}>
                 </td>
+                <td>(<a href={artLink}>X</a>)</td>
             </tr>
         </table>
     </SectionOneColumn>
