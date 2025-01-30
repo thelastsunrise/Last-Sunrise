@@ -1,0 +1,18 @@
+---
+const { imgSrc, imgAlt, linkTo } = Astro.props
+import { Image } from "astro:assets"
+---
+<div class="card d-flex flex-column flex-lg-row p-3">
+    <figure class="card-img-link flex-shrink-0 me-lg-3 m-auto mb-3 mb-lg-auto d-flex align-items-center">
+        <a href={linkTo}>
+            <Image
+            src={imgSrc}
+            width="400"
+            alt={imgAlt}
+            />
+        </a>
+    </figure>
+    <div class="flex-grow-1">
+        <slot/>
+    </div>
+</div>

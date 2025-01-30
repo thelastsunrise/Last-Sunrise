@@ -214,20 +214,24 @@ hr {
     border: 2px var(--glow) solid;
     border-radius: 0;
     padding: 0.5rem;
+    margin-bottom: 1rem;
+
     p:last-child {
         margin-bottom: 0;
     }
-    margin-bottom: 1rem;
+    
     &.not-wide {
         display: block; 
         width: fit-content;
     }
-    & img {
+
+    .card-img-link {
         border: 3px var(--glow) solid;
     }
-    img:hover {
+
+    .card-img-link:hover {
         border: 3px var(--radiant) solid;
-        opacity: 50%;
+        opacity: 80%;
     }
 }
 
