@@ -4,15 +4,15 @@ import "../styles/global.css";
 
 const { title, extraClasses, rColWidth, lColWidth } = Astro.props;
 ---
-<div class="row">
-    <section class={`"col-12"`}>
+<section class="row">
+    <article class={`"col-12"`}>
         <slot name="pretext"/>
-    </section>
+    </article>
     
-    <section class={`col-12 col-lg-${lColWidth}`}>
+    <article class={`col-12 col-lg-${lColWidth}`}>
         <slot name="col-l"/>
-    </section>
-    <section class={`col-12 col-lg-${rColWidth}`}>
+    </article>
+    <article class={`col-12 col-lg-${rColWidth}`}>
         <slot name="col-r"/>
-    </section>
-</div>
+    </article>
+</section>
