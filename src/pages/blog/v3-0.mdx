@@ -1,17 +1,44 @@
 ---
 layout: "../../layouts/BlogPostLayout.astro"
-title: "Version 3.0 - V3 New Me"
-description: "It's been a while, but I'm back and with a revamped site layout! Aside from the new layout, this blog post includes: some musings on the future of the website, thoughts on moving to a Astro, my first static site generator, and a brand new page graveyard for all the pages lost in v1 and v2"
+title: "Version 3.0 (V3 New Me)"
+description: "It's been a while, but I'm back and with a revamped site layout! Aside from the new layout, this blog post includes: thoughts on moving to a Astro, my first static site generator, and some musings on the future of the website."
 pubDate: 2025-01-30
 
 id: 6
 ---
-import ImageCardFloat from "../../components/ImageCardFloat.astro";
 
-So hi! It's been a little while (a whole year)
+---
+So hi! It's been a bit (a whole year). Apart from life being crazy busy (a fact I will probably get into in future blog posts) I haven't had any motivation to work on the website because it's felt like more effort than it was worth. It felt like this monumental task to even open my project file, so I kept putting it off until a whole entire year had passed.
+
+By the time I found the time and energy to open it again (this December), it was a complete *mess*. The code was so unorganized it was a chore to sift through it all and try to make something basic like an about page or a widget for my socials. And yeah, of course it'd look horrible because I was rusty in reading syntax, but beyond that everything was just littered with Bootstrap classes that contradicted each other and it irked me.
+
+It didn't help that the entire site was contingent on this really complicated layout with tons of divs, scripts and stylesheets stacked on top of each other with some vague concepts of synchronicity in between. I'd been down this exact road before with v1 and since I have a hell of a lot more free time now that I'm off from school, I decided it was time to rebuild the site from scratch again. With an actual action plan this time.
 
 #### Moving to Astro
 
-#### Revamped Layout
+I was trying to think of ways to cut down on page clutter while also keeping the aesthetic of the site, *and* keeping it all responsive at the same time. I spent a while browsing some sites and looking through their code when I noticed [one](https://centiskor.ch/) with a note about being built with [Astro](https://astro.build/).
 
-#### Page Graveyard
+I looked into it, and it was perfect for what I was trying to fix! I could put all the complicated, messy code bits into components, and be able to make new pages from that initial layout super easily. 
+
+It's been a challenge for sure, I was no expert at JavaScript before, and I certainly am not now, but developing on an Astro environment has actually been a really great way to learn. Not to mention, it's helping me brush up on using a CLI with all the installs I've had to do. I *probably* wouldn't recommend it for someone who just started figuring out HTML and CSS, but the tutorial is pretty good if you don't really know much of anything about real actual programming (source: me) and I've been having a blast organizing all my code into components and layouts.
+
+#### Revamped Layout
+<figure class="blog">
+<img class="blog" src="../images/blog/3x0-sketches.png"/>
+<figcaption class="blog"> Two of the final sketches for the v3 layout revamp, the leftmost one was a value test while the right was done after when I felt comfortable with all the shapes.</figcaption>
+</figure>
+
+I had *so* much fun designing this layout. Having an actual framework to organize my code probably helped.
+
+I knew I wanted a small, horizontal navbar at the top of the page, first and foremost. I love the cluttered sidebar look and all, but I thought organized sections would suit my vision for the site way better. Besides, I could always add a sidebar to a certain section, while having a sidebar for *all* the navigation would restrict a lot of space for content.
+
+Where I had a pretty good idea about how the page was going to be set up, it took a while for me to figure out exactly how I wanted each asset to look.
+
+Beyond that, I didn't really have any visual inspirations this time! I wanted it to be blue and gold, and to keep the stars and clouds motif, but there wasn't any sort of aesthetic I was chasing this time like I was for [v2](/blog/v2-0#homepage-overhaul). I'm particularly a fan of the water motif this time around. If I were to channel 2011 web design trends, I'd probably name this layout *Ocean Sunrise*.
+
+#### The Future
+The other glaring thing I've been thinking about as I've gone through and archived all the old pages I could is how...corporate I sound? Sure, this site's a portfolio piece and is tied to my name, so I want it to be at least in part nice and professional, but I also want to sound like a human being and not some PR team. So I'm lightening up on tone and re-approaching how I do blogs. I want them to be a little more stream-of-consciousness than dissertation. I want to post whenever I have something to say, even if it's not a big site update or comprehensive musing.
+
+Instead of big change(b)logs like this in the future, I want to publish code snippets and tutorials. I'm planning on writing one soon about how I got Helios to float on the index with accurate text wrapping below him soon, and probably one on using background images to bedazzle basic containers. 
+
+In terms of updates, the main thing on my list right now is moving the MGS shrine to a subdomain, since that's the only thing I haven't brought over from v2 just yet. There's a bunch of housekeeping I'd like to do too, like fixing the navbar on mobile so it's in a little hamburger menu, I want to make the links hoverable too and put mega menus inside some of the dropdowns (I keep thinking about how the [Big Finish](https://www.bigfinish.com/) website does it). The index needs to be finished soon as well, but I need SQL for my guestbook and SQL is scary and terrifying and I want to ignore that for now.

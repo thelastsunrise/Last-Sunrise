@@ -235,6 +235,19 @@ hr {
     }
 }
 
+figure.blog {
+    margin: 2rem 0;
+}
+
+figure>img.blog {
+    width:100%;
+}
+
+figcaption.blog {
+    margin-top: 1rem;
+    text-align: center;
+}
+
 .table {
     max-width: 750px;
     border: 2px var(--glow) solid;
