@@ -5,6 +5,9 @@ import "../styles/global.css";
 
 const { title, description, mascotActive } = Astro.props;
 
+const isBlog = Astro.url.pathname.includes('/blog/');
+const pageTitle = isBlog ? "Cat's Blog" : title;
+
 import HeadMeta from "../components/HeadMeta.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
@@ -21,7 +24,7 @@ import NavBar from "../components/NavBar.astro";
             </div>
 
             <main class="mx-4 content">
-                <h2 class:list={`${mascotActive ? 'mascotActive' : ''}`}>{title}</h2>
+                <h2 class:list={`${mascotActive ? 'mascotActive' : ''}`}>{pageTitle}</h2>
                 <NavBar mascotActive={mascotActive}/>
                 <slot/>
             </main>

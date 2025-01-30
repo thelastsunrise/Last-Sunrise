@@ -4,11 +4,7 @@ import SectionOneColumn from "../components/SectionOneColumn.astro";
 
 const { frontmatter } = Astro.props;
 ---
-<head>
-    <title>{frontmatter.title} - Last Sunrise v3</title>
-    <meta property="og:title" content={`Last Sunrise v3 - ${frontmatter.title}`} />
-</head>
-<MainLayout title="Cat's Blog" description={frontmatter.description}>
+<MainLayout title={frontmatter.title} description={frontmatter.description}>
     <SectionOneColumn>
         <h3>{frontmatter.title}</h3>
         <p><strong>Published</strong>: {frontmatter.pubDate.toString().slice(0, 10)}</p>
