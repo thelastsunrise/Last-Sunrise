@@ -13,11 +13,13 @@ const { frontmatter } = Astro.props;
         <h3>{frontmatter.title}</h3>
         <p><strong>Published</strong>: {frontmatter.pubDate.toString().slice(0, 10)}</p>
         <p>{frontmatter.description}</p>
-        <ul>
+        {frontmatter.subpoints && frontmatter.subpoints.length > 0 && (
+            <ul>
             {frontmatter.subpoints.map((point: string) => (
                 <li>{point}</li>
             ))}
-        </ul>
+            </ul>
+        )}
         
         <slot/>
     </SectionOneColumn>
