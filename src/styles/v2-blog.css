@@ -1,0 +1,259 @@
+:root {
+    --mars: #DFDAEC;
+    --pale: #FCF4F2;
+    --star: #FEE5BF;
+    --glow: #EFCED3;
+    --haze: #B38EC2;
+    --onyx: #613C66;
+
+    --hazedark: #7a4b8d;
+}
+
+html {
+    min-height: 100%;
+    min-width: 1200px;
+}
+
+body {
+    background: 
+    url(/images/graveyard/bgtile.png),
+    var(--mars);
+    color: var(--onyx);
+    font-family: 'Manrope', sans-serif;
+    font-size: 11pt;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 20pt;
+}
+
+h2 {
+    font-size: 17pt;
+}
+
+h3 {
+    font-size: 15pt;
+}
+
+hr {
+    border: 1pt solid var(--glow);
+    opacity: 1;
+    margin: .5rem -14px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--haze)
+}
+
+a:hover {
+    color: var(--hazedark)
+}
+
+.sidebar a {
+    color: var(--onyx)
+}
+
+.sidebar a:hover {
+    color: var(--haze)
+}
+
+ul {
+    list-style-image: url(/images/graveyard/arrowbullet.png);
+}
+
+hr.post {
+    border: 2pt solid var(--glow);
+}
+
+#page {
+    width: 1000px;
+    margin: auto;
+}
+
+#backlink {
+    position: absolute;
+    top: 38px;
+    left: 14px;
+    color: var(--onyx);
+    width: 150px;
+    height: 24px;
+    padding-left: 5px;
+}
+
+#backlink:hover {
+    position: absolute;
+    background: rgb(252,244,242);
+    background: linear-gradient(90deg, rgba(252,244,242,1) 50%, rgba(0,0,0,0) 100%);
+}
+
+.overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    min-width: 1200px;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    opacity: 25%;
+    pointer-events: none;
+    z-index: 999;
+    background: url("/images/graveyard/overlay.png") repeat;
+}
+
+.header {
+    background: url(/images/graveyard/blogheaderbg.png) no-repeat;
+    height: 179px;
+}
+
+.content.heading {
+    background: url(/images/graveyard/contentheaderbg.png) no-repeat;
+    padding: 38px 68px 0px 34px; 
+    height: 71px;
+}
+
+.content.footing {
+    background: url(/images/graveyard/contentfooterbg.png) no-repeat;
+}
+
+.content {
+    background: url(/images/graveyard/contentbg.png) repeat-y;
+    padding-right: 54px;
+}
+
+.sidebar.heading.top {
+    background: url(/images/graveyard/sidebarheaderbg.png) no-repeat;
+}
+
+.sidebar.heading.bottom {
+    background: url(/images/graveyard/sidebarheaderbg.png) no-repeat 0 -106px;
+    margin-top: var(--sideheight);
+}
+
+.sidebar.main {
+    background: url(/images/graveyard/sidebarbg.png) repeat-y;
+    margin-left: 32px;
+    min-height: 250px;
+}
+
+.sidebar.footing {
+    background: url(/images/graveyard/sidebarbottombg.png) no-repeat;
+    margin-left: 32px;
+}
+
+.footer {
+    background: url(/images/graveyard/footerbg.png) no-repeat;
+}
+
+.footer a {
+    color: var(--pale);
+}
+
+.button {
+    background: var(--glow);
+    padding: .35rem;
+    border: 2pt solid var(--onyx);
+    font-weight: 400;
+}
+
+.button:hover {
+    background: var(--star);
+}
+
+.postimg {
+    width: 200px;
+    margin: .5rem .5rem 1rem;
+    text-align: center;
+    border: 2pt solid var(--onyx);
+    border-radius: 2.5pt;
+}
+
+.title {
+    position: absolute;
+    bottom: 20px;
+    left: 55px;
+}
+
+.card {
+    border: 0;
+}
+
+.figure {
+    background: var(--star);
+    padding: .75rem;
+    border: 2pt solid var(--onyx);
+    width: 240px;
+    text-align: center;
+    margin: .5rem;
+    border-radius: 2.5pt;
+}
+
+.figure.float-right {
+    margin-left: .75rem;
+}
+
+.figure.float-left {
+    margin-right: 1rem;
+}
+
+/* BUTTON ANIMATION START */
+.marquee {
+    --gap: 1px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+    min-width: 946px!important;
+    margin: 5px 30px 5px 2px;
+    border-top: .25rem solid var(--beige);
+    border-bottom: .25rem solid var(--beige);
+}
+
+.bannerroll {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: var(--gap);
+    animation: scroll 20s linear infinite;
+    list-style-type: none;
+    list-style-image: none;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+/* BUTTON ANIMATION END */
+
+.overlayimg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3e274183;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}

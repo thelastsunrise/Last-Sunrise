@@ -1,0 +1,314 @@
+---
+import "../../styles/v2-blog.css"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v2.0 Changelog // Last Sunrise v2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+    <style>
+        :root {
+            --sideheight: -626px; /* slide around on inspect until properly aligned*/
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page">
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-12 card bg-transparent">
+                    <div class="header card-body">
+                        <img class="title" src="/images/graveyard/blogtitle.png" alt="Blogs">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3 card bg-transparent">
+                    <div class="sidebar heading top card-body p-0">
+                        <a id="backlink" href="/../">&#8592; Back Home</a>
+                        <h3 class="text-center mb-0" style="padding: 69px 7px 6px 40px;">Changes</h3>
+                        <div id="changes" class="sidebar main card-body p-0">
+                            <ul><!---add links to bloglinks > changesitems---></ul>
+                        </div>
+                        <div class="sidebar footing card-body"></div>
+                    </div>
+                    <div class="sidebar heading bottom card-body p-0">
+                        <h3 class="text-center mb-0" style="padding: 30px 7px 6px 40px;">Journal</h3>
+                        <div id="journals" class="sidebar main card-body p-0">
+                            <ul><!---add links to bloglinks > journalsitems---></ul>
+                        </div>
+                        <div class="sidebar footing card-body"></div>
+                    </div>
+                </div>
+
+                <div class="col-9 card bg-transparent">
+                    <div class="content heading card-body">
+                        <h2>v2.3 - <span id="v2x3"></span><span class="float-right">(11/29/23)</span></h2>
+                    </div>
+                    <div class="content pb-2 card-body">
+                        <ul>
+                            <li><b>v2.3.6</b> - Moved the site over from Neocities to a VPS off Contabo! (01/11/23)</li>
+                            <li><b>v2.3.5</b> - Fixed a linking issue on the 404 page. (12/27/23)</li>
+                            <li><b>v2.3.4</b> - Updated the currently section on the index, fixed some misinfo on the MGS codecs article, and added some new drawings to the MGS shrine homepage! (12/19/23)</li>
+                            <li><b>v2.3.3</b> - Fixed up some stamps, added a button, and most importantly posted my first article on codecs to the MGS shrine. (12/07/23)</li>
+                            <li><b>v2.3.2</b> - Added stamps to the MGS shrine, as well as some new art to the shrine's gallery! (12/06/23)</li>
+                            <li><b>v2.3.1</b> - Made the MGS shrine responsive. (12/05/23)</li>
+                        </ul>
+                        <hr>
+                        <p class="mb-2">Procrastinating the actually important site updates with a mini update and a new shrine!</p>
+                        <ul>
+                            <li><a href="#mgs">MGS Shrine</a> - What it says on the tin: the landing page for a new Metal Gear shrine to tide over my brainrot.</li>
+                        </ul>
+
+                        <hr class="post">
+                        <h3 id="mgs">MGS Shrine</h3>
+                        <p>Something I've noticed about my webdev workflow is I tend to spend a bit <em>too</em> much time perfecting each page before launching it, which would be great if I did this for a living! But at the end of the day this is just a hobby project, and one I use to decompress when life gets rough. My point with this being, it's gotten to the point where I stress <em>so</em> much over making each update perfect that it's starting to make this project a chore, which is the last thing in the world I want!</p>
+                        <p>All this means that I'm going try and take a new approach to these updates. Every shrine doesn't need to be its own elaborate fansite, if something breaks it's a breeze to go back through and fix it. This shrine is me trying to unlearn that perfectionism... at least as much as I can. It's by no means my favorite part of this site, but even then I'm really happy with it! I'm proud of how I managed to keep it all to one landing page, and how I built it with expansion in mind without it being a project I tackle all at once.</p>
+                        <figure class="figure float-left">
+                            <img src="/images/blog/2x3-sketches.png" class="postimg" alt="A very rough and unfinished color map for the MGS shrine.">
+                            <figcaption class="figure-img img-fluid">A basic color layout map for the shrine, mostly focused on color scheme & aesthetic.</figcaption>
+                        </figure>
+                        <p>I jumped right into the code for this page...mostly at least. I tried writing out the text contents before anything, which helped a lot with pushing out of those slumps of staring at my screen trying to figure out what a section could possibly be used for. From there I drew a very quick layout, more focused on color than anything. It took me a while to figure out what I even wanted the page to look like.</p>
+                        <p>In the end I settled with a codec-inspired color scheme, perhaps in the future I'll experiment with themes (I still have the code lying around from early v2.0...).</p>
+                        <figure class="figure float-right">
+                            <img src="/images/blog/2x3-codec.jpg" class="postimg" alt="A screenshot of the MGS1 codec UI.">
+                            <figcaption class="figure-img img-fluid">The visual inspiration for the MGS shrine, I just love the colors and blocky motifs on this UI!</figcaption>
+                        </figure>
+                        <p>There's lots of fixes and mini-updates to come with this shrine; actually publishing that article I started, as well as adding some deco around the page expanding the outlinks section, and most importantly making an actual fanart gallery.</p>
+                        <p>On that note, I snagged the code for the gallery masonry from <a href="https://www.smashingmagazine.com/native-css-masonry-layout-css-grid/">here</a>. I'll experiment with it some more in the near future to differentiate it more from the source & tailor it more for this site, but I highly reccommend giving that article a read if you're interested in a pure CSS masonry grid!</p>
+                        <a style="color:var(--onyx)" href="/blog/changes/v2_2.html" class="float-left button">&#8592; Last post</a>
+                    </div>
+                    <div class="content footing pb-0 card-body"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 p-0 mt-3 card bg-transparent">
+                    <div class="footer p-0 pb-2 card-body text-center">
+                        <div class="marquee">
+                            <ul class="bannerroll">
+                                <li><img src="/images/graveyard/bu12.gif"></li>
+                                <li><img src="/images/graveyard/queer.png"></li>
+                                <li><img src="/images/graveyard/bob.gif"></li>
+                                <li><img src="/images/graveyard/nobinarynoprob.jpg"></li>
+                                <li><img src="/images/graveyard/buttons2019.gif"></li>
+                                <li><img src="/images/graveyard/lovesylveon.gif"></li>
+                                <li><img src="/images/graveyard/trans.jpg"></li>
+                                <li><a href="https://neo-neighborhoods.neocities.org/SoHo/"><img src="/images/graveyard/sohop88.gif"></a></li>
+                                <li><img src="/images/graveyard/neocities-vaporwave-stamp.gif"></li>
+                                <li><img src="/images/graveyard/notperfect.gif"></li>
+                                <li><img src="/images/graveyard/makewebsite.jpg"></li>
+                                <li><img src="/images/graveyard/persona.gif"></li>
+                                <li><img src="/images/graveyard/bisexual.jpg"></li>
+                                <li><img src="/images/graveyard/helpme.gif"></li>
+                                <li><img src="/images/graveyard/lookdontsteal.gif"></li>
+                            </ul>
+                            <ul class="bannerroll">
+                                <li><img src="/images/graveyard/bu12.gif"></li>
+                                <li><img src="/images/graveyard/queer.png"></li>
+                                <li><img src="/images/graveyard/bob.gif"></li>
+                                <li><img src="/images/graveyard/nobinarynoprob.jpg"></li>
+                                <li><img src="/images/graveyard/buttons2019.gif"></li>
+                                <li><img src="/images/graveyard/lovesylveon.gif"></li>
+                                <li><img src="/images/graveyard/trans.jpg"></li>
+                                <li><a href="https://neo-neighborhoods.neocities.org/SoHo/"><img src="/images/graveyard/sohop88.gif"></a></li>
+                                <li><img src="/images/graveyard/neocities-vaporwave-stamp.gif"></li>
+                                <li><img src="/images/graveyard/notperfect.gif"></li>
+                                <li><img src="/images/graveyard/makewebsite.jpg"></li>
+                                <li><img src="/images/graveyard/persona.gif"></li>
+                                <li><img src="/images/graveyard/bisexual.jpg"></li>
+                                <li><img src="/images/graveyard/helpme.gif"></li>
+                                <li><img src="/images/graveyard/lookdontsteal.gif"></li>
+                            </ul>
+                        </div>
+                        Last Sunrise est. 2023 &#9734; Last updated 11/29/2024
+                        <br>
+                        <a href="https://neocities.org/site/lastsunrise">Neocities</a> &#10023; <a href="/../sitemap.html">Sitemap</a> &#10023; <a href="/../copyright.html">Copyright</a> &#10023; <a href="mailto:cat@lastsunrise.art">Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+</body>
+
+<!--- scripts (vomit) --->
+<script>
+    function getTimeAgo(date) {
+    const currentDate = new Date();
+    const timeAgo = currentDate.getTime() - date.getTime();
+    const seconds = Math.floor(timeAgo / 1000);
+    const minutes = Math.floor(seconds / 60);
+    const hours = Math.floor(minutes / 60);
+    const days = Math.floor(hours / 24);
+    const weeks = Math.floor(days / 7);
+    const months = Math.floor(days / 30);
+
+    if (days === 0) {
+    return 'Today';
+    } else if (days === 1) {
+    return 'Yesterday';
+    } else if (days < 7) {
+    return `${days} days ago`;
+    } else if (days < 30) {
+    const week = weeks === 1 ? 'week' : 'weeks';
+    return `${weeks} ${week} ago`;
+    } else {
+    const month = months === 1 ? 'month' : 'months';
+    return `${months} ${month} ago`;
+    }
+    }
+
+    const v2x0 = new Date('2023-06-01');
+    const v2x1 = new Date('2023-06-12');
+    const entry1 = new Date('2023-06-28');
+    const wcn1x1 = new Date('2023-10-13');
+    const wcn1x2 = new Date('2023-10-20');
+    const v2x2 = new Date('2023-10-26');
+    const wcn1x3 = new Date('2023-11-03');
+    const v2x3 = new Date('2023-11-29');
+
+    const timeAgo1 = getTimeAgo(v2x0);
+    const timeAgo2 = getTimeAgo(v2x1);
+    const timeAgo3 = getTimeAgo(entry1);
+    const timeAgo4 = getTimeAgo(wcn1x1);
+    const timeAgo5 = getTimeAgo(wcn1x2);
+    const timeAgo6 = getTimeAgo(v2x2);
+    const timeAgo7 = getTimeAgo(wcn1x3);
+    const timeAgo8 = getTimeAgo(v2x3);
+
+    const element1 = document.getElementById('v2x0');
+    const element2 = document.getElementById('v2x1');
+    const element3 = document.getElementById('entry1');
+    const element4 = document.getElementById('wcn1x1');
+    const element5 = document.getElementById('wcn1x2');
+    const element6 = document.getElementById('v2x2');
+    const element7 = document.getElementById('wcn1x3');
+    const element8 = document.getElementById('v2x3');
+
+    if (element1) {
+        element1.innerHTML = `${timeAgo1}`;
+    }
+    if (element2) {
+        element2.innerHTML = `${timeAgo2}`;
+    }
+    if (element3) {
+        element3.innerHTML = `${timeAgo3}`;
+    }
+    if (element4) {
+        element4.innerHTML = `${timeAgo4}`;
+    }
+    if (element5) {
+        element5.innerHTML = `${timeAgo5}`;
+    }
+    if (element6) {
+        element6.innerHTML = `${timeAgo6}`;
+    }
+    if (element7) {
+        element7.innerHTML = `${timeAgo7}`;
+    }
+    if (element8) {
+        element8.innerHTML = `${timeAgo8}`;
+    }
+</script>
+<script>
+    // links for the first section ("changes")
+    var changesItems = [
+        { label: 'Version 2.3', url: '/blog/changes/v2_3.html' },
+        { label: 'Version 2.2', url: '/blog/changes/v2_2.html' },
+        { label: 'Version 2.1', url: '/blog/changes/v2_1.html' },
+        { label: 'Version 2.0', url: '/blog/changes/v2_0.html' }
+    ];
+    
+    // links for the second section ("journals")
+    var journalsItems = [
+        { label: 'Aromanticism', url: '/blog/journals/aromanticism.html' }
+    ];
+    
+    // function to generate the list items and links for the first section
+    function generateChangesSidebarItems() {
+        var sidebarList = document.querySelector('#changes ul');
+    
+        changesItems.forEach(function(item) {
+        var listItem = document.createElement('li');
+        var link = document.createElement('a');
+        link.href = item.url;
+        link.textContent = item.label;
+        listItem.appendChild(link);
+        sidebarList.appendChild(listItem);
+        });
+    }
+    
+    // function to generate the list items and links for the second section
+    function generateJournalsSidebarItems() {
+        var sidebarList = document.querySelector('#journals ul');
+    
+        journalsItems.forEach(function(item) {
+        var listItem = document.createElement('li');
+        var link = document.createElement('a');
+        link.href = item.url;
+        link.textContent = item.label;
+        listItem.appendChild(link);
+        sidebarList.appendChild(listItem);
+        });
+    }
+    
+    // function to generate the html
+    generateChangesSidebarItems();
+    generateJournalsSidebarItems();
+    
+</script>
+<script>
+    // get all elements with the class "postimg"
+    const postImages = document.querySelectorAll('.postimg');
+
+    // create overlay element
+    const overlay = document.createElement('div');
+    overlay.classList.add('overlayimg');
+
+    // track the clicks!
+    postImages.forEach((postImage) => {
+    postImage.addEventListener('click', () => {
+        // remove previously opened images
+        const existingPopup = overlay.querySelector('.popup-img');
+        if (existingPopup) {
+        existingPopup.remove();
+        }
+
+        // create image element for the popup
+        const popupImage = document.createElement('img');
+        popupImage.src = postImage.src;
+        popupImage.classList.add('popup-img');
+
+        // append the popup image to the overlay
+        overlay.appendChild(popupImage);
+
+        // append the overlay to the document body
+        document.body.appendChild(overlay);
+
+        // add click event listener to the overlay
+        overlay.addEventListener('click', () => {
+        // remove the overlay and the popup image when overlay is clicked
+        overlay.remove();
+        });
+    });
+    });
+</script>
+
+
+</html>
