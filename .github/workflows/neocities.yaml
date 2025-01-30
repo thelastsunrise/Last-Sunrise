@@ -52,7 +52,7 @@ jobs:
       - name: Add Redirect to HTML Files
         run: |
           for file in $(find dist -name '*.html'); do
-            url_path=$(echo $file | sed 's/dist\///' | sed 's/\.html$//')
+            url_path=$(echo $file | sed 's/dist\///' | sed 's/\index.html$//')
             sed -i 's|<head>|<head><meta http-equiv="refresh" content="0; URL=https://lastsunrise.art/'"$url_path"'">|' "$file"
           done
         
