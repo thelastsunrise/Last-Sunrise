@@ -6,19 +6,31 @@ import { parseStringPromise } from "xml2js";
 import MainLayout from "../layouts/MainLayout.astro";
 import SectionOneColumn from "../components/SectionOneColumn.astro";
 
-const sitemapPath = path.resolve("./dist/sitemap-0.xml");
+const devSitemapPath = path.resolve("./dist/sitemap-0.xml");
+const prodSitemapPath = path.resolve("./sitemap-0.xml");
 const siteURL = "https://lastsunrise.art";
 let urls = [];
 
 const title = "Sitemap";
 const description = "A bare-bones list of every page on the website";
 
+// figure out if site's in a dev environment or prod environment. if dev link isn't found move onto prod!
+const getSitemapPath = async () => {
+    try {
+        await fs.access(devSitemapPath);
+        return devSitemapPath;
+    } catch {
+        return prodSitemapPath;
+    }
+};
+
 try {
+    const sitemapPath = await getSitemapPath();
     const xmlContent = await fs.readFile(sitemapPath, "utf8");
     const parsed = await parseStringPromise(xmlContent);
     urls = parsed.urlset.url.map((page: any) => page.loc[0].replace(siteURL, "")); // trim off whole url
 } catch (error) {
-    console.error("OOPS");
+    console.error("OOPS", error);
 }
 
 const pageCount = urls.length;
