@@ -4,7 +4,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 const title = "Blog";
 const description = "Blog posts by Cat";
-const allPosts = Object.values(await import.meta.glob('./blog/*.md', { eager: true }));
+const allPosts = Object.values(await import.meta.glob('./blog/*.mdx', { eager: true }));
 ---
 <MainLayout title={title} description={description}>
     <SectionOneColumn>

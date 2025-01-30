@@ -1,0 +1,16 @@
+---
+const { imgSrc, imgAlt, placement} = Astro.props
+---
+<div class={`card m-4 float-${placement}`} style="width:20rem">
+    <figure class="card-img-top">
+        <img
+            src={imgSrc}
+            width="400"
+            alt={imgAlt}
+            class="w-100"
+        />
+    </figure>
+    <figcaption class="card-body">
+        <slot/>
+    </figcaption>
+</div>
