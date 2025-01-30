@@ -1,6 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro"
 import SectionMascot from "../components/SectionMascot.astro";
+import SectionTwoColumn from "../components/SectionTwoColumn.astro";
 
 const title = "Home";
 const description = "A personal website";
@@ -14,6 +15,35 @@ const mascotActive = true;
         <div class="card">
             <p>Last Sunrise is currently on <strong>Version 3</strong>. I rebuilt the entire thing from scratch (again), which you can read about <a href="/blog/v3">here</a>. In short, it was way more effort than it was worth to make any updates to my site. But now I'm back and better than ever with a static site generator and a dream.</p>
         </div>
-        <hr>
     </SectionMascot>
+    <hr>
+    <SectionTwoColumn lColWidth="8" rColWidth="4">
+        <div slot="pretext">
+            <p>The index is still under construction! In the meantime, feel free to sign my <a href="https://www.ultraguest.com/sign/1685313407">guestbook</a> while I port it over to a self-hosted DB, or check out some of the webrings and cliques I'm a part of below :-)</p>
+        </div>
+
+        <div class="text-center" slot="col-l">
+            <p class="d-block card">
+                Retronaut Webring
+                <br>
+                <a href="https://webring.dinhe.net/prev/https://lastsunrise.art/">&#8592 Prev</a>
+                // 
+                <a href="https://webring.dinhe.net/">Join</a>
+                //
+                <a href="https://webring.dinhe.net/next/https://lastsunrise.art/">Next &#8594;</a>
+            </p>
+
+            <a href="http://pkmn.caelestis.nu" target="_blank" rel="noopener noreferrer" title="I Choose You! :: GROWLITHE"><img src="/images/graveyard/growlithe.png" alt="A tiny sprite of Growlithe" style="margin: auto;"></a>
+        </div>
+
+        <div slot="col-r">
+            <div class="card not-wide m-auto p-3">
+                Link me?
+                <br>
+                <img class="m-auto" src="/images/lsrbutton.gif" width="88px">
+                <br>
+                <textarea readonly="" class="mt-3" style="resize:none;">&lt;a href="https://lastsunrise.art"&gt;&lt;img src="https://lastsunrise.art/images/lsrbutton.gif" alt="Last Sunrise Button"&gt;&lt;/a&gt;</textarea>
+            </div>
+        </div>
+    </SectionTwoColumn>
 </MainLayout>

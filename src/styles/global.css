@@ -147,7 +147,7 @@ footer {
         url(/images/cloudtopper-corner-sm-r.svg) top 1px right 0 no-repeat;
 }
 
-input {
+input, textarea {
     background-color: var(--radiant);
     border: 2pt var(--glow) solid;
 }
@@ -202,6 +202,10 @@ hr {
         margin-bottom: 0;
     }
     margin-bottom: 1rem;
+    &.not-wide {
+        display: block; 
+        width: fit-content;
+    }
 }
 
 .table {
