@@ -137,7 +137,7 @@ import "../../styles/v2-blog.css"
                         </div>
                         Last Sunrise est. 2023 &#9734; Last updated 11/29/2024
                         <br>
-                        <a href="https://neocities.org/site/lastsunrise">Neocities</a> &#10023; <a href="/../sitemap.html">Sitemap</a> &#10023; <a href="/../copyright.html">Copyright</a> &#10023; <a href="mailto:cat@lastsunrise.art">Email</a>
+                        <a role="link" aria-disabled="true">Neocities</a> &#10023; <a role="link" aria-disabled="true">Sitemap</a> &#10023; <a role="link" aria-disabled="true">Copyright</a> &#10023; <a role="link" aria-disabled="true">Email</a>
                     </div>
                 </div>
             </div>
@@ -247,7 +247,10 @@ import "../../styles/v2-blog.css"
         changesItems.forEach(function(item) {
         var listItem = document.createElement('li');
         var link = document.createElement('a');
-        link.href = item.url;
+        // ADDED FOR ARCHIVAL
+        link.role="link";
+        link.setAttribute="aria-disabled", "true";
+        // DONE
         link.textContent = item.label;
         listItem.appendChild(link);
         sidebarList.appendChild(listItem);
@@ -261,7 +264,10 @@ import "../../styles/v2-blog.css"
         journalsItems.forEach(function(item) {
         var listItem = document.createElement('li');
         var link = document.createElement('a');
-        link.href = item.url;
+        // ADDED FOR ARCHIVAL
+        link.role="link";
+        link.setAttribute="aria-disabled", "true";
+        // DONE
         link.textContent = item.label;
         listItem.appendChild(link);
         sidebarList.appendChild(listItem);
