@@ -4,7 +4,7 @@
     --sky: #cdd3e0;
     --aura: #e36b26;
     --glow: #f0ca8f;
-    --shine: #f0ddb0;
+    --shine: #f3e2ba;
     --radiant: #ebe9db;
     --twilight: #594a46;
     --deep: #322a28;
@@ -221,6 +221,13 @@ hr {
     &.not-wide {
         display: block; 
         width: fit-content;
+    }
+    & img {
+        border: 3px var(--glow) solid;
+    }
+    img:hover {
+        border: 3px var(--radiant) solid;
+        opacity: 50%;
     }
 }
 

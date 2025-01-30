@@ -2,18 +2,70 @@
 import SectionOneColumn from "../components/SectionOneColumn.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 
+import { Image } from "astro:assets"
+
+import v1Screenie from "../images/graveyard/index-v1-screenie.png"
+import v2Screenie from "../images/graveyard/index-v2-screenie.png"
+import wcnScreenie from "../images/graveyard/wcn-screenie.png"
+
 const title = "Webpage Graveyard";
 const description = "Deleted Last Sunrise webpages from times past";
 ---
 <MainLayout title={title} description={description}>
     <SectionOneColumn>
         <p>Below is a list of pages I've decided to delete from the main website for any number of reasons.</p>
-        <p>Perhaps delete isn't the best choice of words, every link below is at least mostly functional. For one, I believe in media preservation over my own distaste for some of these pages. If some hypothetical person might be able to benefit from dissecting my code, understanding the choices I made and how I've learned since, that's all the reason I need. Besides, it's kind of fun to look down at memory lane sometimes.</p>
-        <p>Be warned, the pages below will be laggy, awkwardly designed, horribly inaccessible and almost completely unresponsive. I've done what I can to make them at least somewhat viewable on whatever device, but there's only so much that can be done.</p>
+        <p>Perhaps delete isn't the best choice of words, every link below is at least mostly functional. For one, I believe in media preservation over my own distaste for some of these pages. If some hypothetical person might be able to learn from dissecting my code, understanding the choices I made and how I've learned since, that's all the reason I need. Besides, it's kind of fun to look down at memory lane sometimes.</p>
+        <p>Be warned, the pages below will be laggy, awkwardly designed, horribly inaccessible and almost completely unresponsive. I've done what I can to make them at least somewhat viewable on whatever device, but there's only so much that <em>can</em> be done.</p>
 
-        <!-- format w/ preview image, dates active, deletion reason, and a section for blathering -->
-        <li><a href="/graveyard/index-v1">Index V1</a> - (02/22/23-06/01/23) A mess and a half that used iframes of all things for the sidebars and footers I did not want to comb through every page to update. This was a page made by a version of me who thought they knew everything about webdev because they spent their childhood editing OC profiles. Naturally, I was humbled, and quickly moved onto v2 with everything I learned here.</li>
-        <li><a href="/graveyard/index-v2">Index V2</a> - (06/01/23-01/??/25) Oh yeah wooyeah.</li>
-        <li><a href="/graveyard/wcn">What Comes Next?</a> - (10/26/23-11/07/23) This was a page made for a D&D campaign I ran my freshman year of college. I like the page design a lot! I really mastered the art of putting image assets into CSS (I'm still very proud of those corner pieces). Unfortunately, this page suffers the same issue as the rest of v2--the code is far too bloated to be usable. Not to mention the art style is very...unfitting of the vibes I was going for.</li>
+        <div class="card d-flex flex-column flex-lg-row p-3">
+            <div class="flex-shrink-0 me-lg-3 m-auto mb-3 mb-lg-auto d-flex align-items-center">
+                <a href="/graveyard/index-v1">
+                    <Image
+                    src={v1Screenie}
+                    width="400"
+                    alt="A screenshot of the version 2 index"
+                    />
+                </a>
+            </div>
+            <div class="flex-grow-1">
+                <p><b>Cause of death:</b> Boring design</p>
+                <p><b>Dates active:</b> Feb 22, 2023 to June 1, 2023</p>
+                <p>A mess and a half that used iframes of all things for the sidebars and footers I did not want to comb through every page to update. This was a page made by a version of me who thought they knew everything about webdev because they spent their childhood editing OC profiles. Naturally, I was humbled, and quickly moved onto v2 with everything I learned here.</p>
+            </div>
+        </div>
+
+        <div class="card d-flex flex-column flex-lg-row p-3">
+            <div class="flex-shrink-0 me-lg-3 mb-3 mb-lg-auto m-auto d-flex align-items-center ">
+                <a href="/graveyard/index-v2">
+                    <Image
+                    src={v2Screenie}
+                    width="400"
+                    alt="A screenshot of the version 2 index"
+                    />
+                </a>
+            </div>
+            <div class="flex-grow-1">
+                <p><b>Cause of death:</b> Messy, hard-to-follow code</p>
+                <p><b>Dates active:</b> June 1, 2023 to January 30, 2025</p>
+                <p>I love this layout, I really do! In some ways, more than v3's. It's a really unique design with lots of fun color choices and it's one of my favorites out of my own graphic design works. This was when I finally let myself use bootstrap for the sake of responsiveness and then... I gave up on making it responsive after realizing how horrible it'd be to redraw 5 versions of all my assets. Ultimately, there was just way too much going on for it to be any fun for me to update, so I hit the bricks for a year and left most of the pages blank.</p>
+            </div>
+        </div>
+
+        <div class="card d-flex flex-column flex-lg-row p-3">
+            <div class="flex-shrink-0 me-lg-3 mb-3 mb-lg-auto m-auto d-flex align-items-center">
+                <a href="/graveyard/wcn">
+                    <Image
+                    src={wcnScreenie}
+                    width="400"
+                    alt="A screenshot of the version 2 index"
+                    />
+                </a>
+            </div>
+            <div class="flex-grow-1">
+                <p><b>Cause of death:</b> Memories of a bad time in my life</p>
+                <p><b>Dates active:</b> October 26, 2023 to November 7, 2023</p>
+                <p>This was a page made for a D&D campaign I ran my freshman year of college. I like the page design a lot! I really mastered the art of putting image assets into CSS (I'm still very proud of those corner pieces). Unfortunately, this page suffers the same issue as the rest of v2--the code is far too bloated to be usable. Not to mention the art style is very...unfitting of the vibes I was going for.</p>
+            </div>
+        </div>
     </SectionOneColumn>
 </MainLayout>
