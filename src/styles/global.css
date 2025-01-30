@@ -189,6 +189,10 @@ input {
 }
 
 /* NONESSENTIAL COMPONENTS */
+hr {
+    border: var(--dim) 3pt solid;
+}
+
 .card {
     background-color: var(--shine);
     border: 2px var(--glow) solid;
