@@ -48,6 +48,13 @@ jobs:
         run: |
           npm ci
           npm run build
+
+      - name: Add redirect to HTML files
+        run: |
+          for file in $(find dist -name '*.html'); do
+            relativePath="${file#dist}"
+            echo '<meta http-equiv="refresh" content="0; URL=https://lastsunrise.art${relativePath}">' | cat - "$file" > temp && mv temp "$file"
+          done
         
       - name: Deploy to Neocities
         uses: bcomnes/deploy-to-neocities@master
