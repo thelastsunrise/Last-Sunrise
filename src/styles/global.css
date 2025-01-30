@@ -11,6 +11,7 @@
 
     /* mascot vars */
     --mascot-width: 400px;
+    --mascot-height: calc(4/3*var(--mascot-width));
     --h-offset: calc(var(--mascot-width)/2);
     --v-offset: 250px;
 }
@@ -171,6 +172,17 @@ input, textarea {
         padding-left: 3rem;
         padding-right: 3rem;
     }
+
+    section.mascotActive {
+        min-height: auto;
+    }
+}
+
+/* LARGE SCREENS & UP */
+@media only screen and (min-width: 982px) {
+    section.mascotActive {
+        min-height: var(--mascot-height);
+    }
 }
 
 /* EXTRA LARGE SCREENS & UP */
@@ -185,6 +197,10 @@ input, textarea {
     .navbar.mascotActive .navbar-nav, h2.mascotActive {
         position: relative;
         left: var(--h-offset);
+    }
+
+    section.mascotActive {
+        min-height: auto;
     }
 }
 

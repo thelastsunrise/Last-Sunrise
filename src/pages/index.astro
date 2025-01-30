@@ -4,7 +4,7 @@ import SectionMascot from "../components/SectionMascot.astro";
 import SectionTwoColumn from "../components/SectionTwoColumn.astro";
 
 const title = "Home";
-const description = "A personal website";
+const description = "The index and center of it all";
 
 const mascotActive = true;
 ---
@@ -23,26 +23,42 @@ const mascotActive = true;
         </div>
 
         <div class="text-center" slot="col-l">
-            <p class="d-block card">
-                Retronaut Webring
-                <br>
-                <a href="https://webring.dinhe.net/prev/https://lastsunrise.art/">&#8592 Prev</a>
-                // 
-                <a href="https://webring.dinhe.net/">Join</a>
-                //
-                <a href="https://webring.dinhe.net/next/https://lastsunrise.art/">Next &#8594;</a>
-            </p>
+            <div id="webrings" class="d-flex justify-content-evenly align-items-center" style="gap:1rem;">
+                <div class="flex-fill d-block card">
+                    <a href="https://webring.dinhe.net/prev/https://lastsunrise.art/">&#8592 Prev</a>
+                    // 
+                    <a href="https://webring.dinhe.net/">Retronauts</a>
+                    //
+                    <a href="https://webring.dinhe.net/next/https://lastsunrise.art/">Next &#8594;</a>
+                </div>
+                <div class="flex-fill d-block card">
+                    <a href="https://asterhalloween.neocities.org/">&#8592 Prev</a>
+                    // 
+                    <a href="https://evehibi.nekoweb.org/ckwr/"><img width="30px" alt="An image of Almond Cookie from the Cookie Run series" src="images/almond.png"></a>
+                    //
+                    <a href="https://digitalgoddess.net/">Next &#8594;</a>
+                </div>
+            </div>
 
-            <a href="http://pkmn.caelestis.nu" target="_blank" rel="noopener noreferrer" title="I Choose You! :: GROWLITHE"><img src="/images/graveyard/growlithe.png" alt="A tiny sprite of Growlithe" style="margin: auto;"></a>
+            <div id="cliques">
+                <a href="http://pkmn.caelestis.nu" target="_blank" rel="noopener noreferrer" title="I Choose You! :: GROWLITHE"><img src="/images/graveyard/growlithe.png" alt="A tiny sprite of Growlithe" style="margin: auto;"></a>
+            </div>
+            
+            <div id="fanlistings">
+                <a href="https://xv.cieth.org/prompto/fan/" target="_blank" title="Good Enough // Prompto Argentum"><img alt="A fanlisting button for Prompto Argentum from Final Fantasy XV" src="/images/prom504.png"/></a>
+                <a href="https://mezuco.re/fanlistings/otasune" target="_blank" title="Let's Take a Trip to Jupiter // Otasune"><img alt="A fanlisting button for Otasune, the ship between Solid Snake & Otacon from Metal Gear Solid" src="/images/otasune50x50_2.png"/></a>
+                <a href="https://fan.sleety.org/mgs/index.php" target="_blank" title="Victory or Death // Metal Gear Solid"><img alt="A fanlisting button for Metal Gear Solid" src="/images/mgs-code-50-3.png"/></a>
+            </div>
+            <hr class="d-block d-lg-none">
         </div>
 
         <div slot="col-r">
-            <div class="card not-wide m-auto p-3">
+            <div class="card d-block m-auto p-3 text-center">
                 Link me?
                 <br>
-                <img class="m-auto" src="/images/lsrbutton.gif" width="88px">
+                <img src="/images/lsrbutton.gif" alt="Last Sunrise's site button" width="88px">
                 <br>
-                <textarea readonly="" class="mt-3" style="resize:none;">&lt;a href="https://lastsunrise.art"&gt;&lt;img src="https://lastsunrise.art/images/lsrbutton.gif" alt="Last Sunrise Button"&gt;&lt;/a&gt;</textarea>
+                <textarea readonly="" class="mt-3" style="resize:none;">&lt;a href="https://lastsunrise.art"&gt;&lt;img src="https://lastsunrise.art/images/lsrbutton.gif" alt="Last Sunrise's site button"&gt;&lt;/a&gt;</textarea>
             </div>
         </div>
     </SectionTwoColumn>
