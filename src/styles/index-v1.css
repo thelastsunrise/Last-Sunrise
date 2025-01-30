@@ -41,8 +41,13 @@ hr {
     --light: #F5F1ED;
     --tan: #c4ab8a;
     --beige: #775e4a;
-    --bright: #c5520f;
+    --bright: #bb4500;
     --highlight: #e4a92b;
+}
+
+::selection {
+    background: var(--highlight);
+    color: var(--light)
 }
 
 /* GRID STYLING START */
@@ -71,6 +76,10 @@ hr {
 
 .pageitem, .sectionitem {
     padding: 20px 20px 0px 20px;
+}
+
+#scrobble a:hover {
+    color: var(--light);
 }
 
 .sectionitem {
@@ -203,8 +212,17 @@ hr {
 }
 
 #introtext {
-    grid-column: 1 / 3;
-    padding-right: 0px;
+    grid-column: 1 / 4;
+    padding-right: 20px;
+}
+
+#todo {
+    grid-column: 1 / 4;
+}
+
+#pagedoll {
+    transform: translateY(30px);
+    float: right;
 }
 
 #neighbors {
@@ -216,4 +234,96 @@ hr {
 .disabled {
     pointer-events: none;
     text-decoration: line-through 2px var(--bright);
+}
+
+.ring {
+    border: 2px solid var(--dark);
+    padding: 5px;
+    background: var(--tan)
+}
+
+.ring a:hover {
+    color: var(--light)
+}
+
+@media only screen and (max-width: 800px) { /* LAYOUT FOR PHONE */
+
+
+    .pagecontainer {
+        max-width: 92%;
+        grid-template-areas:
+        'header header header header header header header header header header header header'
+        'left   left   left   left   left   left   left   left   left   left   left  left   '
+        'main   main   main   main   main   main   main   main   main   main   main  main   '
+        'right  right  right  right  right  right  right  right  right  right  right right  '
+        'footer footer footer footer footer footer footer footer footer footer footer footer';
+    }
+
+    .maincontainer {
+        padding: 0px;
+        margin: 0px;
+        grid-template-columns: 50% 50%;
+    }
+
+    .mainsection {
+        width: 100%;
+        border: none;
+    }
+
+    .pageitem, .sectionitem {
+        padding: 0px;
+    }
+
+    #introtext {
+        border-top: 5px solid var(--beige);
+        grid-column: 1 / 3;
+        padding: 10px
+    }
+
+    #pagedoll {
+        margin: auto;
+        margin-top: -30px;
+        margin-bottom: 30px;
+        display: block;
+        float: none;
+    }
+
+    #neighbors {
+        grid-column: 1 / 3;
+        border: none;
+    }
+
+    #rings {
+        grid-column: 1 / 3;
+    }
+
+    .mainfooter {
+        width: 100%
+    }
+
+    .rightsidebar {
+        width: 100%
+    }
+
+    .leftsidebar {
+        width: 100%;
+        order: 1;
+    }
+
+    .mainheader {
+        width: 100%;
+        height: 100%
+    }
+
+    .mainheader img {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    #left {
+        max-height: 340px;
+    }
 }
