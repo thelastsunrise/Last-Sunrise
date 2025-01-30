@@ -49,12 +49,8 @@ jobs:
           npm ci
           npm run build
 
-      - name: Add redirect to HTML files
-        run: |
-          for file in $(find dist -name '*.html'); do
-            relativePath="${file#dist}"
-            echo '<meta http-equiv="refresh" content="0; URL=https://lastsunrise.art${relativePath}">' | cat - "$file" > temp && mv temp "$file"
-          done
+      - name: Add page redirects
+        run: node AddRedirects.js
         
       - name: Deploy to Neocities
         uses: bcomnes/deploy-to-neocities@master
