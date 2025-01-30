@@ -49,8 +49,12 @@ jobs:
           npm ci
           npm run build
 
-      - name: Add page redirects
-        run: node AddRedirects.js
+      - name: Add Redirect to HTML Files
+        run: |
+          for file in $(find dist -name '*.html'); do
+            url_path=$(echo $file | sed 's/dist\///')
+            sed -i 's|<head>|<head><meta http-equiv="refresh" content="0; URL=https://bingus.art/'"$url_path"'">|' "$file"
+          done
         
       - name: Deploy to Neocities
         uses: bcomnes/deploy-to-neocities@master
