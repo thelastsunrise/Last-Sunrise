@@ -56,6 +56,7 @@ jobs:
             sed -i 's|<head>|<head><meta http-equiv="refresh" content="0; URL=https://lastsunrise.art/'"$url_path"'">|' "$file"
           done
         
+      # THIS & THE PREVIOUS REST OF THIS SCRIPT ARE FROM https://github.com/professorsugoi/Deploy-Astro-Neocities/tree/master
       - name: Deploy to Neocities
         uses: bcomnes/deploy-to-neocities@master
         with:
@@ -63,3 +64,12 @@ jobs:
           cleanup: true
           dist_dir: dist
         # if dist_dir is within a subfolder, update the filepath to reflect that
+
+    # FROM https://github.com/deploy2nekoweb/deploy2nekoweb
+      - name: deploy2nekoweb
+        uses: deploy2nekoweb/deploy2nekoweb@v4
+        with:
+          nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
+          nekoweb-cookie: ${{ secrets.NEKOWEB_COOKIE }}
+          nekoweb-folder: 'site'
+          directory: 'dist'
