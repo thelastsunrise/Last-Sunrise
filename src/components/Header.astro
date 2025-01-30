@@ -1,13 +1,11 @@
 ---
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/global.css";
-
-import { Image } from "astro:assets";
 ---
 <script>import "bootstrap/js/dist/dropdown.js"</script>
 
-<div class="row">
-    <header class="col-12 position-relative">
+<header class="row">
+    <div class="col-12 position-relative">
         <h1 id="logo" class="position-absolute translate-middle top-50 start-50">
             <picture>
                 <source srcset="/images/logo-wide.svg" width="1000" media="(min-width: 992px)"/>
@@ -15,6 +13,5 @@ import { Image } from "astro:assets";
                 <img loading=eager width="500px" style="filter: drop-shadow(0 10px 4px #413e3d35)" src="/images/logo-tall.svg" alt="Last Sunrise"/>
             </picture>
         </h1>
-    </header>
-    
-</div>
+    </div>
+</header>
