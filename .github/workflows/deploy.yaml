@@ -1,4 +1,4 @@
-name: Deploy to Neocities
+name: Deploy to Web
 
 env:
   FORCE_COLOR: 1
@@ -48,6 +48,15 @@ jobs:
         run: |
           npm ci
           npm run build
+
+      - name: SFTP uploader
+        uses: wangyucode/sftp-upload-action@v2.0.4
+        with:
+          host: "lastsunrise.art"
+          username: "lastsunrise"
+          password: ${{ secrets.SFTP_PASSWORD }}
+          localDir: "dist"
+          remoteDir: "/home/lastsunrise/htdocs/lastsunrise.art/"
 
       - name: Add Redirect to HTML Files
         run: |
