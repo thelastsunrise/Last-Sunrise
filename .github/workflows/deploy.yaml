@@ -49,6 +49,7 @@ jobs:
           npm ci
           npm run build
 
+      # VIA https://github.com/marketplace/actions/sftp-uploader
       - name: SFTP uploader
         uses: wangyucode/sftp-upload-action@v2.0.4
         with:
