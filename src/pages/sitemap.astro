@@ -1,12 +1,12 @@
 ---
 import fs from "fs/promises";
 import { parseStringPromise } from "xml2js";
-import getFilePath from "../components/scripts/EnvironmentRouter";
+import getFilePath from "../components/scripts/EnvironmentRouter.js";
 
 import MainLayout from "../layouts/MainLayout.astro";
 import SectionOneColumn from "../components/SectionOneColumn.astro";
 
-const filename = "../dist/sitemap-0.xml";
+const filename = "sitemap-0.xml";
 const siteURL = "https://lastsunrise.art";
 let urls = [];
 
@@ -14,8 +14,8 @@ const title = "Sitemap";
 const description = "A bare-bones list of every page on the website";
 
 try {
-    const sitemapPath = await getFilePath(filename);
-    const xmlContent = await fs.readFile(sitemapPath, "utf8");
+    const sitemapPath = await fetch(`${siteURL}/${filename}`);
+    const xmlContent = await sitemapPath.text();
     const parsed = await parseStringPromise(xmlContent);
     urls = parsed.urlset.url.map((page: any) => page.loc[0].replace(siteURL, "")); // trim off whole url
 } catch (error) {
