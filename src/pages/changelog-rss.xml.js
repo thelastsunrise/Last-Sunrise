@@ -7,6 +7,12 @@ return rss({
     site: context.site,
     items: [
     {
+        title: "3.0.1",
+        description: "Fixed a few of the semantic element placements, as well as the broken sitemap.",
+        pubDate: "2025-01-30",
+        link: "https://lastsunrise.art/blog/v3-0"
+    },
+    {
         title: "3.0.0",
         description: "Reworked the website...again! New index, a graveyard for pages past, possibly the last change(b)log, general housekeeping and hopefully some much better performance now that the site's built with a SSG.",
         pubDate: "2025-01-30",
