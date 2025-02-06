@@ -8,7 +8,7 @@ return rss({
     items: [
     {
         title: "3.0.2",
-        description: "Added pagination and inline previews to the blog directory, changed some card styling, and fixed image sizing on small screens.",
+        description: "Added pagination and inline previews to the blog directory, a changelog to the index, made the graveyard cards more readable, and fixed image sizing on small screens.",
         pubDate: "2025-02-06",
     },
     {
