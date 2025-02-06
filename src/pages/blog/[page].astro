@@ -1,0 +1,19 @@
+---
+export async function getStaticPaths({ paginate }) {
+    const allPosts = Object.values(await import.meta.glob('../blog/*.mdx', { eager: true }));
+    const formattedPosts = allPosts.sort((a, b) => new Date(a.frontmatter.date) - new Date(b.frontmatter.date)).reverse();
+
+    return paginate(formattedPosts, {
+        pageSize: 3,
+    })
+}
+const { page } = Astro.props;
+---
+<h1>hi! ur on page {page.currentPage}</h1>
+<ul>
+    {
+        page.data.map((post) => (
+            <li>{post.frontmatter.title}</li>
+        ))
+    }
+</ul>
