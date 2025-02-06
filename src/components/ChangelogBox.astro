@@ -1,0 +1,30 @@
+---
+import { parseStringPromise } from "xml2js";
+
+import MainLayout from "../layouts/MainLayout.astro";
+import SectionOneColumn from "../components/SectionOneColumn.astro";
+
+const filename = "changelog-rss.xml";
+const siteURL = "https://lastsunrise.art";
+let changelogEntries = [];
+
+const title = "Changelog";
+const description = "The latest changes and updates to the website";
+
+try {
+    const changelogPath = await fetch(`${siteURL}/${filename}`);
+    const xmlContent = await changelogPath.text();
+    const parsed = await parseStringPromise(xmlContent);
+    changelogEntries = parsed.rss.channel[0].item.slice(0, 5); // get only the last x entries
+} catch (error) {
+    console.error("OOPS", error);
+}
+---
+<ul>
+    {changelogEntries.map((entry) => (
+        <li class="card">
+            <p><a href={entry.link && entry.link[0] ? entry.link[0] : '#'}>{entry.title && entry.title[0] ? entry.title[0] : 'No Title'}</a> - {entry.pubDate && entry.pubDate[0] ? entry.pubDate[0].slice(5, 16) : 'No Date'}</p>
+            <p>{entry.description && entry.description[0] ? entry.description[0] : 'No Description'}</p>
+        </li>
+    ))}
+</ul>
