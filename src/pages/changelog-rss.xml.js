@@ -8,7 +8,7 @@ return rss({
     items: [
     {
         title: "3.0.2",
-        description: "Fixed image sizing on small screens.",
+        description: "Added pagination and inline previews to the blog directory, changed some card styling, and fixed image sizing on small screens.",
         pubDate: "2025-02-06",
     },
     {
