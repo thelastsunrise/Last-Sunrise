@@ -225,6 +225,13 @@ hr {
         width: fit-content;
     }
 
+    &.subtle {
+        background-color: #ffffff59;
+        border: none;
+        border-left: 3pt var(--glow) solid;
+        padding-left: 1rem;
+    }
+
     .card-img-link {
         border: 3px var(--glow) solid;
         img {
