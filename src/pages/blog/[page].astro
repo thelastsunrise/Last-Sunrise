@@ -1,7 +1,7 @@
 ---
 export async function getStaticPaths({ paginate }) {
     const allPosts = Object.values(await import.meta.glob('../blog/*.mdx', { eager: true }));
-    const formattedPosts = allPosts.sort((a, b) => new Date(a.frontmatter.date) - new Date(b.frontmatter.date)).reverse();
+    const formattedPosts = allPosts.sort((a, b) => new Date(a.frontmatter.pubDate) - new Date(b.frontmatter.pubDate)).reverse();
 
     return paginate(formattedPosts, {
         pageSize: 3,
