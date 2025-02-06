@@ -29,7 +29,10 @@ const { page } = Astro.props;
             ))
         }
 
-        {page.url.prev ? <a href={page.url.prev}>Prev</a> : null}
-        {page.url.next ? <a href={page.url.next}>Next</a> : null}
+        <p class="text-center">
+            {page.url.prev ? <a href={page.url.prev}>&ShortLeftArrow; Prev</a> : null}
+            {page.url.prev && page.url.next ? " | " : null}
+            {page.url.next ? <a href={page.url.next}>Next &ShortRightArrow;</a> : null}
+        </p>
     </SectionOneColumn>
 </MainLayout>
