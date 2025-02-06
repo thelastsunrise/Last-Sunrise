@@ -3,14 +3,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/global.css";
 import fs from "fs/promises"
 import { parseStringPromise } from "xml2js"
-import getFilePath from "./scripts/EnvironmentRouter";
 
 let latestDate = '';
 const filename ="changelog-rss.xml"
+const siteURL = "https://lastsunrise.art";
 
 try {
-    const changelogPath = await getFilePath(filename);
-    const xmlContent = await fs.readFile(changelogPath, "utf8");
+    const changelogPath = await fetch(`${siteURL}/${filename}`);
+    const xmlContent = await changelogPath.text();
     const parsed = await parseStringPromise(xmlContent);
     const items = parsed.rss.channel[0].item;
     const fullDate = new Date(items[0].pubDate[0]); // grab newest date in CL
