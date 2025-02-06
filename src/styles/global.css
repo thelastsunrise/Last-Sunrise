@@ -227,6 +227,10 @@ hr {
 
     .card-img-link {
         border: 3px var(--glow) solid;
+        img {
+            width: 100%!important;
+            height: auto;
+        }
     }
 
     .card-img-link:hover {
