@@ -7,6 +7,11 @@ return rss({
     site: context.site,
     items: [
     {
+        title: "3.0.2",
+        description: "Fixed image sizing on small screens.",
+        pubDate: "2025-02-06",
+    },
+    {
         title: "3.0.1",
         description: "Fixed a few of the semantic element placements, some linking issues, as well as the broken sitemap.",
         pubDate: "2025-01-30",
