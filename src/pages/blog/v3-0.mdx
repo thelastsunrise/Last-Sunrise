@@ -3,11 +3,9 @@ layout: "../../layouts/BlogPostLayout.astro"
 title: "Version 3.0 (V3 New Me)"
 description: "It's been a while, but I'm back and with a revamped site layout! Aside from the new layout, this blog post includes: thoughts on moving to a Astro, my first static site generator, and some musings on the future of the website."
 pubDate: 2025-01-30
-
-id: 6
 ---
+import BlogImage from "../../components/BlogImage.astro";
 
----
 So hi! It's been a bit (a whole year). Apart from life being crazy busy (a fact I will probably get into in future blog posts) I haven't had any motivation to work on the website because it's felt like more effort than it was worth. It felt like this monumental task to even open my project file, so I kept putting it off until a whole entire year had passed.
 
 By the time I found the time and energy to open it again (this December), it was a complete *mess*. The code was so unorganized it was a chore to sift through it all and try to make something basic like an about page or a widget for my socials. And yeah, of course it'd look horrible because I was rusty in reading syntax, but beyond that everything was just littered with Bootstrap classes that contradicted each other and it irked me.
@@ -23,10 +21,7 @@ I looked into it, and it was perfect for what I was trying to fix! I could put a
 It's been a challenge for sure, I was no expert at JavaScript before, and I certainly am not now, but developing on an Astro environment has actually been a really great way to learn. Not to mention, it's helping me brush up on using a CLI with all the installs I've had to do. I *probably* wouldn't recommend it for someone who just started figuring out HTML and CSS, but the tutorial is pretty good if you don't really know much of anything about real actual programming (source: me) and I've been having a blast organizing all my code into components and layouts.
 
 #### Revamped Layout
-<figure class="blog">
-<img class="blog" src="../../images/blog/3x0-sketches.png"/>
-<figcaption class="blog"> Two of the final sketches for the v3 layout revamp, the leftmost one was a value test while the right was done after when I felt comfortable with all the shapes.</figcaption>
-</figure>
+<BlogImage imgAlt="Two images side by side, both are sketches of the Last Sunrise v3 layout. The first one is black and white, with red notes to determine container/div placement. It looks pretty similar to the final, with the exception of the main content header. The right image is the same thing, but with color and no notation. The content area is blank, and the drawings are very simple compared to the final UI." imgSrc="../../images/blog/3x0-sketches.png">Two of the final sketches for the v3 layout revamp, the leftmost one was a value test while the right was done after when I felt comfortable with all the shapes.</BlogImage>
 
 I had *so* much fun designing this layout. Having an actual framework to organize my code probably helped.
 
