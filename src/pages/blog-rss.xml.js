@@ -5,7 +5,7 @@ return rss({
     title: 'Last Sunrise - Blog',
     description: 'Webbed Site',
     site: context.site,
-    items: await pagesGlobToRssItems(import.meta.glob('./**/*.mdx')),
+    items: await pagesGlobToRssItems(import.meta.glob('../blog/*.mdx')),
     customData: `<language>en-us</language>`,
 });
 }
