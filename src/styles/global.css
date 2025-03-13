@@ -248,10 +248,11 @@ hr {
 
 figure.blog {
     margin: 2rem 0;
+    text-align: center;
 }
 
 figure>img.blog {
-    width:100%;
+    max-height: 500px;
 }
 
 figcaption.blog {
