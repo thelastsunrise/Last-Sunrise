@@ -2,6 +2,6 @@
 const { imgSrc, imgAlt } = Astro.props;
 ---
 <figure class="blog">
-    <img class="blog" alt={imgAlt} src={imgSrc}/>
-    <figcaption class="blog"> <slot/></figcaption>
+    <img class="blogimg" alt={imgAlt} src={imgSrc}/>
+    <figcaption class="blog"><slot/></figcaption>
 </figure>

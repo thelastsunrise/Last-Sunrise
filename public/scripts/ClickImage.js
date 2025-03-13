@@ -1,5 +1,5 @@
-// get all elements with the class "postimg"
-const postImages = document.querySelectorAll('.postimg');
+// get all elements with the class "blogimg"
+const postImages = document.querySelectorAll('.blogimg');
 
 // create overlay element
 const overlay = document.createElement('div');
