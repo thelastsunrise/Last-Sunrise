@@ -1,0 +1,20 @@
+<button onclick="returnToTop()" id="returnButton" title="Return to top"></button>
+
+<script is:inline>
+    let returnButton = document.getElementById("returnButton");
+    
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+            returnButton.style.display = "block";
+        } else {
+            returnButton.style.display = "none";
+        }
+    }
+
+    function returnToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
