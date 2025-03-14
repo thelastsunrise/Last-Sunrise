@@ -7,6 +7,11 @@ return rss({
     site: context.site,
     items: [
     {
+        title: "3.0.4",
+        description: "Added a button to return to the top of any page, and fixed the sizing of images in blog posts...again.",
+        pubDate: "2025-03-14",
+    },
+    {
         title: "3.0.3",
         description: "Wrote a new blog post about my trip to Japan! Additionally, updated the styling of blog images so they take up less vertical space, and transferred the old blog script that allows expanding the images for preview.",
         pubDate: "2025-03-13",
