@@ -7,6 +7,12 @@ return rss({
     site: context.site,
     items: [
     {
+        title: "3.0.3",
+        description: "Wrote a new blog post about my trip to Japan! Additionally, updated the styling of blog images so they take up less vertical space, and transferred the old blog script that allows expanding the images for preview.",
+        pubDate: "2025-03-13",
+        link: "https://lastsunrise.art/blog/japan-2025"
+    },
+    {
         title: "3.0.2",
         description: "Added pagination and inline previews to the blog directory, a changelog to the index, made the graveyard cards more readable, and fixed image sizing on small screens.",
         pubDate: "2025-02-06",
