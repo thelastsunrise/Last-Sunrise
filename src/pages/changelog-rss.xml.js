@@ -9,7 +9,7 @@ return rss({
     {
         title: "3.0.4",
         description: "Added a button to return to the top of any page, and fixed the sizing of images in blog posts...again. Also added a button to the Persona 3 fanlisting!",
-        pubDate: "2025-03-14",
+        pubDate: "2025-03-14"
     },
     {
         title: "3.0.3",
