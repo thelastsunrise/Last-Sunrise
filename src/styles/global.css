@@ -204,15 +204,18 @@ input, textarea {
     }
 }
 
-#return {
-    position: fixed;
-    bottom: 0;
-    right: 1.5rem;
-    z-index: 100;
-    margin: 1rem;
+#returnButton {
+    display: none;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 30px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 100; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
     background: center / contain no-repeat url(/images/return-arrow.svg);
     width: 100px;
-    height: 174px;
+    height: 115px;
+    cursor: pointer; /* Add a mouse pointer on hover */
 }
 
 /* NONESSENTIAL COMPONENTS */
