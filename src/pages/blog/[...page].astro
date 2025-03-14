@@ -21,7 +21,7 @@ const { page } = Astro.props;
         {
             page.data.map((post) => (
                 <div class="card subtle">
-                    <h3>{post.frontmatter.title}</h3>
+                    <h3><a class="subtle" href={post.url}>{post.frontmatter.title}</a></h3>
                     <p><b>Published:</b> {post.frontmatter.pubDate.toString().slice(0, 10)}</p>
                     <p>{post.frontmatter.description}</p>
                     <div><a href={post.url}>Read more...</a></div>
