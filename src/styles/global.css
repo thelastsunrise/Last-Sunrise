@@ -204,6 +204,17 @@ input, textarea {
     }
 }
 
+#return {
+    position: fixed;
+    bottom: 0;
+    right: 1.5rem;
+    z-index: 100;
+    margin: 1rem;
+    background: center / contain no-repeat url(/images/return-arrow.svg);
+    width: 100px;
+    height: 174px;
+}
+
 /* NONESSENTIAL COMPONENTS */
 hr {
     border: var(--dim) 3pt solid;
