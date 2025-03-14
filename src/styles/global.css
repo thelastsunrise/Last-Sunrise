@@ -208,14 +208,18 @@ input, textarea {
     display: none;
     position: fixed; /* Fixed/sticky position */
     bottom: 30px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
+    right: 50px; /* Place the button 30px from the right */
     z-index: 100; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
     background: center / contain no-repeat url(/images/return-arrow.svg);
-    width: 100px;
-    height: 115px;
+    width: 50px;
+    height: 60px;
     cursor: pointer; /* Add a mouse pointer on hover */
+}
+
+#returnButton:hover {
+    filter: drop-shadow(0 0 3pt #fff)
 }
 
 /* NONESSENTIAL COMPONENTS */
