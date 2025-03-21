@@ -5,4 +5,7 @@ body {
 
 ol {
     list-style-type: upper-roman;
+    & ol {
+        list-style-type: lower-roman;
+    }
 }
