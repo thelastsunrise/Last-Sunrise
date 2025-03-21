@@ -136,6 +136,10 @@ footer {
     }
 }
 
+.footer-text {
+    background-color: var(--night);
+}
+
 .footer-filler {
     content: "";
     height: 200px;
