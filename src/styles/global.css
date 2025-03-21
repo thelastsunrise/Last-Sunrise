@@ -126,7 +126,7 @@ footer {
     & > div {
         padding-top: 100px;
         position: relative;
-        bottom: -264px !important;
+        bottom: -312px !important;
     }
     & a {
         color: var(--glow);
@@ -142,7 +142,6 @@ footer {
 
 .footer-filler {
     content: "";
-    height: 200px;
     background-color: var(--night);
 }
 
