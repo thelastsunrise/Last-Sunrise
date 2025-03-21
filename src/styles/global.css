@@ -165,6 +165,7 @@ footer {
 input, textarea {
     background-color: var(--radiant);
     border: 2pt var(--glow) solid;
+    width: 100%;
 }
 
 /* MEDIUM SCREENS & UP */
