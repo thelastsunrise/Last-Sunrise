@@ -1,0 +1,27 @@
+---
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/preview.css";
+import "../styles/ryoji.css";
+
+import HeadMeta from "../components/HeadMeta.astro";
+
+const { title, description } = Astro.props;
+---
+<html>
+    <HeadMeta title={title} description={description}/>
+    <body>
+        <div class="container">
+            <header class="row">
+                <h1>{title}</h1>
+                <nav class="navbar">
+                    <li>Home</li>
+                    <li><a href="../../../../">Exit</a></li>
+                </nav>
+            </header>
+
+            <main class="row">
+                <slot/>
+            </main>
+        </div>
+    </body>
+</html>

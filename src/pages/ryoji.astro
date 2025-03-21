@@ -1,20 +1,10 @@
 ---
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/preview.css";
-import "../styles/ryoji.css";
+import RyojiLayout from "../layouts/RyojiLayout.astro";
 
 const title = "Refracted";
 const description = "A fansite dedicated to Ryoji Mochizuki from Persona 3";
 ---
-
-<div class="container">
-    <h1>{title}</h1>
-
-    <nav class="navbar">
-        <li>Home</li>
-        <li><a href="../../../../">Exit</a></li>
-    </nav>
-
+<RyojiLayout title={title} description={description}>
     <h2>Welcome</h2>
     <p>Welcome to <em>{title}</em>, a fansite dedicated to the character of Ryoji Mochizuki (in all his forms) from the game <i>Persona 3</i>.</p>
 
@@ -31,5 +21,4 @@ const description = "A fansite dedicated to Ryoji Mochizuki from Persona 3";
         <li>Proof</li>
         <li>Beyond</li>
     </ol>
-
-</div>
+</RyojiLayout>
