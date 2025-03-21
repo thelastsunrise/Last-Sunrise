@@ -39,16 +39,20 @@ a:hover {
     color: var(--glow);
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     background: 
         url(/images/header-bottom-bg.svg) repeat-x top 350px center / 1300pt,
         url(/images/sun-bg.svg) no-repeat center top -10px / auto 750pt,
         linear-gradient(var(--sky), var(--sky)) center top 600px / auto calc(100% - 600px) no-repeat,
         var(--night);
-    overflow-x: hidden;
     color: var(--deep);
     font-family: 'Manrope', sans-serif;
-    max-width: 100vw
+    max-width: 100vw;
+    position: relative;
 }
 
 h2 {
@@ -82,7 +86,7 @@ header {
 }
 
 nav {
-    --nav-expand: 0px;
+    --nav-expand: 100px;
 
     position: relative;
     left: calc(-1 * var(--nav-expand)); /* Move the navbar 200px to the left */
@@ -161,11 +165,6 @@ input, textarea {
 
 /* MEDIUM SCREENS & UP */
 @media only screen and (min-width: 768px) {
-
-    nav {
-        --nav-expand: 100px;
-    }
-
     .cloud-topper {
         height: 105px;
         background: 
