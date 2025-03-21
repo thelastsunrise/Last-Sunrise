@@ -1,6 +1,6 @@
 body {
     min-height: 100vh;
-    background-color: #272727;
+    background-color: #1f1f1f;
 }
 
 ol {
@@ -8,4 +8,9 @@ ol {
     & ol {
         list-style-type: lower-roman;
     }
+}
+
+.container {
+    min-height: 100vh;
+    background-color: #585858;
 }
