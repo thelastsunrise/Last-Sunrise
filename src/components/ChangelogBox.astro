@@ -20,7 +20,7 @@ try {
     console.error("OOPS", error);
 }
 ---
-<ul>
+<ul style="padding-left:0">
     {changelogEntries.map((entry) => (
         <li class="card">
             <p><a href={entry.link && entry.link[0] ? entry.link[0] : '#'}>{entry.title && entry.title[0] ? entry.title[0] : 'No Title'}</a> - {entry.pubDate && entry.pubDate[0] ? entry.pubDate[0].slice(5, 16) : 'No Date'}</p>
