@@ -1,6 +1,7 @@
 body {
     min-height: 100vh;
     background-color: #1f1f1f;
+    color: #d1d1d1
 }
 
 ol {
@@ -12,5 +13,5 @@ ol {
 
 .container {
     min-height: 100vh;
-    background-color: #585858;
+    background-color: #323232;
 }
