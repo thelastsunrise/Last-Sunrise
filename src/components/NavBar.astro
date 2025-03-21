@@ -8,7 +8,12 @@ const { mascotActive } = Astro.props;
         <a class="nav-link disabled" href="../../about">About</a>
         <a class="nav-link disabled" href="../../works">Works</a>
         <a class="nav-link" href="../../blog">Blog</a>
-        <a class="nav-link disabled" href="../../shrines">Shrines</a>
+        <li class="dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expended="false" href="../../shrines">Shrines</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../../ryoji">Ryoji Mochizuki (Persona 3)</a></li>
+            </ul>
+        </li>
         <li class="dropdown">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="../../links">Links</a>
             <ul class="dropdown-menu">
