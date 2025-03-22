@@ -6,6 +6,7 @@ import "../styles/ryoji.css";
 import HeadMeta from "../components/HeadMeta.astro";
 import Footer from "../components/Footer.astro";
 
+const siteTitle = "Refracted";
 const { title, description } = Astro.props;
 ---
 <html>
@@ -13,7 +14,7 @@ const { title, description } = Astro.props;
     <body>
         <div class="container px-4">
             <header class="row">
-                <h1>{title}</h1>
+                <h1>{siteTitle}</h1>
                 <nav class="navbar">
                     <li><a href="../../ryoji">Atlas</a></li>
                     <li>Essence</li>
