@@ -16,7 +16,15 @@ ol {
     }
 }
 
+em {
+    color: #838cb3
+}
+
 .container {
     min-height: 100vh;
     background-color: #323232;
+}
+
+.subtle {
+    opacity: 50%;
 }
