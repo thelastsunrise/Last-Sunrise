@@ -1,5 +1,6 @@
 {
   "name": "lastsunrise",
+  "workspaces": ["sites/*"],
   "type": "module",
   "version": "3.1.0",
   "scripts": {
