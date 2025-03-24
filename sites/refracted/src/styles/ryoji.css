@@ -1,6 +1,15 @@
+:root {
+    --sea: #11121d;
+    --void: #0a0b16;
+    --soul: #b1b1c0;
+    --hope: #c37e41;
+}
+
 body {
     min-height: 100vh;
-    background-color: #1f1f1f;
+    background: 
+        left / contain no-repeat url(/images/ryoji-header.png),
+        var(--sea);
     color: #d1d1d1
 }
 
@@ -22,7 +31,7 @@ em {
 
 .container {
     min-height: 100vh;
-    background-color: #323232;
+    background-color: var(--void);
 }
 
 .subtle {
