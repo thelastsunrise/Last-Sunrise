@@ -1,4 +1,16 @@
 ---
 const currentYear = new Date().getFullYear();
+
+const {isFansite} = Astro.props;
 ---
-<p>COPYRIGHT BLURB!!!</p>
+<p class="text-center" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://lastsunrise.art/">Last Sunrise</a> by <span property="cc:attributionName">Cat Leff</span> 2023-{currentYear} is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+
+<p>This license means that all content attributed to myself may be <strong>shared, copied or redistributed in any material or format.</strong> and may be <strong>adapted, remixed, transformed or otherwise built upon.</strong> This is allowed on the condition that all redistributions and adaptations are <strong>attributed back to myself</strong> with <strong>proper links, and an indication if any changes were made</strong>. Additionally, any redistributions may NOT be commercial in any way, and must be distributed under the <strong>CC BY-NC-SA 4.0</strong> license. Any alterations to the original licensing, whether additional restrictions or freedoms, are not permitted.</p>
+
+{!isFansite ? <p>Assume all content on this website, excluding the following exceptions, are created and attributed by myself unless stated otherwise.</p> <p>These exclusions include:</p> : <p>For this specific domain, all copyrighted materials (including visual assets, narrative concepts, audio files, etc.) are attributed to their respective owners and sources with regard to fair use law. This is a fan-made website that uses such content solely for informational and entertainment purposes. Absolutely no ownership is claimed over these materials, only to the code running this page.</p> <p>Alongside the source material (cited in the footer below), this website makes use of the following resources:</p>}
+<ul>
+    <slot></slot>
+    <li>Any graphics, videos, images and text with links or citations to another domain not under the Last Sunrise network.</li>
+</ul>
+<p>The above exceptions are utilized in accordance with their respective licenses and copyright terms.</p>
+<p>For any questions regarding the use of content from this website, please contact <a href="mailto:cat@lastsunrise.art">cat@lastsunrise.art</a>.</p>
