@@ -11,15 +11,21 @@
 }
 
 @font-face {
+    font-family: RoadizSans;
+    src: url(/fonts/roadizsans-mono-webfont.ttf);
+}
+
+@font-face {
     font-family: IctuOculi;
     src: url(/fonts/IctuOculi-Regular.ttf);
 }
 
 #title {
     margin-top: -250px;
-    p {
+    h2 {
         margin-top: -30px;
         margin-left: 80pt;
+        font-size: 12pt;
     }
 }
 
@@ -30,6 +36,10 @@
 h1 {
     font-family: Caramel, cursive;
     font-size: 100pt;
+}
+
+h2, h3, h4 {
+    font-family: RoadizSans, sans-serif;
 }
 
 body {
