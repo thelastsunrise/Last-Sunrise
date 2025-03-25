@@ -38,6 +38,10 @@ h1 {
     font-size: 100pt;
 }
 
+h2 {
+    margin-bottom: 1rem;
+}
+
 h2, h3, h4 {
     font-family: RoadizSans, sans-serif;
 }
