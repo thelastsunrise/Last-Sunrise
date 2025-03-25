@@ -88,3 +88,8 @@ em {
 .subtle {
     opacity: 50%;
 }
+
+.no-style {
+    color: var(--soul);
+    text-decoration: none;
+}
