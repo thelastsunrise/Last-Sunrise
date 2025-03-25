@@ -1,0 +1,11 @@
+---
+import RyojiLayout from "./RyojiLayout.astro";
+
+const { frontmatter } = Astro.props;
+---
+<RyojiLayout title={frontmatter.title}>
+    <section class="col-12">
+        <h2>{frontmatter.title}</h2>
+        <slot/>
+    </section>
+</RyojiLayout>
