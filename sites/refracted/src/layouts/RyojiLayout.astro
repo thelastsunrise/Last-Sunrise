@@ -1,11 +1,11 @@
 ---
+import { FooterText } from "../../../../packages/universal-components";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 //import "../styles/preview.css";
 import "../styles/ryoji.css";
 
-
-
-const siteTitle = "Refracted";
+const siteName = "Refracted";
 const { title, description } = Astro.props;
 ---
 <html>
@@ -13,7 +13,7 @@ const { title, description } = Astro.props;
         <div class="container px-5">
             <header class="row">
                 <div id="title" class="text-center text-lg-start">
-                    <h1>{siteTitle}</h1>
+                    <h1>{siteName}</h1>
                     <h2>A <span class="focus">Ryoji Mochizuki</span> fansite</h2>
                 </div>
                 <nav class="navbar justify-content-evenly">
@@ -31,13 +31,11 @@ const { title, description } = Astro.props;
 
             <footer class="row">
                 <div class="col-12 text-center">
-                    <p>
-                        <a href="../../../../">Refracted</a> est. 2025 // Last updated
-                        <br>
-                        <i>Refracted</i> is a part of the <a href="https://lastsunrise.art">Last Sunrise</a> network.
-                        <br>
-                        <a href="../../../copyright">Copyright</a> // <a href="mailto:cat@lastsunrise.art">Email</a>
-                    </p>
+                    <FooterText siteName={siteName} siteURL="https://ryoji.lastsunrise.art" estYear="2025" isChildSite="true">
+                        <p class="subtle">
+                            &copy; ATLUS / SEGA. <i>Persona 3</i> and all related characters belong to their respective owners. This fansite is non-commercial and is created only to express my love for the original story told.
+                        </p>
+                    </FooterText>
                 </div>
             </footer>
         </div>

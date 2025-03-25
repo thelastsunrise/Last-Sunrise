@@ -3,9 +3,10 @@
     "type": "module",
     "exports": {
         ".": "./index.js",
-        "./copyright-blurb": "./copyright-blurb.astro"
+        "./copyright-blurb": "./copyright-blurb.astro",
+        "./footer-text": "./footer-text.astro"
     },
     "files": [
-        "index.js", "copyright-blurb.astro"
+        "index.js", "copyright-blurb.astro", "footer-text.astro"
     ]
 }

@@ -1,0 +1,29 @@
+---
+import { parseStringPromise } from "xml2js"
+
+const networkURL = "https://lastsunrise.art";
+const { siteName, siteURL, estYear, isChildSite } = Astro.props;
+
+let latestDate = "";
+const filename = "changelog-rss.xml";
+
+try {
+    const changelogPath = await fetch(`${networkURL}/${filename}`);
+    const xmlContent = await changelogPath.text();
+    const parsed = await parseStringPromise(xmlContent);
+    const items = parsed.rss.channel[0].item;
+    const fullDate = new Date(items[0].pubDate[0]); // grab newest date in CL
+    latestDate = fullDate.toDateString();
+} catch (error) {
+    console.error("OOPS", error);
+}
+---
+<p>
+    <a href={siteURL}>{siteName}</a> est. {estYear} &#9734 Last updated <span>{latestDate}</span>
+    <br>
+    {isChildSite && <span><i>{siteName}</i> is part of the <a href={networkURL}>Last Sunrise</a> network</span> }
+</p>
+
+<p><a href="./sitemap">Sitemap</a> // <a href="./copyright">Copyright</a> // <a href={networkURL + "/rss"}>RSS</a> // <a href="mailto:cat@lastsunrise.art">Email</a></p>
+
+<slot></slot>
