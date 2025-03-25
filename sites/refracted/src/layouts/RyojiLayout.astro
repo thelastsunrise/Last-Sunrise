@@ -28,6 +28,18 @@ const { title, description } = Astro.props;
             <main class="row m-4">
                 <slot/>
             </main>
+
+            <footer class="row">
+                <div class="col-12 text-center">
+                    <p>
+                        <a href="../../../../">Refracted</a> est. 2025 // Last updated
+                        <br>
+                        <i>Refracted</i> is a part of the <a href="https://lastsunrise.art">Last Sunrise</a> network.
+                        <br>
+                        <a href="../../../copyright">Copyright</a> // <a href="mailto:cat@lastsunrise.art">Email</a>
+                    </p>
+                </div>
+            </footer>
         </div>
     </body>
 </html>

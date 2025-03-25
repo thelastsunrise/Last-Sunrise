@@ -46,17 +46,16 @@ p {
     font-size: 13pt;
 }
 
+footer {
+    margin-top: 100px!important;
+}
+
 body {
     background: 
         top -100px left / auto 100vh no-repeat url(/images/ryoji-header.png),
         var(--sea);
     color: var(--soul);
     font-family: IctuOculi, serif;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
 }
 
 ol {
@@ -72,7 +71,6 @@ em {
 
 .container {
     margin-top: 350px;
-    min-height: 70vh;
     max-width: 1000px;
     background-color: var(--void);
 }
