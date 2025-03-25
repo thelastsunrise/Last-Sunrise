@@ -5,6 +5,10 @@
     --hope: #c37e41;
 }
 
+#title {
+    margin-top: -200px;
+}
+
 body {
     min-height: 100vh;
     background: 
