@@ -6,8 +6,8 @@
 }
 
 @font-face {
-    font-family: Caramel;
-    src: url(/fonts/Caramel-Regular.ttf);
+    font-family: Yesterday;
+    src: url(/fonts/yesterday.ttf);
 }
 
 @font-face {
@@ -34,7 +34,7 @@
 }
 
 h1 {
-    font-family: Caramel, cursive;
+    font-family: Yesterday, cursive;
     font-size: 100pt;
 }
 
