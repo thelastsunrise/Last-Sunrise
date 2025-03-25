@@ -5,8 +5,15 @@
     --hope: #c37e41;
 }
 
+@font-face {
+    font-family: Caramel;
+    src: url(/fonts/Caramel-Regular.ttf);
+}
+
 #title {
-    margin-top: -200px;
+    margin-top: -250px;
+    font-family: Caramel, cursive;
+    font-size: 100pt;
 }
 
 body {
