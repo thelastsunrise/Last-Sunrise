@@ -10,8 +10,24 @@
     src: url(/fonts/Caramel-Regular.ttf);
 }
 
+@font-face {
+    font-family: IctuOculi;
+    src: url(/fonts/IctuOculi-Regular.ttf);
+}
+
 #title {
     margin-top: -250px;
+    p {
+        margin-top: -30px;
+        margin-left: 80pt;
+    }
+}
+
+.focus {
+    color: var(--hope);
+}
+
+h1 {
     font-family: Caramel, cursive;
     font-size: 100pt;
 }
@@ -21,7 +37,8 @@ body {
     background: 
         top left / auto 100vh no-repeat url(/images/ryoji-header.png),
         var(--sea);
-    color: #d1d1d1
+    color: var(--soul);
+    font-family: IctuOculi, serif;
 }
 
 footer {
