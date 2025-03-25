@@ -58,6 +58,10 @@ body {
     font-family: IctuOculi, serif;
 }
 
+nav {
+    margin-top: -60px!important;
+}
+
 ol {
     list-style-type: upper-roman;
     & ol {
@@ -70,6 +74,7 @@ em {
 }
 
 .container {
+    min-height: 60vh;
     margin-top: 350px;
     max-width: 1000px;
     background-color: var(--void);
