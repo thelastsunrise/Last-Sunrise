@@ -11,6 +11,8 @@
     "dev:lsr": "astro dev --root sites/last-sunrise",
     "dev:ryoji": "astro dev --root sites/refracted",
     "build": "astro build",
+    "build:lsr": "astro build --root sites/last-sunrise",
+    "build:ryoji": "astro build --root sites/refracted",
     "preview": "astro preview",
     "astro": "astro"
   },
