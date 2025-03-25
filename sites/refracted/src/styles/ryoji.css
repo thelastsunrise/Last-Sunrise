@@ -79,6 +79,12 @@ em {
     color: #838cb3
 }
 
+blockquote {
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: var(--soul) 2pt solid;
+}
+
 .container {
     margin-top: 350px;
     max-width: 1000px;
