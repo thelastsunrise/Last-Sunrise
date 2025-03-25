@@ -1,5 +1,19 @@
 ---
+import { getCollection } from "astro:content";
+
 import RyojiLayout from "./RyojiLayout.astro";
+
+const articles = (await getCollection("articles"))
+    .sort((a, b) => {
+        if (a.data.section === b.data.section) {
+            return a.data.id - b.data.id;
+        }
+        return a.data.section - b.data.section;
+    });
+
+const currentPostIndex = articles.findIndex((article) => article.slug === Astro.params.slug);
+const prevPost = currentPostIndex === 0 ? undefined : articles[currentPostIndex - 1];
+const nextPost = currentPostIndex + 1 === articles.length ? undefined : articles[currentPostIndex + 1];
 
 const { frontmatter } = Astro.props;
 ---
@@ -7,5 +21,7 @@ const { frontmatter } = Astro.props;
     <section class="col-12">
         <h2>{frontmatter.title}</h2>
         <slot/>
+
+        {prevPost} {nextPost}
     </section>
 </RyojiLayout>
