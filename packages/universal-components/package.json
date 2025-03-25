@@ -1,0 +1,11 @@
+{
+    "name": "universal-components",
+    "type": "module",
+    "exports": {
+        ".": "./index.js",
+        "./copyright-blurb": "./copyright-blurb.astro"
+    },
+    "files": [
+        "index.js", "copyright-blurb.astro"
+    ]
+}

@@ -1,0 +1,1 @@
+export { default as CopyrightBlurb } from "./copyright-blurb.astro";
