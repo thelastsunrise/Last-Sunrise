@@ -17,7 +17,7 @@
 
 @font-face {
     font-family: IctuOculi;
-    src: url(/fonts/IctuOculi-Regular.ttf);
+    src: url(/fonts/IctuOculi-RegularRoman.ttf);
 }
 
 #title {
@@ -42,7 +42,7 @@ h2, h3, h4 {
     font-family: RoadizSans, sans-serif;
 }
 
-p {
+p, li {
     font-size: 13pt;
 }
 
@@ -59,7 +59,9 @@ body {
 }
 
 nav {
-    margin-top: -60px!important;
+    margin-top: -50px!important;
+    font-family: RoadizSans, sans-serif;
+    text-transform: uppercase;
 }
 
 ol {
