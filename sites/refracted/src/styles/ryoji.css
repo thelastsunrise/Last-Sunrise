@@ -8,7 +8,7 @@
 body {
     min-height: 100vh;
     background: 
-        left / contain no-repeat url(/images/ryoji-header.png),
+        top left / auto 100vh no-repeat url(/images/ryoji-header.png),
         var(--sea);
     color: #d1d1d1
 }
@@ -30,7 +30,9 @@ em {
 }
 
 .container {
+    margin-top: 400px;
     min-height: 100vh;
+    max-width: 1000px;
     background-color: var(--void);
 }
 
