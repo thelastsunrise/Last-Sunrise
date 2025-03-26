@@ -1,0 +1,17 @@
+---
+import RyojiLayout from "./RyojiLayout.astro";
+
+const { frontmatter } = Astro.props;
+---
+<RyojiLayout title={frontmatter.title}>
+    <section class="col-12">
+        <h2 class="focus">{frontmatter.title}</h2>
+        <blockquote>
+            <slot/>
+        </blockquote>
+
+        <nav class="article-jump pt-5 px-5">
+            &#8249; <a href="../transcripts">Return to Transcripts Hub</a>
+        </nav>
+    </section>
+</RyojiLayout>
