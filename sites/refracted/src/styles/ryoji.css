@@ -80,6 +80,10 @@ nav {
     text-transform: uppercase;
 }
 
+figcaption {
+    text-align: center;
+}
+
 ol {
     list-style-type: upper-roman;
     & ol {
