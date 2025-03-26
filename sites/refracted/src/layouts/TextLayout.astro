@@ -26,7 +26,7 @@ const { frontmatter } = Astro.props;
         <h2>{frontmatter.title}</h2>
         <slot/>
 
-        <nav class="article-jump">
+        <nav class="article-jump pt-5">
             {prevPost && <span class="float-start">&#8249; <a href={`/${prevPost.id}`}>{prevPost.data.title}</a></span>}
             {nextPost && <span class="float-end"><a href={`/${nextPost.id}`}>{nextPost.data.title}</a> &#8250; </span>}
         </nav>
