@@ -53,12 +53,12 @@ p, li {
     font-size: 13pt;
 }
 
-a {
+a, .dropdown-item {
     color: var(--hope);
     text-decoration: none;
 }
 
-a:hover:not(.no-style) {
+a:hover:not(.no-style), .navbar-nav .nav-link.show {
     color: var(--love);
 }
 
@@ -86,6 +86,16 @@ nav {
 .nav-link {
     color: var(--soul);
     transition: none;
+}
+
+.dropdown-menu {
+    background-color: var(--sea);
+    border: none;
+    border-radius: 0;
+}
+
+.dropdown-item:hover {
+    background-color: transparent!important;
 }
 
 figure {

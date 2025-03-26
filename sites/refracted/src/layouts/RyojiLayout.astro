@@ -34,14 +34,23 @@ const { title, description } = Astro.props;
                                 <SectionLinks n="1" classes="dropdown-item"/>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./">Recollection</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Recollection</a>
+                            <ul class="dropdown-menu">
+                                <SectionLinks n="2" classes="dropdown-item"/>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./">Existence</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Existence</a>
+                            <ul class="dropdown-menu">
+                                <SectionLinks n="3" classes="dropdown-item"/>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./">Beyond</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Beyond</a>
+                            <ul class="dropdown-menu">
+                                <SectionLinks n="4" classes="dropdown-item"/>
+                            </ul>
                         </li>
                     </ul>
                 </nav>
