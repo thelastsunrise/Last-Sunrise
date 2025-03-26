@@ -97,6 +97,18 @@ blockquote {
     border-left: var(--soul) 2pt solid;
 }
 
+.profile-box {
+    margin-bottom: 2rem;
+    p {
+        line-height: 1;
+    }
+    img {
+        height: 320px;
+        margin-right: 2rem;
+        border: var(--soul) 2pt solid;
+    }
+}
+
 .container {
     margin-top: 350px;
     max-width: 1000px;
