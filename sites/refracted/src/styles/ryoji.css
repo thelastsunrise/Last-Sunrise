@@ -58,7 +58,7 @@ a, .dropdown-item {
     text-decoration: none;
 }
 
-a:hover:not(.no-style), .navbar-nav .nav-link.show {
+a:hover:not(.no-style), .navbar-nav .nav-link.show, .nav-link:focus {
     color: var(--love);
 }
 
