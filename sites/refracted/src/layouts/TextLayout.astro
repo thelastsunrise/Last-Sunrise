@@ -1,18 +1,9 @@
 ---
-import { getCollection } from "astro:content";
+import { sortArticles } from "../../public/scripts/sortArticles.ts";
 
 import RyojiLayout from "./RyojiLayout.astro";
 
-const articles = (await getCollection("articles"))
-    .sort((a, b) => {
-        // sort the sections first
-        if (a.data.section === b.data.section) {
-            // if two sections are equal, then sort ids
-            return a.data.id - b.data.id;
-        }
-        // otherwise just sort the section
-        return a.data.section - b.data.section;
-    });
+const articles = await sortArticles();
 
 const currentPath = Astro.url.pathname.replace(/^\/|\/$/g, ""); // remove leading/trailing slashes
 const currentPostIndex = articles.findIndex((article) => article.id === currentPath);
