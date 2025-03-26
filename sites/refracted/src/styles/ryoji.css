@@ -3,7 +3,7 @@
     --void: #0a0b16;
     --soul: #b1b1c0;
     --hope: #c37e41;
-    --love: #fff
+    --love: #e3db95;
 }
 
 @font-face {
@@ -59,7 +59,7 @@ a {
 }
 
 a:hover:not(.no-style) {
-    color: #dccf69;
+    color: var(--love);
 }
 
 footer {
@@ -85,6 +85,7 @@ nav {
 
 .nav-link {
     color: var(--soul);
+    transition: none;
 }
 
 figcaption {
