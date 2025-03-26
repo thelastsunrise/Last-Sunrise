@@ -12,7 +12,7 @@ const articles = defineCollection({
 });
 
 const transcripts = defineCollection({
-    loader: glob({ pattern: "transcripts/**/*.md*", base: "./src/pages"}),
+    loader: glob({ pattern: "*.md*", base: "./src/pages/transcripts"}),
     schema: z.object({
         title: z.string(),
         id: z.number(),

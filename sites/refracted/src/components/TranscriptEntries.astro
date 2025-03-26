@@ -1,0 +1,10 @@
+---
+import { getCollection } from "astro:content";
+
+const transcripts = await getCollection("transcripts");
+---
+<ul>
+    {transcripts.map(transcript => (
+        <li><a href={`/transcripts/${transcript.id}`}>{transcript.data.title}</a></li>
+    ))}
+</ul>
