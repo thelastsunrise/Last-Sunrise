@@ -2,7 +2,10 @@
 import { sortArticles } from "../../public/scripts/sortArticles.ts";
 
 const articles = await sortArticles();
+
 const n = parseInt(Astro.props.n);
+const classes = Astro.props.classes;
+const showDesc = Astro.props.showDesc;
 
 function getArticlesForSection(sectionNumber) {
     return articles.filter((article) => article.data.section === sectionNumber);
@@ -11,6 +14,6 @@ function getArticlesForSection(sectionNumber) {
 ---
 {getArticlesForSection(n).map((article) => (
     <li>
-        <a href={`/${article.id}`}>{article.data.title}</a> - {article.data.description}
+        <a class={classes && classes} href={`/${article.id}`}>{article.data.title}</a>{showDesc && ` - ${article.data.description}`}
     </li>
 ))}
