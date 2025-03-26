@@ -91,7 +91,12 @@ nav {
 .dropdown-menu {
     background-color: var(--sea);
     border: none;
+    border-top: 2pt var(--soul) solid;
     border-radius: 0;
+}
+
+.dropdown-item {
+    font-size: 11pt;
 }
 
 .dropdown-item:hover {
