@@ -1,5 +1,6 @@
 ---
 import { FooterText } from "../../../../packages/universal-components";
+import SectionLinks from "../components/section-links.astro";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 //import "../styles/preview.css";
@@ -10,7 +11,7 @@ const { title, description } = Astro.props;
 ---
 <html>
     <head>
-        <meta charset="utf-8"/>    
+        <meta charset="utf-8"/>
     </head>
 
     <body>
@@ -27,8 +28,11 @@ const { title, description } = Astro.props;
                         <li class="nav-item">
                             <a class="nav-link" href="./">Atlas</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./">Essence</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Essence</a>
+                            <ul class="dropdown-menu">
+                                <SectionLinks n="1" classes="dropdown-item"/>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./">Recollection</a>
@@ -57,5 +61,7 @@ const { title, description } = Astro.props;
                 </div>
             </footer>
         </div>
+
+        <script>import "bootstrap/js/dist/dropdown.js"</script>
     </body>
 </html>
