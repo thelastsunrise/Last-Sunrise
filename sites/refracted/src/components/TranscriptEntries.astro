@@ -5,6 +5,6 @@ const transcripts = await getCollection("transcripts");
 ---
 <ul>
     {transcripts.map(transcript => (
-        <li><a href={`/transcripts/${transcript.id}`}>{transcript.data.title}</a></li>
+        <li><a href={`/transcripts/${transcript.id}`}>{transcript.data.title}</a> - {transcript.data.description}</li>
     ))}
 </ul>

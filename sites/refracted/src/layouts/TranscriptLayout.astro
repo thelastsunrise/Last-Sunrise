@@ -6,6 +6,10 @@ const { frontmatter } = Astro.props;
 <RyojiLayout title={frontmatter.title}>
     <section class="col-12">
         <h2 class="focus">{frontmatter.title}</h2>
+        <p>{frontmatter.description}</p>
+        <p><a href={frontmatter.source}>Source</a></p>
+        <hr>
+
         <blockquote>
             <slot/>
         </blockquote>
