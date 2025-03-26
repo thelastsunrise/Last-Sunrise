@@ -83,6 +83,10 @@ nav {
     }
 }
 
+.nav-link {
+    color: var(--soul);
+}
+
 figcaption {
     text-align: center;
 }
