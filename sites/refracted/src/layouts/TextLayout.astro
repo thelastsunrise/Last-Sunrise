@@ -14,7 +14,7 @@ const { frontmatter } = Astro.props;
 ---
 <RyojiLayout title={frontmatter.title}>
     <section class="col-12">
-        <h2>{frontmatter.title}</h2>
+        <h2 class="focus">{frontmatter.title}</h2>
         <slot/>
 
         <nav class="article-jump pt-5 px-5">
