@@ -1,9 +1,28 @@
 ---
 layout: "../layouts/TextLayout.astro"
-title: "Persona 3"
+title: "The Persona Series"
 section: 1
-no: 1
+id: 1
 
-description: "A primer on the original game"
+description: "A primer on the original game and its series"
 ---
-*Persona 3*, ironically the fourth installment in the Persona series, is a game that tackles death, mortality and grief in all its forms. It was released by Atlus in 2006 for the Playstation 2, and has since been rereleased, adapted endlessly, and most recently remade from scratch. 
+*Persona 3*, ironically the fourth installment in the Persona series, is a JRPG-meets-social-simulator that tackles death, mortality and grief in all its forms. It was released by Atlus in 2006 for the Playstation 2, and has since been rereleased, adapted endlessly, and most recently remade from scratch.
+
+The series itself is an anthology of isolated stories (with the exception of Persona 2, a duology) which follow their own cast of characters, settings and narratives. That said, the games are linked by a common magic system, high school setting, as well as psychological, religious and generally esoteric themes. The main characters are given the ability to fight through summoning **Personas**, reflections of a character's truest self that take the name of historial/religious figures. Each character is also given a relevant tarot card from the major arcana that mirrors the journey they undertake within the game; the protagonist always being the Fool, the one going on this journey<sup>[1]</sup>.
+
+### Persona 3
+Persona 3 opens with the player character, Makoto Yuki<sup>[2]</sup> moving into his new dorm the night before transferring to a new school, Gekkoukan High School. As the clock hits 12 AM, the world shifts: the sky becomes green, the people around him turn into coffins, all electronics are shut down, and ground is littered with pools of blood.
+
+He reaches the dorm, only to be greeted by a kid, Pharos, asking for him to sign a contract.
+
+> Time never waits.
+> It delivers all equally to the same end. I hereby agree to the statement above, and I chooseth this fate of mine own free will.
+
+Pharos vanishes, and Makoto meets two of his new dorm-mates right after. He soon finds out that this dorm is home to a club known as the **Specialized Extracurricular Execution Squad**, or SEES for short. Their purpose is to eliminate the **Dark Hour**, the extra, nonexistent hour of time Makoto experienced on his way to the dorm, and the **Shadows** that threaten to destroy the world within it. Stranger yet, during the Dark Hour, Gekkoukan High School turns into a labyrinthine tower called **Tartarus**, which SEES also exists to investigate (and is why it exists as a school club and not an external taskforce).
+
+Shadows are born of human consciousness, and are amalgamations of all suppressed thoughts, feelings and desires humanity feels. They're mirrors to Personas in that way: where Personas are facets of the self that have been accepted, Shadows are the ones that have been ignored and repressed. While they generally stay in Tartarus during the Dark Hour, every full moon a huge one, representing any one of the first 12 major arcana, will appear somewhere in town and cause mayhem.
+
+---
+
+1. In Persona 1 and 2, the protagonists are not the Fool, but rather different cards in the major arcana.
+2.  The P3 Hero has no single canon name. He's otherwise known as Minato Arisato (manga) and Sakuya Shiomi (stageplay), but I'll be sticking with Yuki on this website.

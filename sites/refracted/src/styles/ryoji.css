@@ -3,6 +3,7 @@
     --void: #0a0b16;
     --soul: #b1b1c0;
     --hope: #c37e41;
+    --love: #fff
 }
 
 @font-face {
@@ -51,6 +52,15 @@ p, li {
     font-size: 13pt;
 }
 
+a {
+    color: var(--hope);
+    text-decoration: none;
+}
+
+a:hover:not(.no-style) {
+    color: #dccf69;
+}
+
 footer {
     margin-top: 100px!important;
 }
@@ -76,10 +86,6 @@ ol {
     }
 }
 
-em {
-    color: #838cb3
-}
-
 blockquote {
     margin-left: 1rem;
     padding-left: 1rem;
@@ -92,7 +98,7 @@ blockquote {
     background-color: var(--void);
 }
 
-.subtle {
+.subtle, em, strong {
     opacity: 50%;
 }
 
