@@ -5,15 +5,19 @@ import RyojiLayout from "./RyojiLayout.astro";
 
 const articles = (await getCollection("articles"))
     .sort((a, b) => {
+        // sort the sections first
         if (a.data.section === b.data.section) {
+            // if two sections are equal, then sort ids
             return a.data.id - b.data.id;
         }
+        // otherwise just sort the section
         return a.data.section - b.data.section;
     });
 
-const currentPostIndex = articles.findIndex((article) => article.slug === Astro.params.slug);
-const prevPost = currentPostIndex === 0 ? undefined : articles[currentPostIndex - 1];
-const nextPost = currentPostIndex + 1 === articles.length ? undefined : articles[currentPostIndex + 1];
+const currentPath = Astro.url.pathname.replace(/^\/|\/$/g, ""); // remove leading/trailing slashes
+const currentPostIndex = articles.findIndex((article) => article.id === currentPath);
+const prevPost = currentPostIndex > 0 ? articles[currentPostIndex - 1] : undefined;
+const nextPost = currentPostIndex < articles.length - 1 ? articles[currentPostIndex + 1] : undefined;
 
 const { frontmatter } = Astro.props;
 ---
@@ -22,6 +26,9 @@ const { frontmatter } = Astro.props;
         <h2>{frontmatter.title}</h2>
         <slot/>
 
-        {prevPost} {nextPost}
+        <nav class="article-jump">
+            {prevPost && <span class="float-start">&#8249; <a href={`/${prevPost.id}`}>{prevPost.data.title}</a></span>}
+            {nextPost && <span class="float-end"><a href={`/${nextPost.id}`}>{nextPost.data.title}</a> &#8250; </span>}
+        </nav>
     </section>
 </RyojiLayout>

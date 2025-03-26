@@ -78,6 +78,9 @@ nav {
     margin-top: -80px!important;
     font-family: RoadizSans, sans-serif;
     text-transform: uppercase;
+    &.article-jump {
+        margin-top: initial!important;
+    }
 }
 
 figcaption {
