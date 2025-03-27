@@ -110,7 +110,6 @@ figure {
 figure:has(img){
     min-width: 100px;
     max-width: 300px;
-    margin: auto 1.5rem;
     img {
         max-width: inherit;
     }

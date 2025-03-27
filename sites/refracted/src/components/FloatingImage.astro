@@ -1,0 +1,9 @@
+---
+const {align, fileName, alt} = Astro.props;
+---
+<figure class={`mx-4 my-2 float-${align}`}>
+    <img class="mb-3" width="100%" src={`/images/${fileName}`} alt={alt}/>
+    <figcaption>
+        <slot/>
+    </figcaption>
+</figure>
