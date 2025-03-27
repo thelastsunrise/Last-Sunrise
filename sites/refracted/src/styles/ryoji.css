@@ -107,6 +107,14 @@ figure {
     text-align: center;
 }
 
+figure:has(img){
+    max-width: 300px;
+    margin: auto 1.5rem;
+    img {
+        max-width: inherit;
+    }
+}
+
 figcaption {
     text-align: center;
 }
