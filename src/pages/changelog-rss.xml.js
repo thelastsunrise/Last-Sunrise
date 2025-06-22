@@ -7,6 +7,11 @@ return rss({
     site: context.site,
     items: [
     {
+        title: "3.0.6",
+        description: "Updated framework for blog section titling and created a new Sims shrine...sort of. Basically I'm just blogging about my current TS4 legacy challenge.",
+        pubDate: "2025-06-22"
+    },
+    {
         title: "3.0.5",
         description: "Fixed even more issues for mobile displays.",
         pubDate: "2025-03-21"
