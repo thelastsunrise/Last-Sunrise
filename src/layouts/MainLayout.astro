@@ -3,10 +3,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 //import "../styles/preview.css";
 import "../styles/global.css";
 
-const { title, description, mascotActive } = Astro.props;
+const { title, description, altTitle, mascotActive } = Astro.props;
 
-const isBlog = Astro.url.pathname.includes('/blog/');
-const pageTitle = isBlog ? "Cat's Blog" : title;
+const isBlog = Astro.props.altTitle;
+const pageTitle = isBlog ? altTitle : title;
 
 import HeadMeta from "../components/HeadMeta.astro";
 import Footer from "../components/Footer.astro";
