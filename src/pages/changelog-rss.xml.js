@@ -9,7 +9,8 @@ return rss({
     {
         title: "3.0.6",
         description: "Updated framework for blog section titling and created a new Sims shrine...sort of. Basically I'm just blogging about my current TS4 legacy challenge.",
-        pubDate: "2025-06-22"
+        pubDate: "2025-06-22",
+        link: "https://lastsunrise.art/shrines/sims/basilio-g1/"
     },
     {
         title: "3.0.5",
