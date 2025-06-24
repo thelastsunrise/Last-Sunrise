@@ -1,6 +1,7 @@
 ---
 import MainLayout from "./MainLayout.astro";
 import SectionOneColumn from "../components/SectionOneColumn.astro";
+import BlogNextPrevButtons from "../components/BlogNextPrevButtons.astro";
 
 const { frontmatter } = Astro.props;
 ---
@@ -20,6 +21,9 @@ const { frontmatter } = Astro.props;
         <hr/>
         
         <slot/>
+
+        <hr/>
+        <BlogNextPrevButtons/>
     </SectionOneColumn>
 </MainLayout>
 
