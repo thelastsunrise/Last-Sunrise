@@ -1,0 +1,26 @@
+---
+import MainLayout from "./MainLayout.astro";
+import SectionOneColumn from "../components/SectionOneColumn.astro";
+
+const { frontmatter } = Astro.props;
+---
+<MainLayout altTitle={frontmatter.altTitle} title={frontmatter.title} description={frontmatter.description}>
+    <SectionOneColumn>
+        <h3>{frontmatter.title}</h3>
+        <p><a href="/shrines/sims">&#8592; Return to Sims Hub</a></p>
+        <p><strong>Published</strong>: {frontmatter.pubDate.toString().slice(0, 10)}</p>
+        <p>{frontmatter.description}</p>
+        {frontmatter.subpoints && frontmatter.subpoints.length > 0 && (
+            <ul>
+            {frontmatter.subpoints.map((point: string) => (
+                <li>{point}</li>
+            ))}
+            </ul>
+        )}
+        <hr/>
+        
+        <slot/>
+    </SectionOneColumn>
+</MainLayout>
+
+<script is:inline src="/scripts/ClickImage.js"></script>
