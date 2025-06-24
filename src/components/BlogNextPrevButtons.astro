@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import { undefined } from 'astro:schema';
+
+const posts = (await getCollection('sims')).sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const currentPost = posts.findIndex((post) => post.id === Astro.params.id);
+const prevPost = currentPost + 1 === posts.length ? undefined : posts[currentPost + 1];
+const nextPost = currentPost === 0 ? undefined : posts[currentPost - 1];
+
+console.log(currentPost);
+---
+{
+  (prevPost || nextPost) && (
+    <div class="pb-5">
+      { prevPost && ( <span class="float-start"><a href={`/shrines/sims/${prevPost.id}/`}>&larr; {prevPost.data.title}</a></span> ) }
+      { nextPost && ( <span class="float-end"><a href={`/shrines/sims/${nextPost.id}/`}>{nextPost.data.title} &rarr;</a></span> ) }
+    </div>
+  )
+}
