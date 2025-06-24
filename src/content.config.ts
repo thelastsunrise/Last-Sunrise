@@ -2,13 +2,9 @@
 import { defineCollection, z } from 'astro:content';
 
 // 2. Import loader(s)
-import { glob, file } from 'astro/loaders';
-import { desc } from 'astro:db';
+import { glob } from 'astro/loaders';
 
 // 3. Define your collection(s)
-const blog = defineCollection({
-
-});
 const sims = defineCollection({
     loader: glob({pattern: "*.mdx", base: "src/pages/shrines/sims"}),
     schema: z.object({
@@ -19,4 +15,4 @@ const sims = defineCollection({
 });
 
 // 4. Export a single `collections` object to register your collection(s)
-export const collections = { blog, sims};
+export const collections = { sims };

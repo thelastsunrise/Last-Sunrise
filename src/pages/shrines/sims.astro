@@ -2,6 +2,8 @@
 import SectionOneColumn from "../../components/SectionOneColumn.astro";
 import MainLayout from "../../layouts/MainLayout.astro";
 
+import { getCollection } from "astro:content";
+
 const title = "The Sims";
 const description = "My Sims 4 Legacy Challenge.";
 ---
@@ -9,9 +11,6 @@ const description = "My Sims 4 Legacy Challenge.";
     <SectionOneColumn>
         Hello this page is so nothingburger right now. It will be less nothingburger soon, probably with some fancy Sims themed CSS too. I just wanted to start uploading some TS4 play session overviews for my friends ^-^
         <h3>Basilio Legacy</h3>
-        <ol>
-            <li><a href="../../shrines/sims/basilio-g1">Generation 1: Rags to Nuclear Family</a></li>
-            <li><a href="../../shrines/sims/basilio-g2-1">Generation 2 Part 1: It Should be Perfect</a></li>
-        </ol>
+        
     </SectionOneColumn>
 </MainLayout>
