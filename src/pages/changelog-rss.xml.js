@@ -7,6 +7,12 @@ return rss({
     site: context.site,
     items: [
     {
+        title: "3.0.7",
+        description: "Posted a new Sims post, and got next/prev buttons working for that section of the site too.",
+        pubDate: "2025-06-24",
+        link: "https://lastsunrise.art/shrines/sims/basilio-g2-1/"
+    },
+    {
         title: "3.0.6",
         description: "Updated framework for blog section titling and created a new Sims shrine...sort of. Basically I'm just blogging about my current TS4 legacy challenge.",
         pubDate: "2025-06-22",

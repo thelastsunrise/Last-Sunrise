@@ -1,14 +1,13 @@
 ---
 import { getCollection } from 'astro:content';
-import { undefined } from 'astro:schema';
 
 const posts = (await getCollection('sims')).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 
 const currentPost = posts.findIndex((post) => post.id === Astro.params.id);
-const prevPost = currentPost + 1 === posts.length ? undefined : posts[currentPost + 1];
-const nextPost = currentPost === 0 ? undefined : posts[currentPost - 1];
+const prevPost = currentPost + 1 === posts.length ? null : posts[currentPost + 1];
+const nextPost = currentPost === 0 ? null : posts[currentPost - 1];
 
 console.log(currentPost);
 ---
