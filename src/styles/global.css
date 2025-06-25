@@ -41,6 +41,7 @@ a:hover {
 
 html, body {
     overflow-x: hidden;
+    height: 100dvh;
 }
 
 body {
