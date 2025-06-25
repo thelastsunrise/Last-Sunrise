@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "ITC Kabel Std";
+    src: url("/fonts/ITCKabelStdBold.TTF");
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+h1 {
+    font-family: "ITC Kabel Std";
+}
