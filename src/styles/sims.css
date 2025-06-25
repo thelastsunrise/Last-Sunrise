@@ -30,6 +30,9 @@ body {
 
 h1 {
     font-family: "ITC Kabel Std";
+    font-size: 72pt;
+    color: var(--blue);
+    -webkit-text-stroke: var(--whitebg) 1.5pt;
 }
 
 h2, h3, h4 {
