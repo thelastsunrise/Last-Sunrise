@@ -5,6 +5,17 @@
     text-rendering: optimizeLegibility;
 }
 
+@font-face {
+    font-family: "Sims Sans Bold";
+    src: url("/fonts/thesimssansbold.otf");
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
 h1 {
     font-family: "ITC Kabel Std";
+}
+
+h2, h3, h4 {
+    font-family: "Sims Sans Bold";
 }
