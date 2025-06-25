@@ -15,7 +15,7 @@ const { title, description, altTitle } = Astro.props;
         <h1 class="text-center">Last Simsrise</h1>
     </header>
 
-    <main class="row">
+    <main class="row p-5">
                 <h3>{frontmatter.title}</h3>
         <p><a href="/shrines/sims">&#8592; Return to Sims Hub</a></p>
         <p><strong>Published</strong>: {frontmatter.pubDate.toString().slice(0, 10)}</p>

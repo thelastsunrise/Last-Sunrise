@@ -3,7 +3,9 @@
     --green: #60b993;
     --highlight: #b4fad5;
     --whitebg: #ffffff;
-    --secondarybg: #babbc0;
+    --secondarybg: #ecf6f8;
+    --tertiarybg: #e3e3e2;
+    --text: #164277;
 }
 
 @font-face {
@@ -23,6 +25,7 @@
 body {
     background: var(--blue);
     background: linear-gradient(90deg, rgba(55, 112, 168, 1) 0%, rgba(180, 250, 213, 1) 50%, rgba(96, 185, 147, 1) 100%);
+    color: var(--text)
 }
 
 h1 {
@@ -39,4 +42,9 @@ h2, h3, h4 {
 
 main {
     background-color: var(--whitebg);
+    border-radius: 1rem;
+}
+
+.blogimg {
+    max-width: 80%;
 }
