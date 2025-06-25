@@ -1,6 +1,5 @@
 ---
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/preview.css";
 import "../styles/sims.css";
 import BlogNextPrevButtons from "../components/BlogNextPrevButtons.astro";
 
@@ -16,7 +15,7 @@ const { title, description, altTitle } = Astro.props;
         <h1 class="text-center">Last Simsrise</h1>
     </header>
 
-    <div class="row">
+    <main class="row">
                 <h3>{frontmatter.title}</h3>
         <p><a href="/shrines/sims">&#8592; Return to Sims Hub</a></p>
         <p><strong>Published</strong>: {frontmatter.pubDate.toString().slice(0, 10)}</p>
@@ -34,7 +33,7 @@ const { title, description, altTitle } = Astro.props;
 
         <hr/>
         <BlogNextPrevButtons/>
-    </div>
+    </main>
 </div>
 
 <script is:inline src="/scripts/ClickImage.js"></script>
