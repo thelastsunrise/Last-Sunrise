@@ -17,6 +17,9 @@ const posts = await getCollection("sims");
             {posts.map(post => (
                 <li>
                     <a href={`/shrines/sims/${post.id}`}>{post.data.title}</a>
+                    <ul>
+                        <li>{post.data.description}</li>
+                    </ul>
                 </li>
             ))}
         </ol>
