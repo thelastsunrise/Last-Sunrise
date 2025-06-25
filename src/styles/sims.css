@@ -55,6 +55,9 @@ main {
     border-radius: 1rem;
 }
 
-.blogimg {
-    max-width: 80%;
+.blog {
+    text-align: center;
+    .blogimg {
+        max-width: 80%;
+    }
 }
