@@ -7,6 +7,12 @@ return rss({
     site: context.site,
     items: [
     {
+        title: "3.0.8",
+        description: "Posted part 3 of the Basilio legacy challenge blog.",
+        pubDate: "2025-06-25",
+        link: "https://lastsunrise.art/shrines/sims/basilio-g2-2/"
+    },
+    {
         title: "3.0.7",
         description: "Posted a new Sims post, and got next/prev buttons working for that section of the site too.",
         pubDate: "2025-06-24",
