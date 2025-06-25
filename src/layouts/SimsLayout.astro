@@ -1,13 +1,18 @@
 ---
-import MainLayout from "./MainLayout.astro";
-import SectionOneColumn from "../components/SectionOneColumn.astro";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/preview.css";
 import BlogNextPrevButtons from "../components/BlogNextPrevButtons.astro";
 
+import HeadMeta from "../components/HeadMeta.astro";
+
 const { frontmatter } = Astro.props;
+const { title, description, altTitle } = Astro.props;
 ---
-<MainLayout altTitle={frontmatter.altTitle} title={frontmatter.title} description={frontmatter.description}>
-    <SectionOneColumn>
-        <h3>{frontmatter.title}</h3>
+<HeadMeta title={title} description={description}/>
+
+<div class="container">
+    <div class="row">
+                <h3>{frontmatter.title}</h3>
         <p><a href="/shrines/sims">&#8592; Return to Sims Hub</a></p>
         <p><strong>Published</strong>: {frontmatter.pubDate.toString().slice(0, 10)}</p>
         <p>{frontmatter.description}</p>
@@ -19,12 +24,12 @@ const { frontmatter } = Astro.props;
             </ul>
         )}
         <hr/>
-        
+
         <slot/>
 
         <hr/>
         <BlogNextPrevButtons/>
-    </SectionOneColumn>
-</MainLayout>
+    </div>
+</div>
 
 <script is:inline src="/scripts/ClickImage.js"></script>
