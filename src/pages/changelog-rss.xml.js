@@ -8,7 +8,7 @@ return rss({
     items: [
     {
         title: "3.0.8",
-        description: "Posted part 3 of the Basilio legacy challenge blog.",
+        description: "Posted part 3 of the Basilio legacy challenge blog. Also fixed the double scrollbar issue",
         pubDate: "2025-06-25",
         link: "https://lastsunrise.art/shrines/sims/basilio-g2-2/"
     },
