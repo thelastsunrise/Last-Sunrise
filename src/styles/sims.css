@@ -1,5 +1,6 @@
 :root {
     --blue: #3770a8;
+    --otherblue: #248ece;
     --green: #60b993;
     --highlight: #b4fad5;
     --whitebg: #ffffff;
@@ -31,8 +32,12 @@ body {
 h1 {
     font-family: "ITC Kabel Std";
     font-size: 72pt;
-    color: var(--blue);
+    color: var(--otherblue);
     -webkit-text-stroke: var(--whitebg) 1.5pt;
+}
+
+a {
+    text-decoration: none;
 }
 
 h2, h3, h4 {
