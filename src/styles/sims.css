@@ -1,6 +1,7 @@
 :root {
     --blue: #3770a8;
     --otherblue: #248ece;
+    --overlay: #0a1c56c8;
     --green: #60b993;
     --highlight: #b4fad5;
     --whitebg: #ffffff;
@@ -25,7 +26,8 @@
 
 body {
     background: var(--blue);
-    background: linear-gradient(90deg, rgba(55, 112, 168, 1) 0%, rgba(180, 250, 213, 1) 50%, rgba(96, 185, 147, 1) 100%);
+    background: no-repeat top/100% 750px linear-gradient(180deg, var(--overlay) 0%, rgba(255, 255, 255, 0) 100%),
+                linear-gradient(90deg, rgba(55, 112, 168, 1) 0%, rgba(180, 250, 213, 1) 50%, rgba(96, 185, 147, 1) 100%);
     color: var(--text)
 }
 
