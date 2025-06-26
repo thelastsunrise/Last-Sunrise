@@ -45,7 +45,8 @@
 
 body {
     background: var(--blue);
-    background: no-repeat top/100% 750px linear-gradient(180deg, var(--overlay) 0%, rgba(255, 255, 255, 0) 100%),
+    background: no-repeat bottom/contain fixed url("/images/simsbg.svg"),
+                no-repeat top/100% 750px linear-gradient(180deg, var(--overlay) 0%, rgba(255, 255, 255, 0) 100%),
                 linear-gradient(90deg, var(--blue) 0%, var(--highlight) 50%, var(--green) 100%);
     color: var(--textdark);
     font-family: "Metropolis";
