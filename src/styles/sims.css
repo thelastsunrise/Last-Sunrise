@@ -99,6 +99,9 @@ section {
     border: 4pt var(--secondarybg) solid;
     border-radius: 2pt;
     background-color: var(--whitebg);
+    p:first-of-type {
+        padding-top: 1rem;
+    }
 }
 
 figure {
