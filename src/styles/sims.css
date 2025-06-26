@@ -106,6 +106,17 @@ hr {
     opacity: 1;
 }
 
+.navbuttons {
+    * {
+        padding: 0.25rem;
+        color: var(--whitebg);
+        border-radius: 4pt;
+    }
+    *:hover {
+        background: var(--primarybg);
+    }
+}
+
 .lightgradient {
     background: var(--whitebg);
     background: linear-gradient(180deg, var(--whitebg) 40%, var(--secondarybg));
