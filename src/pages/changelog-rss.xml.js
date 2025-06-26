@@ -7,8 +7,14 @@ return rss({
     site: context.site,
     items: [
     {
+        title: "3.1.0",
+        description: "Made real actual CSS for the Sims shrine, which means we're onto a new major site version :-)",
+        pubDate: "2025-06-26",
+        link: "https://lastsunrise.art/shrines/sims/"
+    },
+    {
         title: "3.0.8",
-        description: "Posted part 3 of the Basilio legacy challenge blog. Also fixed the double scrollbar issue",
+        description: "Posted part 3 of the Basilio legacy challenge blog. Also fixed the double scrollbar issue.",
         pubDate: "2025-06-25",
         link: "https://lastsunrise.art/shrines/sims/basilio-g2-2/"
     },
