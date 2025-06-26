@@ -84,29 +84,47 @@ h3 {
 }
 
 main {
-    background-color: var(--whitebg);
     border-radius: 1rem;
 }
 
 section {
     border: 4pt var(--secondarybg) solid;
     border-radius: 2pt;
+    background-color: var(--whitebg);
+}
+
+figure {
+    padding: 2rem;
+    border-radius: 4pt;
+}
+
+hr {
+    border: var(--secondarybg) 2pt solid;
+    margin: 1rem -1.5rem;
+    opacity: 1;
+}
+
+.lightgradient {
+    background: var(--whitebg);
+    background: linear-gradient(180deg, var(--whitebg) 40%, var(--secondarybg));
+    border: var(--secondarybg) solid 1pt;
+}
+
+.darkgradient {
+    background: var(--primarybg);
+    background: linear-gradient(180deg, var(--primarybg) 40%, var(--darkprimarybg));
+    border: var(--darkprimarybg) solid 1pt;
 }
 
 .blog {
     text-align: center;
-    background: var(--whitebg);
-    background: linear-gradient(180deg, var(--whitebg) 40%, var(--secondarybg));
-    border: var(--secondarybg) solid 2pt;
-    padding: 2rem;
-    border-radius: 4pt;
     .blogimg {
         border: var(--shadow) solid 1pt;
         box-shadow: 0px 2px 7px var(--shadow);
         max-width: 80%;
     }
     figcaption {
-        padding-bottom: 0;
+        padding-top: 1.5rem;
         font-weight: 500;
         background: none;
         border: none;
