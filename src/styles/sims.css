@@ -76,7 +76,7 @@ h3 {
     color: var(--whitebg);
     background-color: var(--tertiarybg);
     padding: 0.5rem;
-    margin: auto -1.5rem;
+    margin: 0 -1.5rem 1rem;
 }
 
 .container {
