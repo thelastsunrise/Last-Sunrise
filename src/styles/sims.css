@@ -55,7 +55,9 @@ body {
 h1 {
     font-family: "ITC Kabel Std";
     font-size: 72pt;
-    color: var(--whitebg);
+    a {
+        color: var(--whitebg);
+    }
 }
 
 a {
@@ -115,6 +117,26 @@ hr {
     *:hover {
         background: var(--primarybg);
     }
+}
+
+.escapebutton {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    padding: 0 0;
+    background: var(--whitebg);
+    border-radius: 10px;
+    border: var(--shadow) solid 1pt;
+    color: var(--textdark)
+}
+.escapebutton:hover {
+    background-color: var(--tertiarybg);
+    color: var(--whitebg);
+    border: var(--whitebg) solid 1pt;
 }
 
 .lightgradient {
