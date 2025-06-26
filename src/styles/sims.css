@@ -1,14 +1,17 @@
 :root {
-    --blue: #3770a8;
+    --blue: #5a8bbe;
     --overlay: #0a1c56c8;
     --green: #60b993;
     --highlight: #b4fad5;
     --whitebg: #ffffff;
     --secondarybg: #eeeeee;
     --tertiarybg: #a6b2c2;
+    --primarybg: #2a83c8;
+    --darkprimarybg: #305eaa;
     --selected: #229430;
     --textbold: #0e4ead;
     --textdark: #404040;
+    --shadow: #212121;
     --textlight: #308de2;
 }
 
@@ -92,7 +95,19 @@ section {
 
 .blog {
     text-align: center;
+    background: var(--primarybg);
+    background: linear-gradient(180deg, rgba(42, 131, 200, 1) 40%, rgba(48, 94, 170, 1) 100%);
+    padding: 2rem;
+    border-radius: 4pt;
     .blogimg {
+        border: var(--shadow) solid 1pt;
+        box-shadow: 0px 2px 7px var(--shadow);
         max-width: 80%;
+    }
+    figcaption {
+        padding-bottom: 0;
+        color: var(--whitebg);
+        font-weight: 500;
+        background: none;
     }
 }
