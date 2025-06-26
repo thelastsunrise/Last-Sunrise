@@ -59,9 +59,21 @@ a {
     color: var(--textlight)
 }
 
-h2, h3, h4 {
+h2, h3 {
     font-family: "Carrois Gothic SC";
-    color: var(--textbold)
+    text-align: center;
+}
+
+h2 {
+    color: var(--textbold);
+    font-weight: 600;
+}
+
+h3 {
+    color: var(--whitebg);
+    background-color: var(--tertiarybg);
+    padding: 0.5rem;
+    margin: auto -1.5rem;
 }
 
 .container {
@@ -71,6 +83,11 @@ h2, h3, h4 {
 main {
     background-color: var(--whitebg);
     border-radius: 1rem;
+}
+
+section {
+    border: 4pt var(--secondarybg) solid;
+    border-radius: 2pt;
 }
 
 .blog {

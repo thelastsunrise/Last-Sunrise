@@ -16,23 +16,25 @@ const { title, description, altTitle } = Astro.props;
     </header>
 
     <main class="row p-5">
-                <h3>{frontmatter.title}</h3>
-        <p><a href="/shrines/sims">&#8592; Return to Sims Hub</a></p>
-        <p><strong>Published</strong>: {frontmatter.pubDate.toString().slice(0, 10)}</p>
-        <p>{frontmatter.description}</p>
-        {frontmatter.subpoints && frontmatter.subpoints.length > 0 && (
-            <ul>
-            {frontmatter.subpoints.map((point: string) => (
-                <li>{point}</li>
-            ))}
-            </ul>
-        )}
-        <hr/>
+        <h2>{frontmatter.altTitle}</h2>
+        <section class="px-4">
+            <h3>{frontmatter.title}</h3>
+            <p><strong>Published</strong>: {frontmatter.pubDate.toString().slice(0, 10)}</p>
+            <p>{frontmatter.description}</p>
+            {frontmatter.subpoints && frontmatter.subpoints.length > 0 && (
+                <ul>
+                {frontmatter.subpoints.map((point: string) => (
+                    <li>{point}</li>
+                ))}
+                </ul>
+            )}
+            <hr/>
 
-        <slot/>
+            <slot/>
 
-        <hr/>
-        <BlogNextPrevButtons/>
+            <hr/>
+            <BlogNextPrevButtons/>
+        </section>
     </main>
 </div>
 
