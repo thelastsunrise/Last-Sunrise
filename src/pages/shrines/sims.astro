@@ -1,6 +1,5 @@
 ---
-import SectionOneColumn from "../../components/SectionOneColumn.astro";
-import MainLayout from "../../layouts/MainLayout.astro";
+import SimsLayout from "../../layouts/SimsLayout.astro";
 
 import { getCollection } from "astro:content";
 
@@ -9,19 +8,17 @@ const description = "My Sims 4 Legacy Challenge.";
 
 const posts = await getCollection("sims");
 ---
-<MainLayout title={title} description={description}>
-    <SectionOneColumn>
-        Hello this page is so nothingburger right now. It will be less nothingburger soon, probably with some fancy Sims themed CSS too. I just wanted to start uploading some TS4 play session overviews for my friends ^-^
-        <h3>Basilio Legacy</h3>
-        <ol>
-            {posts.map(post => (
-                <li>
-                    <a href={`/shrines/sims/${post.id}`}>{post.data.title}</a>
-                    <ul>
-                        <li>{post.data.description}</li>
-                    </ul>
-                </li>
-            ))}
-        </ol>
-    </SectionOneColumn>
-</MainLayout>
+<SimsLayout title={title} description={description}>
+    Hello this page is so nothingburger right now. It will be less nothingburger soon, probably with some fancy Sims themed CSS too. I just wanted to start uploading some TS4 play session overviews for my friends ^-^
+    <h3>Basilio Legacy</h3>
+    <ol>
+        {posts.map(post => (
+            <li>
+                <a href={`/shrines/sims/${post.id}`}>{post.data.title}</a>
+                <ul>
+                    <li>{post.data.description}</li>
+                </ul>
+            </li>
+        ))}
+    </ol>
+</SimsLayout>
