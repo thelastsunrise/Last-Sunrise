@@ -71,6 +71,7 @@ h2, h3 {
 h2 {
     color: var(--textbold);
     font-weight: 600;
+    margin-bottom: 1rem;
 }
 
 h3 {
