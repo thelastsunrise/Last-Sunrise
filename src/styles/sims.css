@@ -95,8 +95,9 @@ section {
 
 .blog {
     text-align: center;
-    background: var(--primarybg);
-    background: linear-gradient(180deg, rgba(42, 131, 200, 1) 40%, rgba(48, 94, 170, 1) 100%);
+    background: var(--whitebg);
+    background: linear-gradient(180deg, var(--whitebg) 40%, var(--secondarybg));
+    border: var(--secondarybg) solid 2pt;
     padding: 2rem;
     border-radius: 4pt;
     .blogimg {
@@ -106,8 +107,8 @@ section {
     }
     figcaption {
         padding-bottom: 0;
-        color: var(--whitebg);
         font-weight: 500;
         background: none;
+        border: none;
     }
 }
