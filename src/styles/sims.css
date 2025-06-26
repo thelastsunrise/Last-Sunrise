@@ -7,7 +7,7 @@
     --secondarybg: #eeeeee;
     --tertiarybg: #a6b2c2;
     --selected: #229430;
-    --textbold: #1725b1;
+    --textbold: #0e4ead;
     --textdark: #404040;
     --textlight: #308de2;
 }
@@ -27,8 +27,8 @@
 }
 
 @font-face {
-    font-family: "Ferghaus Sans";
-    src: url("/fonts/Ferghaus Sans DEMO.ttf");
+    font-family: "Carrois Gothic SC";
+    src: url("/fonts/carrois-gothic-sc.regular.ttf");
     font-style: normal;
     text-rendering: optimizeLegibility;
 }
@@ -56,11 +56,12 @@ h1 {
 
 a {
     text-decoration: none;
+    color: var(--textlight)
 }
 
 h2, h3, h4 {
-    font-family: "Ferghaus Sans";
-    color:var(--textbold)
+    font-family: "Carrois Gothic SC";
+    color: var(--textbold)
 }
 
 .container {
