@@ -1,13 +1,15 @@
 :root {
     --blue: #3770a8;
-    --otherblue: #248ece;
     --overlay: #0a1c56c8;
     --green: #60b993;
     --highlight: #b4fad5;
     --whitebg: #ffffff;
-    --secondarybg: #ecf6f8;
-    --tertiarybg: #e3e3e2;
-    --text: #164277;
+    --secondarybg: #eeeeee;
+    --tertiarybg: #a6b2c2;
+    --selected: #229430;
+    --textbold: #1725b1;
+    --textdark: #404040;
+    --textlight: #308de2;
 }
 
 @font-face {
@@ -28,14 +30,13 @@ body {
     background: var(--blue);
     background: no-repeat top/100% 750px linear-gradient(180deg, var(--overlay) 0%, rgba(255, 255, 255, 0) 100%),
                 linear-gradient(90deg, var(--blue) 0%, var(--highlight) 50%, var(--green) 100%);
-    color: var(--text)
+    color: var(--textdark)
 }
 
 h1 {
     font-family: "ITC Kabel Std";
     font-size: 72pt;
-    color: var(--otherblue);
-    -webkit-text-stroke: var(--whitebg) 1.5pt;
+    color: var(--whitebg);
 }
 
 a {
@@ -44,6 +45,7 @@ a {
 
 h2, h3, h4 {
     font-family: "Sims Sans Bold";
+    color:var(--textbold)
 }
 
 .container {
