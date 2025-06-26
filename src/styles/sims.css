@@ -26,11 +26,26 @@
     text-rendering: optimizeLegibility;
 }
 
+@font-face {
+    font-family: "Ferghaus Sans";
+    src: url("/fonts/Ferghaus Sans DEMO.ttf");
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("/fonts/Metropolis-Regular.otf");
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
 body {
     background: var(--blue);
     background: no-repeat top/100% 750px linear-gradient(180deg, var(--overlay) 0%, rgba(255, 255, 255, 0) 100%),
                 linear-gradient(90deg, var(--blue) 0%, var(--highlight) 50%, var(--green) 100%);
-    color: var(--textdark)
+    color: var(--textdark);
+    font-family: "Metropolis";
 }
 
 h1 {
@@ -44,7 +59,7 @@ a {
 }
 
 h2, h3, h4 {
-    font-family: "Sims Sans Bold";
+    font-family: "Ferghaus Sans";
     color:var(--textbold)
 }
 
