@@ -124,6 +124,7 @@ body.simslayout {
             padding: 0.25rem;
             color: var(--whitebg);
             border-radius: 4pt;
+            background-color: var(--darkprimarybg);
         }
         *:hover {
             background: var(--primarybg);
