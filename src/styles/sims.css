@@ -52,123 +52,125 @@ body {
     font-family: "Metropolis";
 }
 
-h1 {
-    font-family: "ITC Kabel Std";
-    font-size: 72pt!important;
+.simslayout {
+    h1 {
+        font-family: "ITC Kabel Std";
+        font-size: 72pt;
+        a {
+            color: var(--whitebg);
+        }
+    }
+
     a {
+        text-decoration: none;
+        color: var(--textlight)
+    }
+
+    h2, h3 {
+        font-family: "Carrois Gothic SC";
+        text-align: center;
+    }
+
+    h2 {
+        color: var(--textbold);
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        color: var(--whitebg);
+        background-color: var(--tertiarybg);
+        padding: 0.5rem;
+        margin: 0 -1.5rem 1rem;
+    }
+
+    .nav-link {
         color: var(--whitebg);
     }
-}
 
-a {
-    text-decoration: none;
-    color: var(--textlight)
-}
-
-h2, h3 {
-    font-family: "Carrois Gothic SC";
-    text-align: center;
-}
-
-h2 {
-    color: var(--textbold);
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-h3 {
-    color: var(--whitebg);
-    background-color: var(--tertiarybg);
-    padding: 0.5rem;
-    margin: 0 -1.5rem 1rem;
-}
-
-.nav-link {
-    color: var(--whitebg);
-}
-
-.container {
-    max-width: 1000px;
-}
-
-main {
-    border-radius: 1rem;
-}
-
-section {
-    border: 4pt var(--secondarybg) solid;
-    border-radius: 2pt;
-    background-color: var(--whitebg);
-    p:first-of-type {
-        padding-top: 1rem;
+    .container {
+        max-width: 1000px;
     }
-}
 
-figure {
-    padding: 2rem;
-    border-radius: 4pt;
-}
+    main {
+        border-radius: 1rem;
+    }
 
-hr {
-    border: var(--secondarybg) 2pt solid;
-    margin: 1rem -1.5rem;
-    opacity: 1;
-}
+    section {
+        border: 4pt var(--secondarybg) solid;
+        border-radius: 2pt;
+        background-color: var(--whitebg);
+        p:first-of-type {
+            padding-top: 1rem;
+        }
+    }
 
-.navbuttons {
-    * {
-        padding: 0.25rem;
-        color: var(--whitebg);
+    figure {
+        padding: 2rem;
         border-radius: 4pt;
     }
-    *:hover {
-        background: var(--primarybg);
+
+    hr {
+        border: var(--secondarybg) 2pt solid;
+        margin: 1rem -1.5rem;
+        opacity: 1;
     }
-}
 
-.escapebutton {
-    width: 25px;
-    height: 25px;
-    display: inline-block;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    text-align: center;
-    padding: 0 0;
-    background: var(--whitebg);
-    border-radius: 12px;
-    border: var(--shadow) solid 1pt;
-    color: var(--textdark)
-}
-.escapebutton:hover {
-    background-color: var(--tertiarybg);
-    color: var(--whitebg);
-    border: var(--whitebg) solid 1pt;
-}
+    .navbuttons {
+        * {
+            padding: 0.25rem;
+            color: var(--whitebg);
+            border-radius: 4pt;
+        }
+        *:hover {
+            background: var(--primarybg);
+        }
+    }
 
-.lightgradient {
-    background: var(--whitebg);
-    background: linear-gradient(180deg, var(--whitebg) 40%, var(--secondarybg));
-    border: var(--secondarybg) solid 1pt;
-}
-
-.darkgradient {
-    background: var(--primarybg);
-    background: linear-gradient(180deg, var(--primarybg) 40%, var(--darkprimarybg));
-    border: var(--darkprimarybg) solid 1pt;
-}
-
-.blog {
-    text-align: center;
-    .blogimg {
+    .escapebutton {
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        text-align: center;
+        padding: 0 0;
+        background: var(--whitebg);
+        border-radius: 12px;
         border: var(--shadow) solid 1pt;
-        box-shadow: 0px 2px 7px var(--shadow);
-        max-width: 80%;
+        color: var(--textdark)
     }
-    figcaption {
-        padding-top: 1.5rem;
-        font-weight: 500;
-        background: none;
-        border: none;
+    .escapebutton:hover {
+        background-color: var(--tertiarybg);
+        color: var(--whitebg);
+        border: var(--whitebg) solid 1pt;
+    }
+
+    .lightgradient {
+        background: var(--whitebg);
+        background: linear-gradient(180deg, var(--whitebg) 40%, var(--secondarybg));
+        border: var(--secondarybg) solid 1pt;
+    }
+
+    .darkgradient {
+        background: var(--primarybg);
+        background: linear-gradient(180deg, var(--primarybg) 40%, var(--darkprimarybg));
+        border: var(--darkprimarybg) solid 1pt;
+    }
+
+    .blog {
+        text-align: center;
+        .blogimg {
+            border: var(--shadow) solid 1pt;
+            box-shadow: 0px 2px 7px var(--shadow);
+            max-width: 80%;
+        }
+        figcaption {
+            padding-top: 1.5rem;
+            font-weight: 500;
+            background: none;
+            border: none;
+        }
     }
 }
