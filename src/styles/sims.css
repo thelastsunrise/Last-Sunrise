@@ -179,4 +179,8 @@ body.simslayout {
             border: none;
         }
     }
+
+    .overlayimg {
+        background-color: #030f20ac;
+    }
 }
