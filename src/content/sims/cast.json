@@ -29,6 +29,33 @@
                         ]
                     }
                 ]
+            },
+            {
+                "number": 2,
+                "cast": [
+                    {
+                        "name": "Elmira Basilio",
+                        "gender": "Female",
+                        "pronouns": "she/her",
+                        "role": "Child",
+                        "images": [
+                            {
+                                "youngadultsrc": "/images/shrines/sims/miguel-ya-fullbody.png"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Etan Basilio",
+                        "gender": "Male",
+                        "pronouns": "he/him",
+                        "role": "Child",
+                        "images": [
+                            {
+                                "youngadultsrc": "/images/shrines/sims/miguel-ya-fullbody.png"
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     }
