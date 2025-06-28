@@ -10,13 +10,23 @@
                         "name": "Miguel Basilio",
                         "gender": "Male",
                         "pronouns": "he/him",
-                        "role": "Founder"
+                        "role": "Founder",
+                        "images": [
+                            {
+                                "youngadultsrc": "public/images/shrines/sims/miguel-ya-fullbody.png"
+                            }
+                        ]
                     },
                     {
                         "name": "Salim Basilio",
                         "gender": "Male",
                         "pronouns": "he/him",
-                        "role": "Primary Spouse"
+                        "role": "Primary Spouse",
+                        "images": [
+                            {
+                                "youngadultsrc": "public/images/shrines/sims/miguel-ya-fullbody.png"
+                            }
+                        ]
                     }
                 ]
             }

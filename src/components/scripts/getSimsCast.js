@@ -5,9 +5,9 @@ export async function getSimsCast() {
 
   return sims.flatMap(sim =>
     sim.data.generation.flatMap(gen =>
-      gen.cast.map(member => ({
-        name: member.name,
-        slug: member.name.toLowerCase().replace(" ", "-"),
+      gen.cast.map(char => ({
+        name: char.name,
+        slug: char.name.toLowerCase().replace(" ", "-"),
       }))
     )
   );
