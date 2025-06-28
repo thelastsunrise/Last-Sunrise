@@ -7,6 +7,12 @@ return rss({
     site: context.site,
     items: [
     {
+        title: "3.1.1",
+        description: "Fixed up the half broken Sims page CSS and published a new part of the legacy saga!",
+        pubDate: "2025-06-27",
+        link: "https://lastsunrise.art/shrines/sims/basilio-g2-3/"
+    },
+    {
         title: "3.1.0",
         description: "Made real actual CSS for the Sims shrine, which means we're onto a new major site version :-)",
         pubDate: "2025-06-26",
