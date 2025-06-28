@@ -335,3 +335,10 @@ figcaption.blog {
         background: rgb(from var(--shine) r g b / 50%);
     }
 }
+
+.banner {
+    background-color: var(--glow);
+    border: none;
+    width: 100%;
+    padding: 0.5rem;
+}
