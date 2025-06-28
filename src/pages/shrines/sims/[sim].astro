@@ -1,0 +1,33 @@
+---
+import { getCollection } from "astro:content";
+import SimsLayout from "../../../layouts/SimsLayout.astro";
+
+export async function getStaticPaths() {
+    const sims = await getCollection("simsCast");
+    
+    const paths = sims.flatMap(sim => {
+        return sim.data.generation.flatMap(gen => {
+            return gen.cast.map(char => ({
+                params: { sim: char.name.toLowerCase().replace(" ", "-") },
+                props: {
+                    char,
+                    generation: gen.number
+                }
+            }))
+        })
+    })
+
+    // Okay this code is a lot . note for my future self trying to comprehend this: when accessing deeply nested JSON data you need to explain exactly how to find the data you want via flatmaps
+    // All this function is doing is making a list of paths to generate, returning each layer of data step by step, and then passing the character info props
+
+    return paths;
+}
+
+const { char, generation } = Astro.props;
+---
+<SimsLayout title={char.name}>
+    <ul>
+        <li><strong>Generation {generation}</strong></li>
+        <li><strong>Role: </strong> {char.role}</li>
+    </ul>
+</SimsLayout>
