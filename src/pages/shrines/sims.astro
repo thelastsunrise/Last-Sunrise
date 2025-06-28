@@ -1,5 +1,6 @@
 ---
 import SimsLayout from "../../layouts/SimsLayout.astro";
+import { getSimsCast } from "../../components/scripts/getSimsCast.js"
 
 import { getCollection } from "astro:content";
 
@@ -7,10 +8,22 @@ const title = "The Sims";
 const description = "My Sims 4 Legacy Challenge.";
 
 const posts = await getCollection("sims");
+const sims = await getSimsCast();
 ---
 <SimsLayout title={title} description={description}>
     <p>Hello this page is so nothingburger right now. It will be less nothingburger soon, aside from updating the legacy I want to make a comprehensive mods/cc list and a cast list for the current legacy! And of course the obligatory blathering about why I like the Sims.</p>
     <h3>Basilio Legacy</h3>
+
+    <h4>Cast List</h4>
+    <ul>
+        {sims.map(sim => (
+            <li>
+                <a href={`/shrines/sims/${sim.slug}`}>{sim.name}</a>
+            </li>
+        ))}
+    </ul>
+
+    <h4>The Saga</h4>
     <ol>
         {posts.map(post => (
             <li>
