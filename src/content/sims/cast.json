@@ -11,6 +11,9 @@
                         "gender": "Male",
                         "pronouns": "he/him",
                         "role": "Founder",
+                        "trait1": "Tender",
+                        "trait2": "Joyless",
+                        "trait3": "Sociable",
                         "images": [
                             {
                                 "youngadultsrc": "/images/shrines/sims/miguel-ya-fullbody.png"
@@ -22,9 +25,12 @@
                         "gender": "Male",
                         "pronouns": "he/him",
                         "role": "Primary Spouse",
+                        "trait1": "Creative",
+                        "trait2": "Lazy",
+                        "trait3": "Bookworm",
                         "images": [
                             {
-                                "youngadultsrc": "/images/shrines/sims/miguel-ya-fullbody.png"
+                                "youngadultsrc": "/images/shrines/sims/salmin-ya-fullbody.png"
                             }
                         ]
                     }
@@ -38,6 +44,8 @@
                         "gender": "Female",
                         "pronouns": "she/her",
                         "role": "Child",
+                        "trait1": "Fickle",
+                        "trait2": "Gym Bunny",
                         "images": [
                             {
                                 "youngadultsrc": "/images/shrines/sims/miguel-ya-fullbody.png"
@@ -49,6 +57,8 @@
                         "gender": "Male",
                         "pronouns": "he/him",
                         "role": "Child",
+                        "trait1": "Vegetarian",
+                        "trait2": "Dog Lover",
                         "images": [
                             {
                                 "youngadultsrc": "/images/shrines/sims/miguel-ya-fullbody.png"
