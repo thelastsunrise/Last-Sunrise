@@ -1,6 +1,6 @@
 {
     "legacy": {
-        "family-name": "Basilio",
+        "familyid": "Basilio",
         "game": "Sims 4",
         "generation": [
             {
@@ -19,9 +19,6 @@
                         "role": "Primary Spouse"
                     }
                 ]
-            },
-            {
-                "number": 2
             }
         ]
     }
