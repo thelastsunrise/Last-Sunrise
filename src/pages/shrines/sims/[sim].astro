@@ -30,5 +30,11 @@ const { char, generation } = Astro.props;
     <ul>
         <li><strong>Generation {generation}</strong></li>
         <li><strong>Role: </strong> {char.role}</li>
+        <li><strong>Traits:</strong></li>
+        <ul>
+            {char.trait1 && <li>{char.trait1}</li>}
+            {char.trait2 && <li>{char.trait2}</li>}
+            {char.trait3 && <li>{char.trait3}</li>}
+        </ul>
     </ul>
 </SimsLayout>
