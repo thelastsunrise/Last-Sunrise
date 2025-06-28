@@ -1,0 +1,28 @@
+{
+    "legacy": {
+        "family-name": "Basilio",
+        "game": "Sims 4",
+        "generation": [
+            {
+                "number": 1,
+                "cast": [
+                    {
+                        "name": "Miguel Basilio",
+                        "gender": "Male",
+                        "pronouns": "he/him",
+                        "role": "Founder"
+                    },
+                    {
+                        "name": "Salim Basilio",
+                        "gender": "Male",
+                        "pronouns": "he/him",
+                        "role": "Primary Spouse"
+                    }
+                ]
+            },
+            {
+                "number": 2
+            }
+        ]
+    }
+}
