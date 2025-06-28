@@ -26,6 +26,7 @@ export async function getStaticPaths() {
 const { char, generation } = Astro.props;
 ---
 <SimsLayout title={char.name}>
+    <img width="500" src={char.images[0].youngadultsrc}></img>
     <ul>
         <li><strong>Generation {generation}</strong></li>
         <li><strong>Role: </strong> {char.role}</li>

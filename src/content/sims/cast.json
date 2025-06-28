@@ -13,7 +13,7 @@
                         "role": "Founder",
                         "images": [
                             {
-                                "youngadultsrc": "public/images/shrines/sims/miguel-ya-fullbody.png"
+                                "youngadultsrc": "/images/shrines/sims/miguel-ya-fullbody.png"
                             }
                         ]
                     },
@@ -24,7 +24,7 @@
                         "role": "Primary Spouse",
                         "images": [
                             {
-                                "youngadultsrc": "public/images/shrines/sims/miguel-ya-fullbody.png"
+                                "youngadultsrc": "/images/shrines/sims/miguel-ya-fullbody.png"
                             }
                         ]
                     }
