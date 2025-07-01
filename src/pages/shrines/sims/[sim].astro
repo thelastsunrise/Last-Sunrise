@@ -29,26 +29,23 @@ const { char, generation } = Astro.props;
     <div class="row">
         <div class="col-6">
             <img id="referenceImage" width="100" src={char.images[0].youngadultsrc}></img>
-            
+
             {char.images[0].teenagesrc && <button>Teenager</button>}
             {char.images[0].youngadultsrc && <button>Young Adult</button>}
             {char.images[0].matureadultsrc && <button>Adult</button>}
         </div>
 
         <div class="col-6">
-
+            <ul>
+                <li><strong>Generation {generation}</strong></li>
+                <li><strong>Role: </strong> {char.role}</li>
+                <li><strong>Traits:</strong></li>
+                <ul>
+                    {char.trait1 && <li>{char.trait1}</li>}
+                    {char.trait2 && <li>{char.trait2}</li>}
+                    {char.trait3 && <li>{char.trait3}</li>}
+                </ul>
+            </ul>
         </div>
     </div>
-
-    
-    <ul>
-        <li><strong>Generation {generation}</strong></li>
-        <li><strong>Role: </strong> {char.role}</li>
-        <li><strong>Traits:</strong></li>
-        <ul>
-            {char.trait1 && <li>{char.trait1}</li>}
-            {char.trait2 && <li>{char.trait2}</li>}
-            {char.trait3 && <li>{char.trait3}</li>}
-        </ul>
-    </ul>
 </SimsLayout>
