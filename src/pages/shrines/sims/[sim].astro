@@ -28,11 +28,15 @@ const { char, generation } = Astro.props;
 <SimsLayout title={char.name}>
     <div class="row">
         <div class="col-12 col-lg-6">
-            <img id="referenceImage" width="100" src={char.images[0].youngadultsrc}></img>
+            <img id="referenceImage" width="100" src={char.images[0].youngadultsrc}
+                data-tn={char.images[0].teenagesrc}
+                data-ya={char.images[0].youngadultsrc}
+                data-ma={char.images[0].matureadultsrc}
+            ></img>
 
-            {char.images[0].teenagesrc && <button>Teenager</button>}
-            {char.images[0].youngadultsrc && <button>Young Adult</button>}
-            {char.images[0].matureadultsrc && <button>Adult</button>}
+            {char.images[0].teenagesrc && <button onclick="changeImage('tn')">Teenager</button>}
+            {char.images[0].youngadultsrc && <button onclick="changeImage('ya')">Young Adult</button>}
+            {char.images[0].matureadultsrc && <button onclick="changeImage('ma')">Adult</button>}
         </div>
 
         <div class="col-12 col-lg-6">
@@ -49,3 +53,11 @@ const { char, generation } = Astro.props;
         </div>
     </div>
 </SimsLayout>
+
+<script is:inline>
+    // changes image src by way of the data in the actual image element
+    function changeImage(age) {
+        const image = document.getElementById("referenceImage");
+        image.src = image.dataset[age];
+    }
+</script>
