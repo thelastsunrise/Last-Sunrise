@@ -8,9 +8,9 @@ return rss({
     items: [
     {
         title: "3.1.2",
-        description: "Some QOL changes for the sims section, including clickable images that don't break.",
-        pubDate: "2025-06-28",
-        link: "https://lastsunrise.art/shrines/sims/"
+        description: "Published a new part to the Basilio legacy saga! Some QOL changes for the Sims section as well, including clickable images that don't break and the most rudementary of cast pages.",
+        pubDate: "2025-07-01",
+        link: "https://lastsunrise.art/shrines/sims/basilio-g2-4/"
     },
     {
         title: "3.1.1",
