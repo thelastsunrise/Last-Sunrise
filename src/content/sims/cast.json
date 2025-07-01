@@ -31,8 +31,8 @@
                         "trait3": "Bookworm",
                         "images": [
                             {
-                                "youngadultsrc": "/images/shrines/sims/salmin-ya-fullbody.png",
-                                "matureadultsrc": "/images/shrines/sims/salmin-ma-fullbody.png"
+                                "youngadultsrc": "/images/shrines/sims/salim-ya-fullbody.png",
+                                "matureadultsrc": "/images/shrines/sims/salim-ma-fullbody.png"
                             }
                         ]
                     }
@@ -51,8 +51,7 @@
                         "trait3": "Self Absorbed",
                         "images": [
                             {
-                                "teenagesrc": "/images/shrines/sims/elmira-tn-fullbody.png",
-                                "youngadultsrc": "/images/shrines/sims/elmira-ya-fullbody.png"
+                                "teenagesrc": "/images/shrines/sims/elmira-tn-fullbody.png"
                             }
                         ]
                     },
@@ -66,8 +65,7 @@
                         "trait3": "Coward",
                         "images": [
                             {
-                                "teenagesrc": "/images/shrines/sims/etan-tn-fullbody.png",
-                                "youngadultsrc": "/images/shrines/sims/etan-ya-fullbody.png"
+                                "teenagesrc": "/images/shrines/sims/etan-tn-fullbody.png"
                             }
                         ]
                     }
