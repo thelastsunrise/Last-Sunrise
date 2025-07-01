@@ -24,11 +24,16 @@ export async function getStaticPaths() {
 }
 
 const { char, generation } = Astro.props;
+
+const latestRef = 
+    char.images[0].matureadultsrc ||
+    char.images[0].youngadultsrc ||
+    char.images[0].teenagesrc;
 ---
 <SimsLayout title={char.name}>
     <div class="row">
         <div class="col-12 col-lg-6">
-            <img id="referenceImage" width="100" src={char.images[0].youngadultsrc}
+            <img id="referenceImage" height="500" src={latestRef}
                 data-tn={char.images[0].teenagesrc}
                 data-ya={char.images[0].youngadultsrc}
                 data-ma={char.images[0].matureadultsrc}
