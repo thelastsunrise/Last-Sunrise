@@ -27,7 +27,7 @@ const { char, generation } = Astro.props;
 ---
 <SimsLayout title={char.name}>
     <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-lg-6">
             <img id="referenceImage" width="100" src={char.images[0].youngadultsrc}></img>
 
             {char.images[0].teenagesrc && <button>Teenager</button>}
@@ -35,7 +35,7 @@ const { char, generation } = Astro.props;
             {char.images[0].matureadultsrc && <button>Adult</button>}
         </div>
 
-        <div class="col-6">
+        <div class="col-12 col-lg-6">
             <ul>
                 <li><strong>Generation {generation}</strong></li>
                 <li><strong>Role: </strong> {char.role}</li>
