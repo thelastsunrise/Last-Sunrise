@@ -16,7 +16,8 @@
                         "trait3": "Sociable",
                         "images": [
                             {
-                                "youngadultsrc": "/images/shrines/sims/miguel-ya-fullbody.png"
+                                "youngadultsrc": "/images/shrines/sims/miguel-ya-fullbody.png",
+                                "matureadultsrc": "/images/shrines/sims/miguel-ma-fullbody.png"
                             }
                         ]
                     },
@@ -30,7 +31,8 @@
                         "trait3": "Bookworm",
                         "images": [
                             {
-                                "youngadultsrc": "/images/shrines/sims/salmin-ya-fullbody.png"
+                                "youngadultsrc": "/images/shrines/sims/salmin-ya-fullbody.png",
+                                "matureadultsrc": "/images/shrines/sims/salmin-ma-fullbody.png"
                             }
                         ]
                     }
@@ -46,9 +48,11 @@
                         "role": "Child",
                         "trait1": "Fickle",
                         "trait2": "Gym Bunny",
+                        "trait3": "Self Absorbed",
                         "images": [
                             {
-                                "youngadultsrc": "/images/shrines/sims/miguel-ya-fullbody.png"
+                                "teenagesrc": "/images/shrines/sims/elmira-tn-fullbody.png",
+                                "youngadultsrc": "/images/shrines/sims/elmira-ya-fullbody.png"
                             }
                         ]
                     },
@@ -59,9 +63,11 @@
                         "role": "Child",
                         "trait1": "Vegetarian",
                         "trait2": "Dog Lover",
+                        "trait3": "Coward",
                         "images": [
                             {
-                                "youngadultsrc": "/images/shrines/sims/miguel-ya-fullbody.png"
+                                "teenagesrc": "/images/shrines/sims/etan-tn-fullbody.png",
+                                "youngadultsrc": "/images/shrines/sims/etan-ya-fullbody.png"
                             }
                         ]
                     }
