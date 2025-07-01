@@ -86,6 +86,12 @@ body.simslayout {
         }
     }
 
+    .dropdown-menu {
+        .nav-link {
+            color: var(--textbold)
+        }
+    }
+
     .container {
         max-width: 1000px;
     }
