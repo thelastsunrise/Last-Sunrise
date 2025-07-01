@@ -132,6 +132,18 @@ body.simslayout {
         }
     }
 
+    button {
+        padding: 0.25rem;
+        color: var(--whitebg);
+        border: none;
+        border-radius: 4pt;
+        background-color: var(--darkprimarybg);
+    }
+    
+    button:hover {
+        background: var(--primarybg);
+    }
+
     .escapebutton {
         width: 25px;
         height: 25px;
