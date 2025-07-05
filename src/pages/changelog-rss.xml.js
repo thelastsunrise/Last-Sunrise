@@ -8,7 +8,7 @@ return rss({
     items: [
     {
         title: "3.1.3",
-        description: "Uploaded a new part to the Basilio legacy blog.",
+        description: "Uploaded a new part to the Basilio legacy blog. Also fixed the sorting on the sims page.",
         pubDate: "2025-07-05",
         link: "https://lastsunrise.art/shrines/sims/basilio-g2-5/"
     },
