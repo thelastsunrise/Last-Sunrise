@@ -7,6 +7,12 @@ return rss({
     site: context.site,
     items: [
     {
+        title: "3.1.3",
+        description: "Uploaded a new part to the Basilio legacy blog.",
+        pubDate: "2025-07-05",
+        link: "https://lastsunrise.art/shrines/sims/basilio-g2-5/"
+    },
+    {
         title: "3.1.2",
         description: "Published a new part to the Basilio legacy saga! Some QOL changes for the Sims section as well, including clickable images that don't break and the most rudementary of cast pages. Like seriously they do NOT look good right now.",
         pubDate: "2025-07-01",
