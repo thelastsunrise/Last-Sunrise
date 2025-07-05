@@ -7,7 +7,9 @@ import { getCollection } from "astro:content";
 const title = "The Sims";
 const description = "My Sims 4 Legacy Challenge.";
 
-const posts = await getCollection("sims");
+const posts = (await getCollection("sims")).sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
 const sims = await getSimsCast();
 ---
 <SimsLayout title={title} description={description}>
