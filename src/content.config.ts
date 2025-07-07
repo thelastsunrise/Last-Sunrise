@@ -37,6 +37,7 @@ const simsCast = defineCollection({
                             name: z.string(),
                             gender: z.string(),
                             pronouns: z.string(),
+                            sexuality: z.string().optional(),
                             role: z.string(),
                             traits: z.array(z.string()).min(1),
                             images: z.array( 
@@ -45,7 +46,15 @@ const simsCast = defineCollection({
                                     youngadultsrc: z.string().optional(),
                                     matureadultsrc: z.string().optional()
                                 })
-                            )
+                            ),
+                            relationships: z.array(
+                                z.object({
+                                    parents: z.array(z.string()).optional(),
+                                    siblings: z.array(z.string()).optional(),
+                                    spouses: z.array(z.string()).optional(),
+                                    children: z.array(z.string()).optional()
+                                }).optional()
+                            ).optional()
                         })
                     )
                 })

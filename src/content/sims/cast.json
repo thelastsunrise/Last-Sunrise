@@ -10,6 +10,7 @@
                         "name": "Miguel Basilio",
                         "gender": "Male",
                         "pronouns": "he/him",
+                        "sexuality": "Homosexual",
                         "role": "Founder",
                         "traits": [
                             "Tender",
@@ -21,12 +22,24 @@
                                 "youngadultsrc": "/images/shrines/sims/miguel-ya-fullbody.png",
                                 "matureadultsrc": "/images/shrines/sims/miguel-ma-fullbody.png"
                             }
+                        ],
+                        "relationships": [
+                            {
+                                "spouses": [
+                                    "Salim Basilio"
+                                ],
+                                "children": [
+                                    "Elmira Basilio",
+                                    "Etan Basilio"
+                                ]
+                            }
                         ]
                     },
                     {
                         "name": "Salim Basilio",
                         "gender": "Male",
                         "pronouns": "he/him",
+                        "sexuality": "Bisexual",
                         "role": "Primary Spouse",
                         "traits": [
                             "Creative",
@@ -37,6 +50,17 @@
                             {
                                 "youngadultsrc": "/images/shrines/sims/salim-ya-fullbody.png",
                                 "matureadultsrc": "/images/shrines/sims/salim-ma-fullbody.png"
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "spouses": [
+                                    "Miguel Basilio"
+                                ],
+                                "children": [
+                                    "Elmira Basilio",
+                                    "Etan Basilio"
+                                ]
                             }
                         ]
                     }
@@ -49,6 +73,7 @@
                         "name": "Elmira Basilio",
                         "gender": "Female",
                         "pronouns": "she/her",
+                        "sexuality": "Greyromantic Heterosexual",
                         "role": "Child",
                         "traits": [
                             "Cautious (Infant)",
@@ -62,12 +87,23 @@
                                 "teenagesrc": "/images/shrines/sims/elmira-tn-fullbody.png",
                                 "youngadultsrc": "/images/shrines/sims/elmira-ya-fullbody.png"
                             }
+                        ],
+                        "relationships": [
+                            {
+                                "parents": [
+                                    "Miguel Basilio", "Salim Basilio"
+                                ],
+                                "siblings": [
+                                    "Etan Basilio"
+                                ]
+                            }
                         ]
                     },
                     {
                         "name": "Etan Basilio",
-                        "gender": "Nonbinary",
+                        "gender": "Nonbinary (masc)",
                         "pronouns": "they/them",
+                        "sexuality": "Heterosexual",
                         "role": "Child",
                         "traits": [
                             "Cautious (Infant)",
@@ -80,6 +116,16 @@
                             {
                                 "teenagesrc": "/images/shrines/sims/etan-tn-fullbody.png",
                                 "youngadultsrc": "/images/shrines/sims/etan-ya-fullbody.png"
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "parents": [
+                                    "Miguel Basilio", "Salim Basilio"
+                                ],
+                                "siblings": [
+                                    "Elmira Basilio"
+                                ]
                             }
                         ]
                     }
