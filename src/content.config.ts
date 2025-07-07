@@ -53,7 +53,13 @@ const simsCast = defineCollection({
                                     relation: z.string(),
                                     link: z.string()
                                 }).optional()
-                            ).min(1)
+                            ).min(1),
+                            blurbs: z.array(
+                                z.object({
+                                    section: z.string(),
+                                    text: z.string()
+                                }).optional()
+                            ).optional()
                         })
                     )
                 })

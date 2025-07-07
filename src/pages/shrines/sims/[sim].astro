@@ -65,6 +65,13 @@ const latestRef =
                     </ul>
             </ul>
         </div>
+
+        <div class="col-12 pt-4">
+            {char.blurbs.map(blurb =>
+                <h3>{blurb.section}</h3>
+                <p>{blurb.text}</p>
+            )}
+        </div>
     </div>
 </SimsLayout>
 

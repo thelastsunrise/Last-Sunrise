@@ -50,6 +50,12 @@
                             {"name": "Miguel Basilio", "relation": "Husband", "link": "miguel-basilio"},
                             {"name": "Elmira Basilio", "relation": "Daughter", "link": "elmira-basilio"},
                             {"name": "Etan Basilio", "relation": "Child", "link": "etan-basilio"}
+                        ],
+                        "blurbs": [
+                            {"section": "Biography", "text": 
+                            "Salim has grown up in the Arts Quarter, surrounded by poets, musicians and artists. He's determined to become a great writer… right after he's finished that book. Oh, and that video game he needs to beat. Come to think of it, he needs a nap too. (via The Sims 4)"},
+                            {"section": "Young Adult", "text": 
+                            "Salim joined the Basilio family in a flash marriage with Miguel (literally the day they met, when he showed up on Miguel's doorstep stating he's his secret admirer). Bringing all of his savings with him and singlehandedly saving Miguel from poverty, will their relationship prove itself to last? Or will Salim realize he's made a huge mistake settling down so quickly?"}
                         ]
                     }
                 ]
