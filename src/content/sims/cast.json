@@ -11,9 +11,11 @@
                         "gender": "Male",
                         "pronouns": "he/him",
                         "role": "Founder",
-                        "trait1": "Tender",
-                        "trait2": "Joyless",
-                        "trait3": "Sociable",
+                        "traits": [
+                            "Tender",
+                            "Joyless",
+                            "Sociable"
+                        ],
                         "images": [
                             {
                                 "youngadultsrc": "/images/shrines/sims/miguel-ya-fullbody.png",
@@ -26,9 +28,11 @@
                         "gender": "Male",
                         "pronouns": "he/him",
                         "role": "Primary Spouse",
-                        "trait1": "Creative",
-                        "trait2": "Lazy",
-                        "trait3": "Bookworm",
+                        "traits": [
+                            "Creative",
+                            "Lazy",
+                            "Bookworm"
+                        ],
                         "images": [
                             {
                                 "youngadultsrc": "/images/shrines/sims/salim-ya-fullbody.png",
@@ -46,9 +50,13 @@
                         "gender": "Female",
                         "pronouns": "she/her",
                         "role": "Child",
-                        "trait1": "Fickle",
-                        "trait2": "Gym Bunny",
-                        "trait3": "Self Absorbed",
+                        "traits": [
+                            "Cautious (Infant)",
+                            "Fussy (Toddler)",
+                            "Fickle",
+                            "Gym Bunny",
+                            "Self-absorbed"
+                        ],
                         "images": [
                             {
                                 "teenagesrc": "/images/shrines/sims/elmira-tn-fullbody.png",
@@ -58,12 +66,16 @@
                     },
                     {
                         "name": "Etan Basilio",
-                        "gender": "Male",
+                        "gender": "Nonbinary",
                         "pronouns": "they/them",
                         "role": "Child",
-                        "trait1": "Vegetarian",
-                        "trait2": "Dog Lover",
-                        "trait3": "Coward",
+                        "traits": [
+                            "Cautious (Infant)",
+                            "Clingy (Toddler)",
+                            "Vegetarian",
+                            "Dog Lover",
+                            "Coward"
+                        ],
                         "images": [
                             {
                                 "teenagesrc": "/images/shrines/sims/etan-tn-fullbody.png",
