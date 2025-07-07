@@ -51,21 +51,23 @@
                         "trait3": "Self Absorbed",
                         "images": [
                             {
-                                "teenagesrc": "/images/shrines/sims/elmira-tn-fullbody.png"
+                                "teenagesrc": "/images/shrines/sims/elmira-tn-fullbody.png",
+                                "youngadultsrc": "/images/shrines/sims/elmira-ya-fullbody.png"
                             }
                         ]
                     },
                     {
                         "name": "Etan Basilio",
                         "gender": "Male",
-                        "pronouns": "he/him",
+                        "pronouns": "they/them",
                         "role": "Child",
                         "trait1": "Vegetarian",
                         "trait2": "Dog Lover",
                         "trait3": "Coward",
                         "images": [
                             {
-                                "teenagesrc": "/images/shrines/sims/etan-tn-fullbody.png"
+                                "teenagesrc": "/images/shrines/sims/etan-tn-fullbody.png",
+                                "youngadultsrc": "/images/shrines/sims/etan-ya-fullbody.png"
                             }
                         ]
                     }
