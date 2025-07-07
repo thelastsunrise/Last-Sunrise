@@ -24,15 +24,9 @@
                             }
                         ],
                         "relationships": [
-                            {
-                                "spouses": [
-                                    "Salim Basilio"
-                                ],
-                                "children": [
-                                    "Elmira Basilio",
-                                    "Etan Basilio"
-                                ]
-                            }
+                            {"name": "Salim Basilio", "relation": "Husband", "link": "salim-basilio"},
+                            {"name": "Elmira Basilio", "relation": "Daughter", "link": "elmira-basilio"},
+                            {"name": "Etan Basilio", "relation": "Child", "link": "etan-basilio"}
                         ]
                     },
                     {
@@ -53,15 +47,9 @@
                             }
                         ],
                         "relationships": [
-                            {
-                                "spouses": [
-                                    "Miguel Basilio"
-                                ],
-                                "children": [
-                                    "Elmira Basilio",
-                                    "Etan Basilio"
-                                ]
-                            }
+                            {"name": "Miguel Basilio", "relation": "Husband", "link": "miguel-basilio"},
+                            {"name": "Elmira Basilio", "relation": "Daughter", "link": "elmira-basilio"},
+                            {"name": "Etan Basilio", "relation": "Child", "link": "etan-basilio"}
                         ]
                     }
                 ]
@@ -89,14 +77,9 @@
                             }
                         ],
                         "relationships": [
-                            {
-                                "parents": [
-                                    "Miguel Basilio", "Salim Basilio"
-                                ],
-                                "siblings": [
-                                    "Etan Basilio"
-                                ]
-                            }
+                            {"name": "Miguel Basilio", "relation": "Father", "link": "miguel-basilio"},
+                            {"name": "Salim Basilio", "relation": "Father", "link": "salim-basilio"},
+                            {"name": "Etan Basilio", "relation": "Twin", "link": "etan-basilio"}
                         ]
                     },
                     {
@@ -119,14 +102,9 @@
                             }
                         ],
                         "relationships": [
-                            {
-                                "parents": [
-                                    "Miguel Basilio", "Salim Basilio"
-                                ],
-                                "siblings": [
-                                    "Elmira Basilio"
-                                ]
-                            }
+                            {"name": "Miguel Basilio", "relation": "Father", "link": "miguel-basilio"},
+                            {"name": "Salim Basilio", "relation": "Father", "link": "salim-basilio"},
+                            {"name": "Elmira Basilio", "relation": "Twin", "link": "elmira-basilio"}
                         ]
                     }
                 ]

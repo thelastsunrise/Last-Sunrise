@@ -49,12 +49,11 @@ const simsCast = defineCollection({
                             ),
                             relationships: z.array(
                                 z.object({
-                                    parents: z.array(z.string()).optional(),
-                                    siblings: z.array(z.string()).optional(),
-                                    spouses: z.array(z.string()).optional(),
-                                    children: z.array(z.string()).optional()
+                                    name: z.string(),
+                                    relation: z.string(),
+                                    link: z.string()
                                 }).optional()
-                            ).optional()
+                            ).min(1)
                         })
                     )
                 })

@@ -57,6 +57,12 @@ const latestRef =
                             <li>{trait}</li>
                         )}
                     </ul>
+                <li><strong>Relatives:</strong></li>
+                    <ul>
+                        {char.relationships.map(rel =>
+                            <li><a href={rel.link}>{rel.name}</a> ({rel.relation})</li>
+                        )}
+                    </ul>
             </ul>
         </div>
     </div>
