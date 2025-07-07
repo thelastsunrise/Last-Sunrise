@@ -7,6 +7,12 @@ return rss({
     site: context.site,
     items: [
     {
+        title: "3.1.4",
+        description: "Uploaded a new part to the Basilio legacy blog. Otherwise, added YA art for Etan and Elmira's character pages, and gave each page a relationship section and little blurbs. The character pages are still VERY unfinished.",
+        pubDate: "2025-07-07",
+        link: "https://lastsunrise.art/shrines/sims/basilio-g2-6/"
+    },
+    {
         title: "3.1.3",
         description: "Uploaded a new part to the Basilio legacy blog. Also fixed the sorting on the sims page.",
         pubDate: "2025-07-05",
