@@ -38,7 +38,7 @@ const simsCast = defineCollection({
                             gender: z.string(),
                             pronouns: z.string(),
                             role: z.string(),
-                            traits: z.array(z.string()),
+                            traits: z.array(z.string()).min(1),
                             images: z.array( 
                                 z.object({
                                     teenagesrc: z.string().optional(),

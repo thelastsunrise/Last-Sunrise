@@ -52,7 +52,11 @@ const latestRef =
                 <li><strong>Generation {generation}</strong></li>
                 <li><strong>Role: </strong> {char.role}</li>
                 <li><strong>Traits:</strong></li>
-                
+                    <ul>
+                        {char.traits.map(trait =>
+                            <li>{trait}</li>
+                        )}
+                    </ul>
             </ul>
         </div>
     </div>
