@@ -7,6 +7,12 @@ return rss({
     site: context.site,
     items: [
     {
+        title: "3.1.5",
+        description: "Published a new part to the Basilio legacy blog! I also wrote a proper disclaimer regarding the use of pronouns on Etan's page.",
+        pubDate: "2025-07-08",
+        link: "https://lastsunrise.art/shrines/sims/basilio-g2-6"
+    },
+    {
         title: "3.1.4",
         description: "Added YA art for Etan and Elmira's character pages, and gave each page a relationship section and little blurbs! The character pages are still VERY unfinished, but are at least presentable now :-)",
         pubDate: "2025-07-07",
