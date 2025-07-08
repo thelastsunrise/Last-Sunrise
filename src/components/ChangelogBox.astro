@@ -5,7 +5,9 @@ import MainLayout from "../layouts/MainLayout.astro";
 import SectionOneColumn from "../components/SectionOneColumn.astro";
 
 const filename = "changelog-rss.xml";
-const siteURL = "https://lastsunrise.art";
+const siteURL = import.meta.env.DEV
+    ? "http://localhost:4321/dist/"
+    : "https://lastsunrise.art";
 let changelogEntries = [];
 
 const title = "Changelog";
