@@ -109,6 +109,7 @@
                     {
                         "name": "Etan Basilio",
                         "gender": "Nonbinary (masc)",
+                        "isTrans": true,
                         "pronouns": "they/them",
                         "sexuality": "Heterosexual",
                         "role": "Child",
