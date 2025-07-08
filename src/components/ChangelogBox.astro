@@ -6,6 +6,7 @@ import SectionOneColumn from "../components/SectionOneColumn.astro";
 
 const filename = "changelog-rss.xml";
 const siteURL = "http://localhost:4321";
+const liveURL = Astro.site
 let changelogEntries = [];
 
 const title = "Changelog";
@@ -27,4 +28,5 @@ try {
             <p>{entry.description && entry.description[0] ? entry.description[0] : 'No Description'}</p>
         </li>
     ))}
+    <p><a href={`${liveURL}${filename}`}>View older changes...</a></p>
 </ul>
