@@ -32,22 +32,6 @@ jobs:
           localDir: "dist"
           remoteDir: "/home/lastsunrise/htdocs/lastsunrise.art/"
 
-      # TO PREVENT DOUBLE PUSHES
-      - name: Wait a sec
-        run: sleep 15
-      
-      - name: Rebuild site
-        run: npm run build
-
-      - name: Re-upload sitemap & index pages
-        uses: wangyucode/sftp-upload-action@v2.0.4
-        with:
-          host: "lastsunrise.art"
-          username: "lastsunrise"
-          password: ${{ secrets.SFTP_PASSWORD }}
-          localDir: "dist/index.html,dist/sitemap/index.html"
-          remoteDir: "/home/lastsunrise/htdocs/lastsunrise.art/"
-
       - name: Add Redirect to HTML Files
         run: |
           for file in $(find dist -name '*.html'); do
