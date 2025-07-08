@@ -8,7 +8,7 @@ return rss({
     items: [
     {
         title: "3.1.5",
-        description: "Published a new part to the Basilio legacy blog! I also wrote a proper disclaimer regarding the use of pronouns on Etan's page.",
+        description: "Published a new part to the Basilio legacy blog! I also wrote a proper disclaimer regarding the use of pronouns on Etan's page, and added a link to the full changelog on the index.",
         pubDate: "2025-07-08",
         link: "https://lastsunrise.art/shrines/sims/basilio-g2-6"
     },
