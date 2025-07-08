@@ -96,6 +96,14 @@
                             {"name": "Miguel Basilio", "relation": "Father", "link": "miguel-basilio"},
                             {"name": "Salim Basilio", "relation": "Father", "link": "salim-basilio"},
                             {"name": "Etan Basilio", "relation": "Twin", "link": "etan-basilio"}
+                        ],
+                        "blurbs": [
+                            {"section": "Growing Up", "text": 
+                            "Elmira was always hard to please, even from the moment she was born. No amount of playtime was ever enough--at least until she decided something else was dire enough to beg for. She loved the color pink, wearing whatever cute outfits her nannies (and more rarely her fathers) cobbled together for her, and splashing paint around the arts and crafts table in her nursery and later bedroom. As soon as she started school, it became obvious that she inherited Miguel's freakishly social tendencies, and would often be seen with a small crowd of adoring friends (and fans) trailing after her from school or Girl Scouts. No matter what, Etan was always her best friend forever when asked about it."},
+                            {"section": "Teenage Years", "text": 
+                            "Elmira didn't care at all about getting good grades or submitting the perfect assignment like her twin brother did. She was much more preoccupied with chasing boys (for the fun of it, not even because she liked them) and making the biggest friend network she possibly could. She loved sneaking off to college parties (something her dads were resigned to letting her do, since she seemed to stay safe) and throwing her own at every chance she got. High school was pretty great for Elmira, less because it was her peak, and more because it was the calm before the storm."},
+                            {"section": "Young Adulthood", "text": 
+                            "Pretty soon after she graduated, Elmira and Etan realized their childhood wasn't that great...at all. Not for any lack of effort on their dads' parts, but because they were always out of the house working on bigger things. At least they had a big house with four walls, but how great was that really if the second they became adults marked the beginning of a slough of mental health issues and realizations about their dads. At least Elmira had Cupid's Corner and her gym job to distract her..."}
                         ]
                     },
                     {
@@ -121,6 +129,14 @@
                             {"name": "Miguel Basilio", "relation": "Father", "link": "miguel-basilio"},
                             {"name": "Salim Basilio", "relation": "Father", "link": "salim-basilio"},
                             {"name": "Elmira Basilio", "relation": "Twin", "link": "elmira-basilio"}
+                        ],
+                        "blurbs": [
+                            {"section": "Growing Up", "text": 
+                            "Etan was always his twin Elmira's opposite, where she was fussy as a babe, he was clingy and quiet. He was often content playing around with wooden shapes and trying to read books inside their daycare. He loved the color blue, and happily wore whatever was put onto him since it meant a little bit of extra love that day. As soon as he started school he excelled, spending time at home experimenting with his lab table instead of an actual extracuricular (a waste of time, according to him). He was completely happy without a vast social life, after all, he had his BFF Elmira by his side!"},
+                            {"section": "Teenage Years", "text": 
+                            "Etan excelled in high school, being offered an early graduation as soon as he finished his freshman year by the school's principal. His family could not have been more proud and supportive of him as he spent this time off waiting to hear back from the various scholarships and universities he applied to. He tinkered with any and all of the equipment around the home and even built a functional spaceship. Though he never could find anyone to use it (and was much too scared to himself), as he started studying biology at Foxbury."},
+                            {"section": "Young Adulthood", "text": 
+                            "College life was not for Etan, something he couldn't understand because education came so easily for him before. Elmira encouraged him to talk to a therapist before another D made him completely break down, where he was diagnosed with Borderline Personality Disorder and was told that his dads were actually neglectful, whether maliciously or not. Struggling desperately to reconcile with the fact that he was burnt out, he adopted an emotional support dog, a Saint Bernard named Bailey, and took some time off at home, where he discovered a love for veterinary work."}
                         ]
                     }
                 ]
