@@ -60,7 +60,7 @@ const latestRef =
                 <li><strong>Relatives:</strong></li>
                     <ul>
                         {char.relationships.map(rel =>
-                            <li><a href={rel.link}>{rel.name}</a> ({rel.relation})</li>
+                            <li><a href={`/shrines/sims/${rel.link}`}>{rel.name}</a> ({rel.relation})</li>
                         )}
                     </ul>
             </ul>
