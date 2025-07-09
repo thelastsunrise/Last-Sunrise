@@ -7,6 +7,12 @@ return rss({
     site: context.site,
     items: [
     {
+        title: "3.1.6",
+        description: "Started sprucing up the Sims homepage, and made an actual legacy hub for the Basilios.",
+        pubDate: "2025-07-09",
+        link: "https://lastsunrise.art/shrines/sims/basilio-legacy"
+    },
+    {
         title: "3.1.5",
         description: "Published a new part to the Basilio legacy blog! I also wrote a proper disclaimer regarding the use of pronouns on Etan's page, and added a link to the full changelog on the index.",
         pubDate: "2025-07-08",
