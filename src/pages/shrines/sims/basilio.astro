@@ -20,14 +20,14 @@ const sims = await getSimsCast();
         <li><strong>Bloodline law: Strict Traditional </strong>- To be eligible to be named heir, a child must be naturally born from their previous-generation parents and be able to trace an unbroken bloodline back to the founder. Adopted children may never be named heir.</li>
         <li><strong>Heir law: Exemplar (modified) </strong>- At the beginning of the challenge, name a single trait. This trait must be one of your founder’s three traits. Any eligible heir that has this trait will gain the title of heir. If a single generation has no children with this trait follow the First Born rule. If more than one child has the Exemplar trait then the oldest child WITH the trait will be the heir.</li>
         <li><strong>Species law: Tolerant </strong>- The species of the child has no impact on their eligibility for heir status.</li>
-        <li><strong>Exemplar trait: Purple Eyes </strong>- Where the "modified" part of the Exemplar rule comes in, instead of an actual playable trait, children must have purple eyes to be considered heir.</li>
+        <li><strong>Exemplar trait: Purple Eyes </strong>- Where the "modified" part of the Exemplar rule comes in, instead of the traditional personality trait, children must have purple eyes to be considered heir.</li>
     </ul>
 
     <h3>Cast List</h3>
     <ul>
         {sims.map(sim => (
             <li>
-                <a href={`/shrines/sims/${sim.slug}`}>{sim.name}</a>
+                <a href={`/shrines/sims/${sim.slug}`}>{sim.name}</a> - 
             </li>
         ))}
     </ul>
