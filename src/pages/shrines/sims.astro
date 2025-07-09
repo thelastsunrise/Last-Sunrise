@@ -14,10 +14,10 @@ const sims = await getSimsCast();
 ---
 <SimsLayout title={title} description={description}>
     <p>Hello this page is so nothingburger right now. It will be less nothingburger soon, aside from updating the legacy I want to make a comprehensive mods/cc list and a cast list for the current legacy! And of course the obligatory blathering about why I like the Sims.</p>
-    <div class="lightgradient">
-        <h4><strong>Latest Post: </strong>{posts[0].data.title}</h4>
+    <div class="lightgradient p-3 mb-3">
+        <h4><strong>Latest Post: </strong>{posts[0].data.generation}.{posts[0].data.chapter} - {posts[0].data.title}</h4>
         <p>{posts[0].data.description}</p>
-        <div class="navbuttons">
+        <div class="navbuttons" style="min-height:40px">
             <span class="float-end"><a href=`/shrines/sims/${posts[0].id}`>Read more &rarr;</a></span>
         </div>
     </div>
