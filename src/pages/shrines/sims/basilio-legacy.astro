@@ -13,7 +13,7 @@ const posts = (await getCollection("sims")).sort(
 const sims = await getSimsCast();
 ---
 <SimsLayout title={title} description={description}>
-    <p>The Basilio Legacy, my current legacy challenge project, is my first time venturing into the Sims 4.</p>
+    <p>The Basilio Legacy, my current legacy challenge project, is my first time venturing into the Sims 4. Albeit heavily modded (the only way I will ever be able to play TS4).</p>
     <p>I'm playing this challenge with the following rules in mind:</p>
     <ul>
         <li><strong>Gender law: Equal </strong>- The Founder may be of either gender. Both boys and girls are eligible for the title of heir.</li>
@@ -27,7 +27,7 @@ const sims = await getSimsCast();
     <ul>
         {sims.map(sim => (
             <li>
-                <a href={`/shrines/sims/${sim.slug}`}>{sim.name}</a> - 
+                <a href={`/shrines/sims/${sim.slug}`}>{sim.name}</a> ({sim.role})
             </li>
         ))}
     </ul>

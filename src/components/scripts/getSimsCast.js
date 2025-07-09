@@ -8,6 +8,7 @@ export async function getSimsCast() {
       gen.cast.map(char => ({
         name: char.name,
         slug: char.name.toLowerCase().replace(" ", "-"),
+        role: char.role
       }))
     )
   );
