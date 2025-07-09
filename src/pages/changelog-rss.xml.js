@@ -8,7 +8,7 @@ return rss({
     items: [
     {
         title: "3.1.6",
-        description: "Started sprucing up the Sims homepage, and made an actual legacy hub for the Basilios.",
+        description: "Started sprucing up the Sims homepage, and made an actual legacy hub for the Basilios. And, of course, published a new part to the legacy saga.",
         pubDate: "2025-07-09",
         link: "https://lastsunrise.art/shrines/sims/basilio-legacy"
     },
