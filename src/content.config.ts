@@ -18,6 +18,8 @@ const blog = defineCollection({
 const sims = defineCollection({
     loader: glob({pattern: "*.mdx", base: "src/content/sims"}),
     schema: z.object({
+        generation: z.number(),
+        chapter: z.number(),
         title: z.string(),
         description: z.string(),
         pubDate: z.coerce.date(),
