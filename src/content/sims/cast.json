@@ -27,6 +27,7 @@
                             {"name": "Salim Basilio", "relation": "Husband", "link": "salim-basilio"},
                             {"name": "Elmira Basilio", "relation": "Daughter", "link": "elmira-basilio"},
                             {"name": "Etan Basilio", "relation": "Child", "link": "etan-basilio"},
+                            {"name": "Bailey Basilio", "relation": "Pet, Dog"},
                             {"name": "Logan Morales", "relation": "Ex-Boyfriend"},
                             {"name": "Waluigi Wah", "relation": "Friend"}
                         ],
@@ -59,7 +60,8 @@
                         "relationships": [
                             {"name": "Miguel Basilio", "relation": "Husband", "link": "miguel-basilio"},
                             {"name": "Elmira Basilio", "relation": "Daughter", "link": "elmira-basilio"},
-                            {"name": "Etan Basilio", "relation": "Child", "link": "etan-basilio"}
+                            {"name": "Etan Basilio", "relation": "Child", "link": "etan-basilio"},
+                            {"name": "Bailey Basilio", "relation": "Pet, Dog"}
                         ],
                         "blurbs": [
                             {"section": "Pre-Legacy", "text": 
@@ -98,6 +100,7 @@
                             {"name": "Miguel Basilio", "relation": "Father", "link": "miguel-basilio"},
                             {"name": "Salim Basilio", "relation": "Father", "link": "salim-basilio"},
                             {"name": "Etan Basilio", "relation": "Twin, BFF", "link": "etan-basilio"},
+                            {"name": "Bailey Basilio", "relation": "Pet, Dog"},
                             {"name": "Doba Claw", "relation": "Situationship"},
                             {"name": "Celia", "relation": "Friend"}
                         ],
@@ -134,8 +137,9 @@
                             {"name": "Miguel Basilio", "relation": "Father", "link": "miguel-basilio"},
                             {"name": "Salim Basilio", "relation": "Father", "link": "salim-basilio"},
                             {"name": "Elmira Basilio", "relation": "Twin, BFF", "link": "elmira-basilio"},
+                            {"name": "Bailey Basilio", "relation": "Pet, Dog"},
                             {"name": "Celia", "relation": "Friend"},
-                            {"name": "Doba CLaw", "relation": "Friend"}
+                            {"name": "Doba Claw", "relation": "Friend"}
                         ],
                         "blurbs": [
                             {"section": "Growing Up", "text": 
