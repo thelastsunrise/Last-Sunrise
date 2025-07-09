@@ -97,7 +97,9 @@
                         "relationships": [
                             {"name": "Miguel Basilio", "relation": "Father", "link": "miguel-basilio"},
                             {"name": "Salim Basilio", "relation": "Father", "link": "salim-basilio"},
-                            {"name": "Etan Basilio", "relation": "Twin", "link": "etan-basilio"}
+                            {"name": "Etan Basilio", "relation": "Twin, BFF", "link": "etan-basilio"},
+                            {"name": "Doba Claw", "relation": "Situationship"},
+                            {"name": "Celia", "relation": "Friend"}
                         ],
                         "blurbs": [
                             {"section": "Growing Up", "text": 
@@ -131,7 +133,8 @@
                         "relationships": [
                             {"name": "Miguel Basilio", "relation": "Father", "link": "miguel-basilio"},
                             {"name": "Salim Basilio", "relation": "Father", "link": "salim-basilio"},
-                            {"name": "Elmira Basilio", "relation": "Twin", "link": "elmira-basilio"}
+                            {"name": "Elmira Basilio", "relation": "Twin, BFF", "link": "elmira-basilio"},
+                            {"name": "Celia", "relation": "Friend"}
                         ],
                         "blurbs": [
                             {"section": "Growing Up", "text": 
