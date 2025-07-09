@@ -7,13 +7,16 @@ import { getCollection } from "astro:content";
 const title = "Basilio Legacy";
 const description = "My Sims 4 Legacy Challenge.";
 
-const posts = (await getCollection("sims")).sort(
+const postsLatest = (await getCollection("sims")).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+const postsOldest = (await getCollection("sims")).sort(
+    (b, a) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 const sims = await getSimsCast();
 ---
 <SimsLayout title={title} description={description}>
-    <p>The Basilio Legacy, my current legacy challenge project, is my first time venturing into the Sims 4. Albeit heavily modded (the only way I will ever be able to play TS4).</p>
+    <p>The Basilio Legacy, my current legacy challenge project, is my first time venturing into the Sims 4. Albeit, heavily modded (the only way I will ever be able to play TS4).</p>
     <p>I'm playing this challenge with the following rules in mind:</p>
     <ul>
         <li><strong>Gender law: Equal </strong>- The Founder may be of either gender. Both boys and girls are eligible for the title of heir.</li>
@@ -22,6 +25,7 @@ const sims = await getSimsCast();
         <li><strong>Species law: Tolerant </strong>- The species of the child has no impact on their eligibility for heir status.</li>
         <li><strong>Exemplar trait: Purple Eyes </strong>- Where the "modified" part of the Exemplar rule comes in, instead of the traditional personality trait, children must have purple eyes to be considered heir.</li>
     </ul>
+    <p>I am also keeping track of points, because I love when numbers go up! Currently, the Basilios are at <strong>17 Points</strong>. If you'd like to read a more detailed overview of what points come from where, <a href="https://docs.google.com/spreadsheets/d/1UQSlc3o9PAcQjQFzXcWsVdKowKU5sUGnWO-yYYG27S0/edit?usp=sharing">click here</a>.</p>
 
     <h3>Cast List</h3>
     <ul>
@@ -32,9 +36,9 @@ const sims = await getSimsCast();
         ))}
     </ul>
 
-    <h4>The Saga</h4>
-    <ol>
-        {posts.map(post => (
+    <h3>The Saga</h3>
+    <ul>
+        {postsOldest.map(post => (
             <li>
                 <a href={`/shrines/sims/${post.id}`}>{post.data.title}</a>
                 <ul>
@@ -42,5 +46,5 @@ const sims = await getSimsCast();
                 </ul>
             </li>
         ))}
-    </ol>
+    </ul>
 </SimsLayout>
