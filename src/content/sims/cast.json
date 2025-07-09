@@ -26,7 +26,9 @@
                         "relationships": [
                             {"name": "Salim Basilio", "relation": "Husband", "link": "salim-basilio"},
                             {"name": "Elmira Basilio", "relation": "Daughter", "link": "elmira-basilio"},
-                            {"name": "Etan Basilio", "relation": "Child", "link": "etan-basilio"}
+                            {"name": "Etan Basilio", "relation": "Child", "link": "etan-basilio"},
+                            {"name": "Logan Morales", "relation": "Ex-Boyfriend"},
+                            {"name": "Waluigi Wah", "relation": "Friend"}
                         ],
                         "blurbs": [
                             {"section": "Pre-Legacy", "text": 
