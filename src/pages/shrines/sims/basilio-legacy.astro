@@ -23,7 +23,7 @@ const sims = await getSimsCast();
         <li><strong>Bloodline law: Strict Traditional </strong>- To be eligible to be named heir, a child must be naturally born from their previous-generation parents and be able to trace an unbroken bloodline back to the founder. Adopted children may never be named heir.</li>
         <li><strong>Heir law: Exemplar (modified) </strong>- At the beginning of the challenge, name a single trait. This trait must be one of your founder's three traits. Any eligible heir that has this trait will gain the title of heir. If a single generation has no children with this trait follow the First Born rule. If more than one child has the Exemplar trait then the oldest child WITH the trait will be the heir.</li>
         <li><strong>Species law: Tolerant </strong>- The species of the child has no impact on their eligibility for heir status.</li>
-        <li><strong>Exemplar trait: Purple Eyes </strong>- Where the "modified" part of the Exemplar rule comes in, instead of the traditional personality trait, children must have purple eyes to be considered heir.</li>
+        <li><strong>Exemplar trait: Purple Eyes </strong>- Where the "modified" part of the Exemplar rule comes in, and also why the Bloodline is on Strict Traditional. Instead of the standard personality trait, children must have purple eyes to be considered heir.</li>
     </ul>
     <p>I am also keeping track of points, because I love when numbers go up! Currently, the Basilios are at <strong>17 Points</strong>. If you'd like to read a more detailed overview of what points come from where, <a href="https://docs.google.com/spreadsheets/d/1UQSlc3o9PAcQjQFzXcWsVdKowKU5sUGnWO-yYYG27S0/edit?usp=sharing">click here</a>.</p>
 
@@ -38,7 +38,7 @@ const sims = await getSimsCast();
 
     <h3>The Saga</h3>
     <ul>
-        {postsOldest.map(post => (
+        {postsLatest.map(post => (
             <li>
                 <a href={`/shrines/sims/${post.id}`}>{post.data.title}</a>
                 <ul>
