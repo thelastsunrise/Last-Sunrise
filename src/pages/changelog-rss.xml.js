@@ -7,6 +7,12 @@ return rss({
     site: context.site,
     items: [
     {
+        title: "3.1.7",
+        description: "Uploaded new character art for the legacy cast: Salim and Miguel's elder art.",
+        pubDate: "2025-07-10",
+        link: ""
+    },
+    {
         title: "3.1.6",
         description: "Started sprucing up the Sims homepage, and made an actual legacy hub for the Basilios. And, of course, published a new part to the legacy saga.",
         pubDate: "2025-07-09",
