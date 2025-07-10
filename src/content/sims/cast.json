@@ -54,7 +54,8 @@
                         "images": [
                             {
                                 "youngadultsrc": "/images/shrines/sims/salim-ya-fullbody.png",
-                                "matureadultsrc": "/images/shrines/sims/salim-ma-fullbody.png"
+                                "matureadultsrc": "/images/shrines/sims/salim-ma-fullbody.png",
+                                "eldersrc": "/images/shrines/sims/salim-el-fullbody.png"
                             }
                         ],
                         "relationships": [

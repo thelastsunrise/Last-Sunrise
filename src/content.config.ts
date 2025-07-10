@@ -47,7 +47,8 @@ const simsCast = defineCollection({
                                 z.object({
                                     teenagesrc: z.string().optional(),
                                     youngadultsrc: z.string().optional(),
-                                    matureadultsrc: z.string().optional()
+                                    matureadultsrc: z.string().optional(),
+                                    eldersrc: z.string().optional()
                                 })
                             ),
                             relationships: z.array(
