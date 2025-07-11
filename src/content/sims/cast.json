@@ -12,6 +12,7 @@
                         "pronouns": "he/him",
                         "sexuality": "Homosexual",
                         "role": "Founder",
+                        "status": "Alive, in household",
                         "traits": [
                             "Tender",
                             "Joyless",
@@ -91,6 +92,7 @@
                         "pronouns": "she/her",
                         "sexuality": "Greyromantic Heterosexual",
                         "role": "Heir",
+                        "status": "Alive, in household",
                         "traits": [
                             "Cautious (Infant)",
                             "Fussy (Toddler)",
@@ -132,6 +134,7 @@
                         "pronouns": "they/them",
                         "sexuality": "Heterosexual",
                         "role": "Child",
+                        "status": "Alive, in household",
                         "traits": [
                             "Cautious (Infant)",
                             "Clingy (Toddler)",
@@ -170,6 +173,7 @@
                         "pronouns": "he/him",
                         "sexuality": "Heterosexual",
                         "role": "Spouse",
+                        "status": "Alive, in household",
                         "traits": [
                             "Active",
                             "Self-assured",
@@ -205,6 +209,7 @@
                         "gender": "Female",
                         "pronouns": "she/her",
                         "role": "Heir",
+                        "status": "Alive, in household",
                         "traits": [
                             "Intense (Infant)"
                         ],
