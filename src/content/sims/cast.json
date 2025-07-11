@@ -28,7 +28,10 @@
                             {"name": "Salim Basilio", "relation": "Husband", "link": "salim-basilio"},
                             {"name": "Elmira Basilio", "relation": "Daughter", "link": "elmira-basilio"},
                             {"name": "Etan Basilio", "relation": "Child", "link": "etan-basilio"},
-                            {"name": "Bailey Basilio", "relation": "Pet, Dog"},
+                            {"name": "Ajei Basilio", "relation": "Granddaughter", "link": "ajei-basilio"},
+                            {"name": "Doba Claw", "relation": "Son-in-law", "link": "doba-claw"},
+                            {"name": "Bailey", "relation": "Pet, Dog"},
+                            {"name": "Cosmo", "relation": "Pet, Cat"},
                             {"name": "Logan Morales", "relation": "Ex-Boyfriend"},
                             {"name": "Waluigi Wah", "relation": "Friend"}
                         ],
@@ -47,6 +50,7 @@
                         "pronouns": "he/him",
                         "sexuality": "Bisexual",
                         "role": "Spouse",
+                        "status": "Deceased",
                         "traits": [
                             "Creative",
                             "Lazy",
@@ -63,7 +67,9 @@
                             {"name": "Miguel Basilio", "relation": "Husband", "link": "miguel-basilio"},
                             {"name": "Elmira Basilio", "relation": "Daughter", "link": "elmira-basilio"},
                             {"name": "Etan Basilio", "relation": "Child", "link": "etan-basilio"},
-                            {"name": "Bailey Basilio", "relation": "Pet, Dog"}
+                            {"name": "Doba Claw", "relation": "Son-in-law", "link": "doba-claw"},
+                            {"name": "Bailey", "relation": "Pet, Dog"},
+                            {"name": "Cosmo", "relation": "Pet, Cat"}
                         ],
                         "blurbs": [
                             {"section": "Pre-Legacy", "text": 
@@ -99,12 +105,16 @@
                             }
                         ],
                         "relationships": [
+                            {"name": "Doba Claw", "relation": "Boyfriend", "link": "doba-claw"},
+                            {"name": "Ajei Basilio", "relation": "Daughter", "link": "ajei-basilio"},
+                            {"name": "Etan Basilio", "relation": "Twin, BFF", "link": "etan-basilio"},
                             {"name": "Miguel Basilio", "relation": "Father", "link": "miguel-basilio"},
                             {"name": "Salim Basilio", "relation": "Father", "link": "salim-basilio"},
-                            {"name": "Etan Basilio", "relation": "Twin, BFF", "link": "etan-basilio"},
-                            {"name": "Bailey Basilio", "relation": "Pet, Dog"},
-                            {"name": "Doba Claw", "relation": "Situationship"},
-                            {"name": "Celia", "relation": "Friend"}
+                            {"name": "Bailey", "relation": "Pet, Dog"},
+                            {"name": "Cosmo", "relation": "Pet, Cat"},
+                            {"name": "Celia", "relation": "Best friend"},
+                            {"name": "George Laurent", "relation": "Ex-Boyfriend"},
+                            {"name": "Sawyer Snow", "relation": "Ex-Boyfriend"}
                         ],
                         "blurbs": [
                             {"section": "Growing Up", "text": 
@@ -136,12 +146,14 @@
                             }
                         ],
                         "relationships": [
+                            {"name": "Elmira Basilio", "relation": "Twin, BFF", "link": "elmira-basilio"},
                             {"name": "Miguel Basilio", "relation": "Father", "link": "miguel-basilio"},
                             {"name": "Salim Basilio", "relation": "Father", "link": "salim-basilio"},
-                            {"name": "Elmira Basilio", "relation": "Twin, BFF", "link": "elmira-basilio"},
-                            {"name": "Bailey Basilio", "relation": "Pet, Dog"},
-                            {"name": "Celia", "relation": "Friend"},
-                            {"name": "Doba Claw", "relation": "Friend"}
+                            {"name": "Doba Claw", "relation": "Brother-in-law", "link": "doba-claw"},
+                            {"name": "Ajei Basilio", "relation": "Niece", "link": "ajei-basilio"},
+                            {"name": "Bailey", "relation": "Pet, Dog"},
+                            {"name": "Cosmo", "relation": "Pet, Dog"},
+                            {"name": "Celia", "relation": "Friend"}
                         ],
                         "blurbs": [
                             {"section": "Growing Up", "text": 
@@ -150,6 +162,67 @@
                             "Etan excelled in high school, being offered an early graduation as soon as he finished his freshman year by the school's principal. His family could not have been more proud and supportive of him as he spent this time off waiting to hear back from the various scholarships and universities he applied to. He tinkered with any and all of the equipment around the home and even built a functional spaceship. Though he never could find anyone to use it (and was much too scared to himself), as he started studying biology at Foxbury."},
                             {"section": "Young Adulthood", "text": 
                             "College life was not for Etan, something he couldn't understand because education came so easily for him before. Elmira encouraged him to talk to a therapist before another D made him completely break down, where he was diagnosed with Borderline Personality Disorder and was told that his dads were actually neglectful, whether maliciously or not. Struggling desperately to reconcile with the fact that he was burnt out, he adopted an emotional support dog, a Saint Bernard named Bailey, and took some time off at home, where he discovered a love for veterinary work."}
+                        ]
+                    },
+                    {
+                        "name": "Doba Claw",
+                        "gender": "Male",
+                        "pronouns": "he/him",
+                        "sexuality": "Heterosexual",
+                        "role": "Spouse",
+                        "traits": [
+                            "Active",
+                            "Self-assured",
+                            "Moody",
+                            "Impulsive",
+                            "Delightful"
+                        ],
+                        "images": [
+                            {
+                                "youngadultsrc": "/images/shrines/sims/doba-ya-fullbody.png"
+                            }
+                        ],
+                        "relationships": [
+                            {"name": "Elmira Basilio", "relation": "Girlfriend", "link": "elmira-basilio"},
+                            {"name": "Ajei Basilio", "relation": "Daughter", "link": "ajei-basilio"},
+                            {"name": "Miguel Basilio", "relation": "Father-in-law", "link": "miguel-basilio"},
+                            {"name": "Salim Basilio", "relation": "Father-in-law", "link": "salim-basilio"},
+                            {"name": "Etan Basilio", "relation": "Sibling-in-law", "link": "etan-basilio"},
+                            {"name": "Cosmo", "relation": "Pet, Cat"}
+                        ],
+                        "blurbs": [
+                            {"section": "Pre-Legacy", "text": 
+                            "Hi"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 3,
+                "cast": [
+                    {
+                        "name": "Ajei Basilio",
+                        "gender": "Female",
+                        "pronouns": "she/her",
+                        "role": "Heir",
+                        "traits": [
+                            "Intense (Infant)"
+                        ],
+                        "images": [
+                            {
+                                "infantsrc": "/images/shrines/sims/ajei-in-fullbody.png"
+                            }
+                        ],
+                        "relationships": [
+                            {"name": "Elmira Basilio", "relation": "Mother", "link": "elmira-basilio"},
+                            {"name": "Doba Claw", "relation": "Father", "link": "doba-claw"},
+                            {"name": "Etan Basilio", "relation": "Pibling", "link": "etan-basilio"},
+                            {"name": "Miguel Basilio", "relation": "Grandfather", "link": "miguel-basilio"},
+                            {"name": "Cosmo", "relation": "Pet, Cat"}
+                        ],
+                        "blurbs": [
+                            {"section": "Growing Up", "text": 
+                            "Nothing yet, check back later!"}
                         ]
                     }
                 ]
