@@ -26,6 +26,7 @@ export async function getStaticPaths() {
 const { char, generation } = Astro.props;
 
 const latestRef = 
+    char.images[0].eldersrc ||
     char.images[0].matureadultsrc ||
     char.images[0].youngadultsrc ||
     char.images[0].teenagesrc;
@@ -37,12 +38,14 @@ const latestRef =
                 {char.images[0].teenagesrc && <button onclick="changeImage('tn')">Teenager</button>}
                 {char.images[0].youngadultsrc && <button onclick="changeImage('ya')">Young Adult</button>}
                 {char.images[0].matureadultsrc && <button onclick="changeImage('ma')">Adult</button>}
+                {char.images[0].eldersrc && <button onclick="changeImage('el')">Elder</button>}
             </div>
             <div>
                 <img id="referenceImage" height="500" src={latestRef}
                     data-tn={char.images[0].teenagesrc}
                     data-ya={char.images[0].youngadultsrc}
                     data-ma={char.images[0].matureadultsrc}
+                    data-el={char.images[0].eldersrc}
                 ></img>
             </div>
         </div>

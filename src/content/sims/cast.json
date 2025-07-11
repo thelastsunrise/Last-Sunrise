@@ -20,7 +20,8 @@
                         "images": [
                             {
                                 "youngadultsrc": "/images/shrines/sims/miguel-ya-fullbody.png",
-                                "matureadultsrc": "/images/shrines/sims/miguel-ma-fullbody.png"
+                                "matureadultsrc": "/images/shrines/sims/miguel-ma-fullbody.png",
+                                "eldersrc": "/images/shrines/sims/miguel-el-fullbody.png"
                             }
                         ],
                         "relationships": [
