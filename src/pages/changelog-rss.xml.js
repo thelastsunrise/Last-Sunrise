@@ -8,9 +8,9 @@ return rss({
     items: [
     {
         title: "3.1.7",
-        description: "Uploaded new character art for the legacy cast: Salim and Miguel's elder art.",
-        pubDate: "2025-07-10",
-        link: ""
+        description: "Huge update for the Sims shrine today! Created two new cast pages, uploaded new character art for the legacy cast (Salim & Miguel elder). Lastly, there's a new saga post going over everything that's changed!",
+        pubDate: "2025-07-11",
+        link: "https://lastsunrise.art/shrines/sims/basilio-g2-8"
     },
     {
         title: "3.1.6",
