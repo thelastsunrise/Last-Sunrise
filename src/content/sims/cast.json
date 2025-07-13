@@ -154,7 +154,8 @@
                         "images": [
                             {
                                 "teenagesrc": "/images/shrines/sims/etan-tn-fullbody.png",
-                                "youngadultsrc": "/images/shrines/sims/etan-ya-fullbody.png"
+                                "youngadultsrc": "/images/shrines/sims/etan-ya-fullbody.png",
+                                "matureadultsrc": "/images/shrines/sims/etan-ma-fullbody.png"
                             }
                         ],
                         "relationships": [
