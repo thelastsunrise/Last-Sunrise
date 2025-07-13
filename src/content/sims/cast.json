@@ -188,13 +188,14 @@
                         "traits": [
                             "Active",
                             "Self-assured",
-                            "Moody",
+                            "Delightful",
                             "Impulsive",
-                            "Delightful"
+                            "Moody"
                         ],
                         "images": [
                             {
-                                "youngadultsrc": "/images/shrines/sims/doba-ya-fullbody.png"
+                                "youngadultsrc": "/images/shrines/sims/doba-ya-fullbody.png",
+                                "occultsrc": "/images/shrines/sims/doba-oc-fullbody.png"
                             }
                         ],
                         "relationships": [
