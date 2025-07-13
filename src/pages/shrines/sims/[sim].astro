@@ -44,8 +44,8 @@ const latestRef =
                 {char.images[0].eldersrc && <button onclick="changeImage('el')">Elder</button>}
                 {char.images[0].occultsrc && <button onclick="changeImage('oc')">Werewolf</button>}
             </div>
-            <div>
-                <img id="referenceImage" height="500" src={latestRef}
+            <div id="referenceImageContainer">
+                <img id="referenceImage" src={latestRef}
                     data-ch={char.images[0].childsrc}
                     data-tn={char.images[0].teenagesrc}
                     data-ya={char.images[0].youngadultsrc}

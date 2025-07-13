@@ -120,6 +120,11 @@ body.simslayout {
         opacity: 1;
     }
 
+    #referenceImage {
+        max-width: 100%;
+        max-height: 500px;
+    }
+
     .navbuttons {
         * {
             padding: 0.25rem;
