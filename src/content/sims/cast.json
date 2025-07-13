@@ -109,7 +109,8 @@
                         "images": [
                             {
                                 "teenagesrc": "/images/shrines/sims/elmira-tn-fullbody.png",
-                                "youngadultsrc": "/images/shrines/sims/elmira-ya-fullbody.png"
+                                "youngadultsrc": "/images/shrines/sims/elmira-ya-fullbody.png",
+                                "matureadultsrc": "/images/shrines/sims/elmira-ma-fullbody.png"
                             }
                         ],
                         "relationships": [
