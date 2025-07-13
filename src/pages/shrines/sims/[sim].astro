@@ -29,7 +29,8 @@ const latestRef =
     char.images[0].eldersrc ||
     char.images[0].matureadultsrc ||
     char.images[0].youngadultsrc ||
-    char.images[0].teenagesrc;
+    char.images[0].teenagesrc ||
+    char.images[0].occultsrc;
 ---
 <SimsLayout title=`${char.name} (${char.pronouns})`>
     <div class="row pt-3">
@@ -39,6 +40,7 @@ const latestRef =
                 {char.images[0].youngadultsrc && <button onclick="changeImage('ya')">Young Adult</button>}
                 {char.images[0].matureadultsrc && <button onclick="changeImage('ma')">Adult</button>}
                 {char.images[0].eldersrc && <button onclick="changeImage('el')">Elder</button>}
+                {char.images[0].occultsrc && <button onclick="changeImage('oc')">Werewolf</button>}
             </div>
             <div>
                 <img id="referenceImage" height="500" src={latestRef}
@@ -46,6 +48,7 @@ const latestRef =
                     data-ya={char.images[0].youngadultsrc}
                     data-ma={char.images[0].matureadultsrc}
                     data-el={char.images[0].eldersrc}
+                    data-oc={char.images[0].occultsrc}
                 ></img>
             </div>
         </div>
