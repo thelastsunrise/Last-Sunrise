@@ -7,6 +7,12 @@ return rss({
     site: context.site,
     items: [
     {
+        title: "3.1.8",
+        description: "Uploaded new character art for Doba (YA & werewolf form).",
+        pubDate: "2025-07-12",
+        link: "https://lastsunrise.art/shrines/sims/"
+    },
+    {
         title: "3.1.7",
         description: "Huge update for the Sims shrine today! Created two new cast pages, uploaded new character art for the legacy cast (Salim & Miguel as elders). Lastly, there's a new saga post going over everything that's changed!",
         pubDate: "2025-07-11",
