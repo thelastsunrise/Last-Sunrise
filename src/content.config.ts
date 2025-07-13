@@ -46,6 +46,7 @@ const simsCast = defineCollection({
                             traits: z.array(z.string()).min(1),
                             images: z.array( 
                                 z.object({
+                                    childsrc: z.string().optional(),
                                     teenagesrc: z.string().optional(),
                                     youngadultsrc: z.string().optional(),
                                     matureadultsrc: z.string().optional(),
