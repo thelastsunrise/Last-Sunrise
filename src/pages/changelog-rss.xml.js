@@ -8,7 +8,7 @@ return rss({
     items: [
     {
         title: "3.1.8",
-        description: "Uploaded new character art for Doba (YA & werewolf form).",
+        description: "Uploaded new character art for Doba (YA & werewolf form), Elmira (MA).",
         pubDate: "2025-07-12",
         link: "https://lastsunrise.art/shrines/sims/"
     },
