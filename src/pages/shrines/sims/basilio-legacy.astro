@@ -7,12 +7,10 @@ import { getCollection } from "astro:content";
 const title = "Basilio Legacy";
 const description = "My Sims 4 Legacy Challenge.";
 
-const postsLatest = (await getCollection("sims")).sort(
-    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
 const postsOldest = (await getCollection("sims")).sort(
     (b, a) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
+
 const sims = await getSimsCast();
 ---
 <SimsLayout title={title} description={description}>
@@ -37,14 +35,37 @@ const sims = await getSimsCast();
     </ul>
 
     <h3>The Saga</h3>
+
+    <h4>Generation 1</h4>
+    <p>The founding of this legacy, following <a href="/shrines/sims/miguel-basilio">Miguel Basilio</a> as he first moved to Windenburg; just him and his huge, empty plot of land against the world. This generation was pretty short, with me starting generation 2 at the end of that first play session. Regardless, this will be your best starting point!</p>
     <ul>
-        {postsLatest.map(post => (
-            <li>
-                <a href={`/shrines/sims/${post.id}`}>{post.data.generation}.{post.data.chapter} - {post.data.title}</a>
-                <ul>
-                    <li>{post.data.description}</li>
-                </ul>
-            </li>
-        ))}
+        {postsOldest
+            .filter(post => post.data.generation === 1)
+            .map(post => (
+                <li><a href={`/shrines/sims/${post.id}`}>{post.data.generation}.{post.data.chapter} - {post.data.title}</a></li>
+            )
+        )}
+    </ul>
+
+    <h4>Generation 2</h4>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor ut rerum laboriosam autem, beatae consectetur atque? Cupiditate quaerat minus beatae in, reiciendis iste quas iusto velit tenetur et hic nesciunt.</p>
+    <ul>
+        {postsOldest
+            .filter(post => post.data.generation === 2)
+            .map(post => (
+                <li><a href={`/shrines/sims/${post.id}`}>{post.data.generation}.{post.data.chapter} - {post.data.title}</a></li>
+            )
+        )}
+    </ul>
+
+    <h4>Generation 3</h4>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor ut rerum laboriosam autem, beatae consectetur atque? Cupiditate quaerat minus beatae in, reiciendis iste quas iusto velit tenetur et hic nesciunt.</p>
+    <ul>
+        {postsOldest
+            .filter(post => post.data.generation === 3)
+            .map(post => (
+                <li><a href={`/shrines/sims/${post.id}`}>{post.data.generation}.{post.data.chapter} - {post.data.title}</a></li>
+            )
+        )}
     </ul>
 </SimsLayout>
