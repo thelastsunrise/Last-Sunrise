@@ -6,19 +6,13 @@ const { frontmatter } = Astro.props;
 ---
 <SimsLayout altTitle={frontmatter.altTitle} title={frontmatter.title} description={frontmatter.description}>
     <h3>{frontmatter.generation}.{frontmatter.chapter} - {frontmatter.title}</h3>
-        <p><strong>Published</strong>: {frontmatter.pubDate.toString().slice(0, 10)}</p>
-        <p>{frontmatter.description}</p>
-        {frontmatter.subpoints && frontmatter.subpoints.length > 0 && (
-            <ul>
-            {frontmatter.subpoints.map((point: string) => (
-                <li>{point}</li>
-            ))}
-            </ul>
-        )}
-        <hr/>
+    <p><strong>Published</strong>: {frontmatter.pubDate.toString().slice(0, 10)}</p>
+    <p>{frontmatter.description}</p>
+    <BlogNextPrevButtons/>
+    <hr/>
 
-        <slot/>
+    <slot/>
 
-        <hr/>
+    <hr/>
     <BlogNextPrevButtons/>
 </SimsLayout>
