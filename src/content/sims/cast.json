@@ -30,7 +30,7 @@
                             {"name": "Elmira Basilio", "relation": "Daughter", "link": "elmira-basilio"},
                             {"name": "Etan Basilio", "relation": "Child", "link": "etan-basilio"},
                             {"name": "Ajei Basilio", "relation": "Granddaughter", "link": "ajei-basilio"},
-                            {"name": "Doba Claw", "relation": "Son-in-law", "link": "doba-claw"},
+                            {"name": "Doba Basilio", "relation": "Son-in-law", "link": "doba-basilio"},
                             {"name": "Bailey", "relation": "Pet, Dog"},
                             {"name": "Cosmo", "relation": "Pet, Cat"},
                             {"name": "Logan Morales", "relation": "Ex-Boyfriend"},
@@ -70,7 +70,7 @@
                             {"name": "Miguel Basilio", "relation": "Husband", "link": "miguel-basilio"},
                             {"name": "Elmira Basilio", "relation": "Daughter", "link": "elmira-basilio"},
                             {"name": "Etan Basilio", "relation": "Child", "link": "etan-basilio"},
-                            {"name": "Doba Claw", "relation": "Son-in-law", "link": "doba-claw"},
+                            {"name": "Doba Basilio", "relation": "Son-in-law", "link": "doba-basilio"},
                             {"name": "Bailey", "relation": "Pet, Dog"},
                             {"name": "Cosmo", "relation": "Pet, Cat"}
                         ],
@@ -84,7 +84,7 @@
                             {"section": "Old Age", "text": 
                             "Salim never could find the time he'd wished he had to do all the things he wanted to do. He could never write enough books, spend enough time with Miguel, or with Etan and Elmira. Nonetheless, time keeps on marching, and Salim turned to yoga and other wellness-adjacent hobbies to pass the time now that he was formally retired and out of the spotlight. With any luck, teaching his body and soul how to live in the moment will make him feel more content with the fact of his death."},
                             {"section": "Death", "text": 
-                            "Salim Basilio passed away peacefully from complications related to his old age inside the Basilio family home. He is honored by his widow, Miguel Basilio, and his children, Etan and Elmira Basilio. Just before his death, Elmira had just moved in with her boyfriend, Doba Claw (who brought his cat, Cosmo) as Elmira announced her pregnancy and upcoming wedding. Unfortunately, he didn't live to see either take place. He died proud of the people his children had become, and of the joy he helped bring back to Miguel. And, of course, of the hundreds of thousands of Simoleons he'd be leaving them all behind."}
+                            "Salim Basilio passed away peacefully from complications related to his old age inside the Basilio family home. He is honored by his widow, Miguel Basilio, and his children, Etan and Elmira Basilio. Just before his death, Elmira had just moved in with her boyfriend, Doba Basilio (who brought his cat, Cosmo) as Elmira announced her pregnancy and upcoming wedding. Unfortunately, he didn't live to see either take place. He died proud of the people his children had become, and of the joy he helped bring back to Miguel. And, of course, of the hundreds of thousands of Simoleons he'd be leaving them all behind."}
                         ]
                     }
                 ]
@@ -115,7 +115,7 @@
                             }
                         ],
                         "relationships": [
-                            {"name": "Doba Claw", "relation": "Boyfriend", "link": "doba-claw"},
+                            {"name": "Doba Basilio", "relation": "Husband", "link": "doba-basilio"},
                             {"name": "Ajei Basilio", "relation": "Daughter", "link": "ajei-basilio"},
                             {"name": "Etan Basilio", "relation": "Twin, BFF", "link": "etan-basilio"},
                             {"name": "Miguel Basilio", "relation": "Father", "link": "miguel-basilio"},
@@ -134,7 +134,7 @@
                             {"section": "Young Adulthood", "text": 
                             "Pretty soon after she graduated, Elmira and Etan realized their childhood wasn't that great...at all. Not for any lack of effort on their dads' parts, but because they were always out of the house working on bigger things. At least they had a big house with four walls, but how great was that really if the second they became adults marked the beginning of a slough of mental health issues and realizations about their dads. At least Elmira had Cupid's Corner, a full blown obsession with werewolves, and her gym job to distract her..."},
                             {"section": "Adulthood", "text": 
-                            "Elmira took after her father, Salim, as she started reaching the wall that was the middle of her life; the time was passing her by and she hadn't even begun to start doing the things she wanted to do. She hated working at the gym, so she quit. She'd finally come to terms with her greyromanticism, and finally felt content enough with the ups and downs that came with that to get into a healthy relationship with a certain Doba Claw. Who also turned out to be a werewolf. And some how, some way, fate rolled its hand and gave the two of them a daughter, Ajei Basilio, on the day Salim passed away, no less."}
+                            "Elmira took after her father, Salim, as she started reaching the wall that was the middle of her life; the time was passing her by and she hadn't even begun to start doing the things she wanted to do. She hated working at the gym, so she quit. She'd finally come to terms with her greyromanticism, and finally felt content enough with the ups and downs that came with that to get into a healthy relationship with a certain Doba Basilio. Who also turned out to be a werewolf. And some how, some way, fate rolled its hand and gave the two of them a daughter, Ajei Basilio, on the day Salim passed away, no less."}
                         ]
                     },
                     {
@@ -164,7 +164,7 @@
                             {"name": "Elmira Basilio", "relation": "Twin, BFF", "link": "elmira-basilio"},
                             {"name": "Miguel Basilio", "relation": "Father", "link": "miguel-basilio"},
                             {"name": "Salim Basilio", "relation": "Father", "link": "salim-basilio"},
-                            {"name": "Doba Claw", "relation": "Brother-in-law", "link": "doba-claw"},
+                            {"name": "Doba Basilio", "relation": "Brother-in-law", "link": "doba-basilio"},
                             {"name": "Ajei Basilio", "relation": "Niece", "link": "ajei-basilio"},
                             {"name": "Bailey", "relation": "Pet, Dog"},
                             {"name": "Cosmo", "relation": "Pet, Dog"},
@@ -183,7 +183,7 @@
                         ]
                     },
                     {
-                        "name": "Doba Claw",
+                        "name": "Doba Basilio",
                         "gender": "Male",
                         "pronouns": "he/him",
                         "sexuality": "Heterosexual",
@@ -203,7 +203,7 @@
                             }
                         ],
                         "relationships": [
-                            {"name": "Elmira Basilio", "relation": "Girlfriend", "link": "elmira-basilio"},
+                            {"name": "Elmira Basilio", "relation": "Wife", "link": "elmira-basilio"},
                             {"name": "Ajei Basilio", "relation": "Daughter", "link": "ajei-basilio"},
                             {"name": "Miguel Basilio", "relation": "Father-in-law", "link": "miguel-basilio"},
                             {"name": "Salim Basilio", "relation": "Father-in-law", "link": "salim-basilio"},
@@ -212,7 +212,7 @@
                         ],
                         "blurbs": [
                             {"section": "Pre-Legacy", "text": 
-                            "Doba Claw lived a pretty average life, moving from reservation to reservation as his parents' work demanded it. But that work didn't offer him much time with them. Instead, he spent his time getting into urban exploration, digging through abandoned buildings just for the fun of it. But, he pushed his luck too far, and one night was bitten by...something he couldn't catch a sight of. That something turned out to be a werewolf, passing its curse along to him. Horrified of what he'd become, Doba ran away, moving as far as he could with the money he could scrape, to try and find a cure for himself."},
+                            "Doba Basilio lived a pretty average life, moving from reservation to reservation as his parents' work demanded it. But that work didn't offer him much time with them. Instead, he spent his time getting into urban exploration, digging through abandoned buildings just for the fun of it. But, he pushed his luck too far, and one night was bitten by...something he couldn't catch a sight of. That something turned out to be a werewolf, passing its curse along to him. Horrified of what he'd become, Doba ran away, moving as far as he could with the money he could scrape, to try and find a cure for himself."},
                             {"section": "Young Adulthood", "text": 
                             "Scavenging through every werewolf forum he could, Doba met Elmira Basilio, who was just as interested in the speculation about the werewolf curse as he was...somehow even more than he was. They hit it off immediately when they finally met in person, and Doba knew he was in love. When he came clean about the truth of his...interest in werewolves, Elmira accepted him brazenly, admitting she liked him even more because of it. He moved into the Basilio house very shortly after that, with his newly adopted cat, Cosmo, after learning Elmira was pregnant."}
                         ]
@@ -238,7 +238,7 @@
                         ],
                         "relationships": [
                             {"name": "Elmira Basilio", "relation": "Mother", "link": "elmira-basilio"},
-                            {"name": "Doba Claw", "relation": "Father", "link": "doba-claw"},
+                            {"name": "Doba Basilio", "relation": "Father", "link": "doba-basilio"},
                             {"name": "Etan Basilio", "relation": "Pibling", "link": "etan-basilio"},
                             {"name": "Miguel Basilio", "relation": "Grandfather", "link": "miguel-basilio"},
                             {"name": "Cosmo", "relation": "Pet, Cat"}
