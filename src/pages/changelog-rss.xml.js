@@ -7,6 +7,12 @@ return rss({
     site: context.site,
     items: [
     {
+        title: "3.1.9",
+        description: "Posted the first part of gen 3 in the Sims legacy saga. I've also touched up the legacy homepage a bit, with some more graphical work to be done later.",
+        pubDate: "2025-07-14",
+        link: "https://lastsunrise.art/shrines/sims/basilio-g3-1"
+    },
+    {
         title: "3.1.8",
         description: "Uploaded new character art for Doba (YA & werewolf form), Elmira (Child & MA), and Etan (Child & MA).",
         pubDate: "2025-07-12",
