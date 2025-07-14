@@ -122,7 +122,7 @@
                             {"name": "Salim Basilio", "relation": "Father", "link": "salim-basilio"},
                             {"name": "Bailey", "relation": "Pet, Dog"},
                             {"name": "Cosmo", "relation": "Pet, Cat"},
-                            {"name": "Celia", "relation": "Best friend"},
+                            {"name": "Celia Ota", "relation": "Best friend"},
                             {"name": "George Laurent", "relation": "Ex-Boyfriend"},
                             {"name": "Sawyer Snow", "relation": "Ex-Boyfriend"}
                         ],
@@ -169,7 +169,7 @@
                             {"name": "Bailey", "relation": "Pet, Dog"},
                             {"name": "Cosmo", "relation": "Pet, Dog"},
                             {"name": "Elsa Arendalle", "relation": "Crush"},
-                            {"name": "Celia", "relation": "Friend"}
+                            {"name": "Celia Ota", "relation": "Friend"}
                         ],
                         "blurbs": [
                             {"section": "Growing Up", "text": 
