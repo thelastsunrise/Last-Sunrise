@@ -8,7 +8,7 @@ return rss({
     items: [
     {
         title: "3.1.9",
-        description: "Posted the first part of gen 3 in the Sims legacy saga. I've also touched up the legacy homepage a bit, with some more graphical work to be done later.",
+        description: "Posted the first part of gen 3 in the Sims legacy saga. I've also touched up the legacy homepage a bit, with some more graphical work to be done later. Oh, and there's links to jump from post to post on the top of each Sims blog now!",
         pubDate: "2025-07-14",
         link: "https://lastsunrise.art/shrines/sims/basilio-g3-1"
     },
