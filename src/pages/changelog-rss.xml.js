@@ -7,6 +7,12 @@ return rss({
     site: context.site,
     items: [
     {
+        title: "3.2.0",
+        description: "The Sims shrine has begun getting way too big to reasonably be put into a subdirectory, so I've split it off into its own website! And of course, there's a new blog post wherein everything that can go wrong goes wrong for this poor family.",
+        pubDate: "2025-07-16",
+        link: "https://sims.lastsunrise.art/basilio/g3-2"
+    },
+    {
         title: "3.1.9",
         description: "Posted the first part of gen 3 in the Sims legacy saga. I've also touched up the legacy homepage a bit, with some more graphical work to be done later. Oh, and there's links to jump from post to post on the top of each Sims blog now!",
         pubDate: "2025-07-14",
