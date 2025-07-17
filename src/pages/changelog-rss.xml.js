@@ -8,7 +8,7 @@ return rss({
     items: [
     {
         title: "3.2.0",
-        description: "The Sims shrine has begun getting way too big to reasonably be put into a subdirectory, so I've split it off into its own website! And of course, there's a new blog post wherein everything that can go wrong goes wrong for this poor family.",
+        description: "The Sims shrine has begun getting way too big to reasonably be put into a subdirectory, so I've split it off into its own website! And of course, there's a new blog post wherein everything that can go wrong goes wrong for this poor family. I've also written new sections on Doba and Elmira's character pages to reflect these recent developments.",
         pubDate: "2025-07-16",
         link: "https://sims.lastsunrise.art/basilio/g3-2"
     },
