@@ -7,6 +7,12 @@ return rss({
     site: context.site,
     items: [
     {
+        title: "3.2.2",
+        description: "Not one, but TWO blog posts on the Sims site today! Otherwise, gave the site some major performance enhancements in image processing, and otherwise made comments just a little bit prettier.",
+        pubDate: "2025-07-22",
+        link: "https://sims.lastsunrise.art/g3-3"
+    },
+    {
         title: "3.2.1",
         description: "Mini hiatus as I tried to build my own comments database... and I did! It's super rudimentary but it works & is live on the Sims site :-)",
         pubDate: "2025-07-21",
@@ -22,79 +28,79 @@ return rss({
         title: "3.1.9",
         description: "Posted the first part of gen 3 in the Sims legacy saga. I've also touched up the legacy homepage a bit, with some more graphical work to be done later. Oh, and there's links to jump from post to post on the top of each Sims blog now!",
         pubDate: "2025-07-14",
-        link: "https://lastsunrise.art/shrines/sims/basilio-g3-1"
+        link: "https://sims.lastsunrise.art/basilio/g3-1"
     },
     {
         title: "3.1.8",
         description: "Uploaded new character art for Doba (YA & werewolf form), Elmira (Child & MA), and Etan (Child & MA).",
         pubDate: "2025-07-12",
-        link: "https://lastsunrise.art/shrines/sims/"
+        link: "https://sims.lastsunrise.art/"
     },
     {
         title: "3.1.7",
         description: "Huge update for the Sims shrine today! Created two new cast pages, uploaded new character art for the legacy cast (Salim & Miguel as elders). Lastly, there's a new saga post going over everything that's changed!",
         pubDate: "2025-07-11",
-        link: "https://lastsunrise.art/shrines/sims/basilio-g2-8"
+        link: "https://sims.lastsunrise.art/basilio/g2-8"
     },
     {
         title: "3.1.6",
         description: "Started sprucing up the Sims homepage, and made an actual legacy hub for the Basilios. And, of course, published a new part to the legacy saga.",
         pubDate: "2025-07-09",
-        link: "https://lastsunrise.art/shrines/sims/basilio-g2-7"
+        link: "https://sims.lastsunrise.art/basilio/g2-7"
     },
     {
         title: "3.1.5",
         description: "Published a new part to the Basilio legacy blog! I also wrote a proper disclaimer regarding the use of pronouns on Etan's page, and added a link to the full changelog on the index.",
         pubDate: "2025-07-08",
-        link: "https://lastsunrise.art/shrines/sims/basilio-g2-6"
+        link: "https://sims.lastsunrise.art/basilio/g2-6"
     },
     {
         title: "3.1.4",
         description: "Added YA art for Etan and Elmira's character pages, and gave each page a relationship section and little blurbs! The character pages are still VERY unfinished, but are at least presentable now :-)",
         pubDate: "2025-07-07",
-        link: "https://lastsunrise.art/shrines/sims/miguel-basilio/"
+        link: "https://sims.lastsunrise.art/profile/miguel-basilio"
     },
     {
         title: "3.1.3",
         description: "Uploaded a new part to the Basilio legacy blog. Also fixed the sorting on the sims page.",
         pubDate: "2025-07-05",
-        link: "https://lastsunrise.art/shrines/sims/basilio-g2-5/"
+        link: "https://sims.lastsunrise.art/basilio/g2-5"
     },
     {
         title: "3.1.2",
         description: "Published a new part to the Basilio legacy saga! Some QOL changes for the Sims section as well, including clickable images that don't break and the most rudementary of cast pages. Like seriously they do NOT look good right now.",
         pubDate: "2025-07-01",
-        link: "https://lastsunrise.art/shrines/sims/basilio-g2-4/"
+        link: "https://sims.lastsunrise.art/basilio/g2-4"
     },
     {
         title: "3.1.1",
         description: "Fixed up the half broken Sims page CSS and published a new part of the legacy saga!",
         pubDate: "2025-06-27",
-        link: "https://lastsunrise.art/shrines/sims/basilio-g2-3/"
+        link: "https://sims.lastsunrise.art/basilio/g2-3"
     },
     {
         title: "3.1.0",
         description: "Made real actual CSS for the Sims shrine, which means we're onto a new major site version :-)",
         pubDate: "2025-06-26",
-        link: "https://lastsunrise.art/shrines/sims/"
+        link: "https://sims.lastsunrise.art/"
     },
     {
         title: "3.0.8",
         description: "Posted part 3 of the Basilio legacy challenge blog. Also fixed the double scrollbar issue.",
         pubDate: "2025-06-25",
-        link: "https://lastsunrise.art/shrines/sims/basilio-g2-2/"
+        link: "https://sims.lastsunrise.art/basilio/g2-2"
     },
     {
         title: "3.0.7",
         description: "Posted a new Sims post, and got next/prev buttons working for that section of the site too.",
         pubDate: "2025-06-24",
-        link: "https://lastsunrise.art/shrines/sims/basilio-g2-1/"
+        link: "https://sims.lastsunrise.art/basilio/g2-1"
     },
     {
         title: "3.0.6",
         description: "Updated framework for blog section titling and created a new Sims shrine...sort of. Basically I'm just blogging about my current TS4 legacy challenge.",
         pubDate: "2025-06-22",
-        link: "https://lastsunrise.art/shrines/sims/basilio-g1/"
+        link: "https://sims.lastsunrise.art/basilio/g1-1"
     },
     {
         title: "3.0.5",
