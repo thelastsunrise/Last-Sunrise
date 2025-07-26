@@ -7,10 +7,16 @@ return rss({
     site: context.site,
     items: [
     {
+        title: "3.2.3",
+        description: "Another new Sims blog! Also, new character art for Ajei and Doba on their respective pages. I desperately need to separate these changelogs soon.",
+        pubDate: "2025-07-26",
+        link: "https://sims.lastsunrise.art/basilio/g3-5"
+    },
+    {
         title: "3.2.2",
         description: "Not one, but TWO blog posts on the Sims site today! Otherwise, gave the site some major performance enhancements in image processing, and otherwise made comments just a little bit prettier.",
         pubDate: "2025-07-22",
-        link: "https://sims.lastsunrise.art/g3-3"
+        link: "https://sims.lastsunrise.art/basilio/g3-3"
     },
     {
         title: "3.2.1",
